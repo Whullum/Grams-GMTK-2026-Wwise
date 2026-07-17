@@ -1,0 +1,36 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "GMTK 2026 GRAM Unity_WwiseProject",
+   "GUID": "{A0B94F54-67A6-4B5D-A8D1-8F9BAFB59349}",
+   "Generator": "2025.1.9.9197"
+  },
+  "CacheRoot": "../.cache",
+  "Platforms": [
+   {
+    "Name": "Mac",
+    "GUID": "{2281DF67-9F2A-4B5C-A480-F46D5A7DB564}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "../../GMTK2026Gram/GMTK 2026 GRAM Unity/Assets/StreamingAssets/GeneratedSoundBanks/Mac"
+   },
+   {
+    "Name": "Windows",
+    "GUID": "{DDF27D9F-92CA-4A6C-8991-EF078B79CA3B}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "../../GMTK2026Gram/GMTK 2026 GRAM Unity/Assets/StreamingAssets/GeneratedSoundBanks/Windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{E29C7B63-7FA3-470D-8E45-22CFFC73AD07}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{DA28DF92-3143-BCBE-7372-9AE452B53153}"
+ }
+}
