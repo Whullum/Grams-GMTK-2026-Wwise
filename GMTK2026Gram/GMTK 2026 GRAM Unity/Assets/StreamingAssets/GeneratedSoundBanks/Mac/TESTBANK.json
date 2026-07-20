@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3291379323",
+    "Type": "User",
+    "GUID": "{869D78B1-F69E-4F11-B3AB-85F2C2DE0D40}",
+    "Language": "SFX",
+    "Hash": "{6724E97D-2049-76EA-4A73-7C2858402C3F}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\TESTBANK",
+    "ShortName": "TESTBANK",
+    "Path": "TESTBANK.bnk",
+    "Media": [
+     {
+      "Id": "83410173",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Confirm.wav",
+      "CachePath": "1E/{1ED70392-02E8-FB03-7848-BC42FAE54472}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3670861436",
+      "Name": "SFX_TEST_EVENT",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX_TEST_EVENT",
+      "GUID": "{3AD970E4-1448-4A39-A9C0-ED0312517E80}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5",
+      "DurationMax": "0.5",
+      "MediaRefs": [
+       {
+        "Id": "83410173"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6F10E8D1-686C-571E-0635-ECFD0128CB2A}"
+ }
+}
