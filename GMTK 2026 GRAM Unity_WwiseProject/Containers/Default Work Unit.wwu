@@ -3,7 +3,7 @@
 	<Containers>
 		<WorkUnit Name="Default Work Unit" ID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="Confirm" ID="{CB07705A-436D-4EC7-AFB6-AC65454B6D86}" ShortID="900836652">
+				<Sound Name="TEST_SFX" ID="{CB07705A-436D-4EC7-AFB6-AC65454B6D86}" ShortID="900836652">
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
