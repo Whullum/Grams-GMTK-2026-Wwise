@@ -16,7 +16,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+							<ObjectRef Name="SFX Bus" ID="{3103FD2E-C5F1-42AC-A555-1E6CDD35F2DE}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -32,6 +32,141 @@
 						<ActiveSource Name="Confirm" ID="{3BEC1C82-0C21-4528-813D-B20AC14CFC4C}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Folder Name="Player" ID="{89A42681-CF99-4400-AA87-E32C326F61DA}" ShortID="328589288"/>
+				<Folder Name="UI" ID="{83633D20-1C98-4051-B972-04FCCAA9774E}" ShortID="404026678"/>
+				<Folder Name="Music" ID="{56ADBE61-15D9-4D75-9FE0-6953D7872107}" ShortID="925071329">
+					<ChildrenList>
+						<MusicSwitchContainer Name="Music Switch" ID="{B5C39FC7-8013-4925-B843-C4EE91EFB0FC}" ShortID="623149980">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music Bus" ID="{2EAE3143-545A-40C8-8608-45A5F01443F6}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{948C5A43-30CB-4099-9E62-7D45A6AD890F}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{56DB0895-DA1E-4B98-9A01-39D4642D9B04}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicPlaylistContainer Name="MUS_Calm" ID="{28D2C295-B319-4279-B629-23BDED9948C2}" ShortID="165563077">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+										<Reference Name="PlaylistRoot">
+											<Custom>
+												<MusicPlaylistItem Name="" ID="{8C1F5521-1AF8-4F5F-AC12-4168B479DF67}" ShortID="631968284"/>
+											</Custom>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{7266225F-20AC-4621-935F-A27D76C14810}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicTransition Name="Transition" ID="{F5B48645-26E7-43E3-9EF5-F294A2D14DC4}">
+															<TransitionInfo/>
+														</MusicTransition>
+													</ChildrenList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="MUS_Neutral" ID="{7F39CB69-FFE8-4C69-9A3F-907615A2187B}" ShortID="926541606">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+										<Reference Name="PlaylistRoot">
+											<Custom>
+												<MusicPlaylistItem Name="" ID="{8BCEC96F-6990-47FC-AF8A-9ED9ED229281}" ShortID="583688307"/>
+											</Custom>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{D7C9CC4A-4E0D-4511-A0CA-6C2E549CC97F}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicTransition Name="Transition" ID="{AB30C48C-F55F-4DA8-834E-303972F897C5}">
+															<TransitionInfo/>
+														</MusicTransition>
+													</ChildrenList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="MUS_Aggressive" ID="{6C64C283-E9A6-45A9-BC91-601414EA438D}" ShortID="838304796">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+										<Reference Name="PlaylistRoot">
+											<Custom>
+												<MusicPlaylistItem Name="" ID="{3612B504-B729-4CD2-AD7F-49320F32F277}" ShortID="173170032"/>
+											</Custom>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{9AA53E82-246B-407B-82F4-05490CF01FDC}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicTransition Name="Transition" ID="{EA782E34-47F8-45C1-B5EC-666CA06888C3}">
+															<TransitionInfo/>
+														</MusicTransition>
+													</ChildrenList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+								</MusicPlaylistContainer>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<PluginInnerObject Name="" ID="{B29826A4-7111-404D-B6EB-8388EF77596E}" PluginName="MusicArgumentsSlot" CompanyID="0" PluginID="89">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="MUS_MusicState" ID="{3CB42D1B-559B-4C0E-96F3-0D0686D4BCB2}" WorkUnitID="{F65D30D3-DFF9-4088-9661-7E588F98F3D3}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSwitchContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Environment" ID="{CF8B550D-3287-4CA1-9F8A-BB0047C13D46}" ShortID="1017255445"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>
