@@ -10,9 +10,116 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="SFX Bus" ID="{3103FD2E-C5F1-42AC-A555-1E6CDD35F2DE}"/>
-						<Bus Name="Music Bus" ID="{2EAE3143-545A-40C8-8608-45A5F01443F6}"/>
+						<Bus Name="SFX Bus" ID="{3103FD2E-C5F1-42AC-A555-1E6CDD35F2DE}">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{9F57B915-51B8-43A8-9B47-6BBE1857F6D2}" ShortID="268414662">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RTPC_SFXVolume" ID="{214509CF-FC03-4BB8-99C9-07017AA28F1B}" WorkUnitID="{0329338C-2039-44A3-A0DB-41116739FB0A}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{C2A9813E-4FE0-4372-8523-7D6569ED0F28}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<Bus Name="Music Bus" ID="{2EAE3143-545A-40C8-8608-45A5F01443F6}">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{0D3F289B-4C9C-45C9-A098-D1F65BFF291E}" ShortID="318972113">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="RTPC_MusicVolume" ID="{E852E9CC-BCB4-4D8F-B062-E24C726FD446}" WorkUnitID="{0329338C-2039-44A3-A0DB-41116739FB0A}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{ED33079E-67A6-4682-9CBF-B536750C8714}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<RTPC Name="" ID="{21128BF0-F691-46A2-AD27-F41B81EBD1FF}" ShortID="584091954">
+								<PropertyList>
+									<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="ControlInput">
+										<ObjectRef Name="RTPC_MasterVolume" ID="{287D872D-ADFE-4158-B144-C0D831FE523F}" WorkUnitID="{0329338C-2039-44A3-A0DB-41116739FB0A}"/>
+									</Reference>
+									<Reference Name="Curve">
+										<Custom>
+											<Curve Name="" ID="{790C498E-50B1-486E-B1BA-BAC3266D0C24}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-100</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</RTPC>
+						</ObjectList>
+					</ObjectLists>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>
