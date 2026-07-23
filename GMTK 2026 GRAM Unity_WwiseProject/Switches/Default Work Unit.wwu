@@ -3,12 +3,19 @@
 	<Switches>
 		<WorkUnit Name="Default Work Unit" ID="{1D3FEC77-78E1-4E84-B7C8-E8BEF792F44F}" PersistMode="Standalone">
 			<ChildrenList>
-				<SwitchGroup Name="Surface" ID="{38F630E8-1B54-4921-8905-51C87A9AACCF}">
+				<SwitchGroup Name="Surface_Footstep" ID="{38F630E8-1B54-4921-8905-51C87A9AACCF}">
 					<ChildrenList>
 						<Switch Name="Carpet" ID="{DA212C81-8A40-43D3-8CAC-F2588E3F3801}"/>
 						<Switch Name="Concrete" ID="{3738C7AF-9A6A-46A9-8101-14B23168D842}"/>
 						<Switch Name="Linoleum" ID="{BAA74040-B1E8-4BC9-AD6C-F10E034822EB}"/>
 						<Switch Name="Metal" ID="{BA4F5C27-4DAF-4C42-96E2-F6D2661C1A87}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Surface_Kick" ID="{E9CD6866-089B-4BFE-B40B-E7B3300F5EFA}">
+					<ChildrenList>
+						<Switch Name="VendingMachine" ID="{EFC3B6D1-E911-4A0A-BB59-DDD0FEF7D93C}"/>
+						<Switch Name="Door" ID="{994B0C0D-B805-4455-A177-FD3E50020333}"/>
+						<Switch Name="Wall" ID="{3771C109-E320-4BF7-BA23-C7CDA6A367DE}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>
