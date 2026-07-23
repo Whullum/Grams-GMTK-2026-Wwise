@@ -242,228 +242,6 @@
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
 												</Reference>
 											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_001" ID="{F0F6D362-6178-413C-A988-F1CE9B29EE4B}" ShortID="632022574">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_001" ID="{EC9DE1E7-325D-4092-A3B5-2BDCE180B2FE}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_001.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="514795512"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_001" ID="{EC9DE1E7-325D-4092-A3B5-2BDCE180B2FE}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_002" ID="{8179701F-CBBF-497C-B01D-D611BDFED605}" ShortID="890401284">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_002" ID="{76CF71E8-6B07-4E0E-B727-4F443A4C8058}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_002.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="58869513"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_002" ID="{76CF71E8-6B07-4E0E-B727-4F443A4C8058}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_003" ID="{6E0EA075-D3EC-45D7-9442-09D70B33E204}" ShortID="1026341470">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_003" ID="{BD81152E-6439-4B70-A1C8-D7E146D456BE}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_003.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="504724513"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_003" ID="{BD81152E-6439-4B70-A1C8-D7E146D456BE}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_004" ID="{2AC2FEEA-6753-4596-AD65-20FA0F6768FC}" ShortID="21990258">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_004" ID="{9F614A93-93C1-4BF1-B882-BF641036EDC6}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_004.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="267511976"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_004" ID="{9F614A93-93C1-4BF1-B882-BF641036EDC6}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_005" ID="{FA64EA92-AA8C-46A4-BB30-DA0E15D99A4E}" ShortID="878480499">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_005" ID="{6C7F4FAF-A6B9-4DEF-88A0-A1D741C4F4FA}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_005.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="547472633"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_005" ID="{6C7F4FAF-A6B9-4DEF-88A0-A1D741C4F4FA}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_006" ID="{E6E852B4-355D-4BFB-B77A-8632352D503D}" ShortID="106699267">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_006" ID="{B92FF93F-A413-4CBD-9165-5BF541F5FF7F}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_006.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="749704516"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_006" ID="{B92FF93F-A413-4CBD-9165-5BF541F5FF7F}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_007" ID="{662D2984-EFB4-4B25-B9CD-3AFAE35CFE5B}" ShortID="850479663">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_007" ID="{4E679AD9-96FF-4322-8FDB-6FD103BE9C8E}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_007.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="389230029"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_007" ID="{4E679AD9-96FF-4322-8FDB-6FD103BE9C8E}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_008" ID="{AF981DE9-58E0-495A-9EF9-0A0F3C842BDE}" ShortID="645220588">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_008" ID="{525F0D76-313D-4A32-9A2C-9E0A859F251B}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_008.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="903563531"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_008" ID="{525F0D76-313D-4A32-9A2C-9E0A859F251B}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_009" ID="{EE4C4E96-927F-4C90-86C2-DA0A90B7F3FC}" ShortID="562108017">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_009" ID="{BE99D3EF-14BA-407D-B872-B3301B252E17}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_009.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="503820914"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_009" ID="{BE99D3EF-14BA-407D-B872-B3301B252E17}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_010" ID="{6AD26CE3-AEF1-4515-9ACF-C27860E481AF}" ShortID="262191750">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_010" ID="{970B950E-C476-4F45-813C-25864F76D4F7}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_010.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="266209921"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_010" ID="{970B950E-C476-4F45-813C-25864F76D4F7}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Walk" ID="{02BA9C4F-307D-493D-BE0B-5ACDABC837F0}" ShortID="993644681">
 											<PropertyList>
@@ -487,6 +265,9 @@
 													</ModifierList>
 												</Property>
 												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
 															<Modifier Name="" ID="{578C1DE2-10A9-4312-A919-FE3F337D6CC6}">
@@ -508,228 +289,6 @@
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
 												</Reference>
 											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_001" ID="{A5863102-C8D3-4057-A01C-5D4A1120BB23}" ShortID="763067975">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_001" ID="{19868D4F-4108-4225-9C90-C1CE716C0647}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_001.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="504644425"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_001" ID="{19868D4F-4108-4225-9C90-C1CE716C0647}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_002" ID="{A4650FAF-0DFD-4C2C-B159-9564B872D17C}" ShortID="896330736">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_002" ID="{7EE255D8-6E11-494D-A69B-E4B44AEE19E8}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_002.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="717404679"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_002" ID="{7EE255D8-6E11-494D-A69B-E4B44AEE19E8}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_003" ID="{25E82058-8268-4F0E-A99E-183516377EE0}" ShortID="738557910">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_003" ID="{904CF96D-223A-4944-B44A-48B759071C94}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_003.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="723468073"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_003" ID="{904CF96D-223A-4944-B44A-48B759071C94}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_004" ID="{D653D624-771E-4F3F-9E99-F6495BD609B6}" ShortID="404382912">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_004" ID="{DC02EB21-814B-4C9E-B32E-36324F96847A}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_004.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="1011423605"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_004" ID="{DC02EB21-814B-4C9E-B32E-36324F96847A}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_005" ID="{5B30C842-20D4-4C1B-BDCD-C345576C3C1D}" ShortID="451701295">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_005" ID="{ED631255-A81A-41A7-BFAA-79CFB5EB74D9}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_005.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="579032665"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_005" ID="{ED631255-A81A-41A7-BFAA-79CFB5EB74D9}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_006" ID="{B0BA70F9-51A2-49C7-8F21-43BCC102799F}" ShortID="131456144">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_006" ID="{2D336A38-72E5-4D6B-8D5E-93CA3B0478B5}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_006.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="852584041"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_006" ID="{2D336A38-72E5-4D6B-8D5E-93CA3B0478B5}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_007" ID="{F1B63EC5-2204-43DC-8A16-1F7CF2BE9185}" ShortID="190870540">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_007" ID="{494C64D2-1670-40A7-8CEE-987F712940F1}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_007.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="652185619"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_007" ID="{494C64D2-1670-40A7-8CEE-987F712940F1}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_008" ID="{7FCD6152-4A43-490D-8063-7EFF0CB5F116}" ShortID="441800580">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_008" ID="{93E2DFD3-97DB-43A5-89BA-FC211C3D14A9}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_008.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="273392622"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_008" ID="{93E2DFD3-97DB-43A5-89BA-FC211C3D14A9}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_009" ID="{E8E28D7B-9D34-4927-A7AB-03278E6ABC26}" ShortID="259287868">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_009" ID="{B8AA8F29-3907-410E-A243-14DB7A0067EB}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_009.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="137119363"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_009" ID="{B8AA8F29-3907-410E-A243-14DB7A0067EB}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_010" ID="{48FF992A-43B0-48B0-847C-06EF1C44FCBD}" ShortID="976935811">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_010" ID="{101911F6-6438-4900-B91E-22E92B050C37}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_010.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="828111199"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_010" ID="{101911F6-6438-4900-B91E-22E92B050C37}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
 										</RandomSequenceContainer>
 									</ChildrenList>
 									<GroupingInfo>
@@ -1658,7 +1217,858 @@
 						</MusicSwitchContainer>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Environment" ID="{CF8B550D-3287-4CA1-9F8A-BB0047C13D46}" ShortID="1017255445"/>
+				<Folder Name="Environment" ID="{CF8B550D-3287-4CA1-9F8A-BB0047C13D46}" ShortID="1017255445">
+					<ChildrenList>
+						<PropertyContainer Name="Ambience" ID="{7899A75F-9D49-4629-AB53-E35FB517D9A3}" ShortID="264780089">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Ambience_Laboratory_Basic" ID="{1494C6A2-05F8-469C-A1AC-F8525106CFA4}" ShortID="341999990">
+									<PropertyList>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="AMBInd-Laboratory_MainRoomHum_LP_01_AAG" ID="{1E1F369D-40A0-402E-872B-A43B5AA10935}" ShortID="631006453">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMBInd-Laboratory_MainRoomHum_LP_01_AAG" ID="{16B7BCCC-7FEB-4E3A-9988-C7B09C8F808E}">
+													<Language>SFX</Language>
+													<AudioFile>AMBInd-Laboratory_MainRoomHum_LP_01_AAG.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="766507505"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMBInd-Laboratory_MainRoomHum_LP_01_AAG" ID="{16B7BCCC-7FEB-4E3A-9988-C7B09C8F808E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="keyboard-ambience" ID="{E084014E-97BB-4AD0-BCD1-475355BE21E0}" ShortID="296652509">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="keyboard-ambience" ID="{E3C2DF55-6414-4E12-A248-DC17A5828AF6}">
+													<Language>SFX</Language>
+													<AudioFile>keyboard-ambience.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="100294477"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="keyboard-ambience" ID="{E3C2DF55-6414-4E12-A248-DC17A5828AF6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMBInd-Laboratory_Various Machine Alerts_AAG" ID="{BDCF5320-FC27-4276-AAFD-48EE90E6364C}" ShortID="823802003">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMBInd-Laboratory_Various Machine Alerts_AAG" ID="{7F1A2C30-4B1E-4F0E-B9BE-449EA53E33A2}">
+													<Language>SFX</Language>
+													<AudioFile>AMBInd-Laboratory_Various Machine Alerts_AAG.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1013447420"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{973ED621-C671-4A3D-B1A5-72409304AB8A}"/>
+												<Position Name="" ID="{1F10DE2A-E39B-4201-958B-DA8F091FA66F}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="AMBInd-Laboratory_Various Machine Alerts_AAG" ID="{7F1A2C30-4B1E-4F0E-B9BE-449EA53E33A2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="Ambience_TeslaCoils" ID="{53261FE6-C5A5-4F1C-B938-CF51EFCA5759}" ShortID="617149236">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>40</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-25</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Tesla Coils" ID="{7B376040-FA17-4A6D-A772-7BAF3D64062A}" ShortID="14704855">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Tesla coil 1" ID="{99ADD65E-A422-418A-B90C-E4F7C6347AB3}" ShortID="879668115">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Tesla coil 1" ID="{E68E6FDC-513E-4B74-AE83-A9A315FDBFE6}">
+																	<Language>SFX</Language>
+																	<AudioFile>Tesla coil 1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="265917564"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Tesla coil 1" ID="{E68E6FDC-513E-4B74-AE83-A9A315FDBFE6}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Tesla coil 2" ID="{DE4B6C69-BDC5-431D-9A49-8B06EC9B9FFB}" ShortID="901651810">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Tesla coil 2" ID="{0B97D3A1-33E0-4A43-B91E-E3CF89AF0932}">
+																	<Language>SFX</Language>
+																	<AudioFile>Tesla coil 2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="785429814"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Tesla coil 2" ID="{0B97D3A1-33E0-4A43-B91E-E3CF89AF0932}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Tesla coil 3" ID="{F394427E-65A4-4C16-A948-346290190F8D}" ShortID="211403983">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Tesla coil 3" ID="{D774E3E5-248D-415F-BF29-BCA3B9A852DE}">
+																	<Language>SFX</Language>
+																	<AudioFile>Tesla coil 3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="592784326"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Tesla coil 3" ID="{D774E3E5-248D-415F-BF29-BCA3B9A852DE}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Tesla coil 4" ID="{C85F0865-1E02-4F1A-8189-24892B1C8F0B}" ShortID="927676391">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Tesla coil 4" ID="{6C421E5D-08D9-4D90-935C-570A240AA024}">
+																	<Language>SFX</Language>
+																	<AudioFile>Tesla coil 4.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="520779337"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Tesla coil 4" ID="{6C421E5D-08D9-4D90-935C-570A240AA024}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Tesla coil 5" ID="{53446CB6-B897-4698-9F5D-534BDF400310}" ShortID="64571620">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Tesla coil 5" ID="{BCF5BF4F-B058-4B89-B37F-71683BF13D20}">
+																	<Language>SFX</Language>
+																	<AudioFile>Tesla coil 5.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="549253677"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Tesla coil 5" ID="{BCF5BF4F-B058-4B89-B37F-71683BF13D20}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Tesla coil 6" ID="{C86B9386-EB14-4881-B38C-CA3B2A400A79}" ShortID="752031603">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Tesla coil 6" ID="{EE4E6010-E055-4818-B1F6-B9183D211040}">
+																	<Language>SFX</Language>
+																	<AudioFile>Tesla coil 6.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="218954603"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Tesla coil 6" ID="{EE4E6010-E055-4818-B1F6-B9183D211040}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Tesla coil 7" ID="{DDBB132D-330E-4BF0-A15A-CF851C99FDA9}" ShortID="344285690">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Tesla coil 7" ID="{0D40A7BE-2593-45EB-B48F-F959D538E3C3}">
+																	<Language>SFX</Language>
+																	<AudioFile>Tesla coil 7.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="636007893"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Tesla coil 7" ID="{0D40A7BE-2593-45EB-B48F-F959D538E3C3}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Tesla coil 8" ID="{588C1542-5D06-49BB-99BB-7AC3CFA7A704}" ShortID="546340424">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Tesla coil 8" ID="{BC816B30-C06D-4178-B1C7-834D99AFE91C}">
+																	<Language>SFX</Language>
+																	<AudioFile>Tesla coil 8.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1022150563"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Tesla coil 8" ID="{BC816B30-C06D-4178-B1C7-834D99AFE91C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<Sound Name="Silence" ID="{B66E4A64-3E81-4B2B-92DF-7B402E520E2E}" ShortID="321803684">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>70</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Silence" ID="{91DFAB67-4683-4D48-8D23-D4E719261284}" ShortID="279835833" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<PropertyList>
+																<Property Name="LengthMax" Type="Real32" Value="10"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Silence" ID="{91DFAB67-4683-4D48-8D23-D4E719261284}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{530BF76E-23BF-424E-AEB2-CBE316B251F4}"/>
+											</PositioningInfo>
+											<ObjectLists>
+												<ObjectList Name="Playlist">
+													<PluginInnerObject Name="" ID="{DD197EB5-4C83-467A-A7E4-1321B2991C8A}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+														<ReferenceList>
+															<Reference Name="PlaylistObject">
+																<ObjectRef Name="Tesla Coils" ID="{7B376040-FA17-4A6D-A772-7BAF3D64062A}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+															</Reference>
+														</ReferenceList>
+													</PluginInnerObject>
+													<PluginInnerObject Name="" ID="{61E61E3B-7ECE-4FE1-8107-24C2006A97D4}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+														<ReferenceList>
+															<Reference Name="PlaylistObject">
+																<ObjectRef Name="Silence" ID="{B66E4A64-3E81-4B2B-92DF-7B402E520E2E}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+															</Reference>
+														</ReferenceList>
+													</PluginInnerObject>
+												</ObjectList>
+											</ObjectLists>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
+								<PropertyContainer Name="Ambience_Laboratory_Complex" ID="{2AF2EC3A-66A8-43E9-9F5E-CAF152D97956}" ShortID="141377741">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Ambience_ComputerBeeps" ID="{1AE7121F-943A-445D-9F9A-D7BB64FFBC99}" ShortID="200817572">
+											<PropertyList>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Ambience_Keyboards" ID="{B1B4C765-906A-4FE3-AFCD-CFD73887E65B}" ShortID="405225979">
+											<PropertyList>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Ambience_TeslaCoils" ID="{A3A89399-BB99-44AB-AEC2-03F75849FBA4}" ShortID="515310863">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>40</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-21</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Tesla Coils" ID="{A04F2351-3734-433C-B865-2AFB247BAB8B}" ShortID="397624572">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Tesla coil 1" ID="{F030F800-CB51-480C-BA0D-9CE361F3D7F8}" ShortID="591830655">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Tesla coil 1" ID="{F754FE38-DE2A-418F-B18A-5097694B3859}">
+																	<Language>SFX</Language>
+																	<AudioFile>Tesla coil 1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="265917564"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Tesla coil 1" ID="{F754FE38-DE2A-418F-B18A-5097694B3859}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Tesla coil 2" ID="{AF60BA39-1CA4-4986-8ADA-DB93F371EE02}" ShortID="920338528">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Tesla coil 2" ID="{A5F09D6D-EB0D-4783-B4DF-3DC7F72533C5}">
+																	<Language>SFX</Language>
+																	<AudioFile>Tesla coil 2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="785429814"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Tesla coil 2" ID="{A5F09D6D-EB0D-4783-B4DF-3DC7F72533C5}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Tesla coil 3" ID="{2E66FDC9-1357-4EFD-8790-ED0AEFF47E0F}" ShortID="127374878">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Tesla coil 3" ID="{4B6990F7-F70E-4307-9C63-9C3AB5FF20B2}">
+																	<Language>SFX</Language>
+																	<AudioFile>Tesla coil 3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="592784326"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Tesla coil 3" ID="{4B6990F7-F70E-4307-9C63-9C3AB5FF20B2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Tesla coil 4" ID="{DC8F0612-8635-4FB9-A24A-6A6E4A152530}" ShortID="488280089">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Tesla coil 4" ID="{E11320FD-DEBA-4C84-A827-D0C51AD6B2A7}">
+																	<Language>SFX</Language>
+																	<AudioFile>Tesla coil 4.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="520779337"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Tesla coil 4" ID="{E11320FD-DEBA-4C84-A827-D0C51AD6B2A7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Tesla coil 5" ID="{021EBBD0-5A1C-4B2E-84FD-BF4619F62B1A}" ShortID="130189667">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Tesla coil 5" ID="{A80D35D8-86B0-44C5-8EEE-39A1E086B89B}">
+																	<Language>SFX</Language>
+																	<AudioFile>Tesla coil 5.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="549253677"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Tesla coil 5" ID="{A80D35D8-86B0-44C5-8EEE-39A1E086B89B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Tesla coil 6" ID="{5DE5B89D-CDC2-4407-9BDC-405D8515638B}" ShortID="536250095">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Tesla coil 6" ID="{92EA92E7-90AB-4A53-80AA-69DFD1162AA7}">
+																	<Language>SFX</Language>
+																	<AudioFile>Tesla coil 6.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="218954603"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Tesla coil 6" ID="{92EA92E7-90AB-4A53-80AA-69DFD1162AA7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Tesla coil 7" ID="{11201716-9795-4D75-A445-B8A275E0DD4C}" ShortID="318247641">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Tesla coil 7" ID="{88C80130-42A7-4D92-B906-6BF9784C979B}">
+																	<Language>SFX</Language>
+																	<AudioFile>Tesla coil 7.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="636007893"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Tesla coil 7" ID="{88C80130-42A7-4D92-B906-6BF9784C979B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Tesla coil 8" ID="{A15E4B5A-FEF0-48DD-91B4-C16BD7DF5B8B}" ShortID="884545706">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Tesla coil 8" ID="{096A9A7C-48C1-4CF7-8D49-A1607D1573A1}">
+																	<Language>SFX</Language>
+																	<AudioFile>Tesla coil 8.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1022150563"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Tesla coil 8" ID="{096A9A7C-48C1-4CF7-8D49-A1607D1573A1}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<Sound Name="Silence" ID="{E5242FCE-47D7-4BEE-993F-BB53B9B61A79}" ShortID="941457400">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>70</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Silence" ID="{C66D38BD-0D5B-4469-9990-E561F1AD5807}" ShortID="397872364" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<PropertyList>
+																<Property Name="LengthMax" Type="Real32" Value="10"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Silence" ID="{C66D38BD-0D5B-4469-9990-E561F1AD5807}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{856CA0D6-7A13-4A47-A2BE-8EDADFBF64D0}"/>
+											</PositioningInfo>
+											<ObjectLists>
+												<ObjectList Name="Playlist">
+													<PluginInnerObject Name="" ID="{143A0015-69E1-4726-B57F-C688C5DA8072}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+														<ReferenceList>
+															<Reference Name="PlaylistObject">
+																<ObjectRef Name="Tesla Coils" ID="{A04F2351-3734-433C-B865-2AFB247BAB8B}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+															</Reference>
+														</ReferenceList>
+													</PluginInnerObject>
+													<PluginInnerObject Name="" ID="{2084F8DF-CB28-420E-83FE-C167C2DEAB80}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+														<ReferenceList>
+															<Reference Name="PlaylistObject">
+																<ObjectRef Name="Silence" ID="{E5242FCE-47D7-4BEE-993F-BB53B9B61A79}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+															</Reference>
+														</ReferenceList>
+													</PluginInnerObject>
+												</ObjectList>
+											</ObjectLists>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Ambience_Vats" ID="{C11B9703-AE11-4C70-BD64-6F99A25731A6}" ShortID="144511134">
+											<PropertyList>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+										</RandomSequenceContainer>
+										<Sound Name="AMBInd-Laboratory_MainRoomHum_LP_01_AAG" ID="{0EDA781A-7603-4C8D-8E72-F80E68FF68C2}" ShortID="62143356">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMBInd-Laboratory_MainRoomHum_LP_01_AAG" ID="{8A676369-FA3A-471D-9603-D967DDAD11B6}">
+													<Language>SFX</Language>
+													<AudioFile>AMBInd-Laboratory_MainRoomHum_LP_01_AAG.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="766507505"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMBInd-Laboratory_MainRoomHum_LP_01_AAG" ID="{8A676369-FA3A-471D-9603-D967DDAD11B6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</PropertyContainer>
+							</ChildrenList>
+						</PropertyContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>
