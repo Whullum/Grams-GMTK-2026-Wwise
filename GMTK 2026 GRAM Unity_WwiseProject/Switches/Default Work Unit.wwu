@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{1D3FEC77-78E1-4E84-B7C8-E8BEF792F44F}" PersistMode="Standalone">
 			<ChildrenList>
 				<SwitchGroup Name="Surface" ID="{38F630E8-1B54-4921-8905-51C87A9AACCF}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Switch Name="Carpet" ID="{DA212C81-8A40-43D3-8CAC-F2588E3F3801}"/>
 						<Switch Name="Concrete" ID="{3738C7AF-9A6A-46A9-8101-14B23168D842}"/>

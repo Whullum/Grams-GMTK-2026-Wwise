@@ -39,6 +39,9 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
 								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Carpet" ID="{DA212C81-8A40-43D3-8CAC-F2588E3F3801}" WorkUnitID="{1D3FEC77-78E1-4E84-B7C8-E8BEF792F44F}"/>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
 								</Reference>
@@ -47,342 +50,54 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<SwitchContainer Name="Concrete" ID="{1EC8CAD8-0682-4EBA-B210-ED118CFBDF55}" ShortID="913297622">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-										</Reference>
-										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="None" ID="{565AF50C-84A0-474A-BA95-A2A007031CE9}" WorkUnitID="{F65D30D3-DFF9-4088-9661-7E588F98F3D3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-										</Reference>
-										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="Player_Movement_Speed" ID="{68ED3B79-B09B-4998-95AC-8437C5BFC56D}" WorkUnitID="{F65D30D3-DFF9-4088-9661-7E588F98F3D3}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<RandomSequenceContainer Name="Run" ID="{C8FC2909-6C5D-4660-B594-02940E1723FB}" ShortID="344807495">
-											<PropertyList>
-												<Property Name="Highpass" Type="int16">
-													<ValueList>
-														<Value>18</Value>
-													</ValueList>
-												</Property>
-												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{B090F73D-8AD1-42E0-BA0B-71FF1981C965}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="50"/>
-																	<Property Name="Min" Type="Real64" Value="-100"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{F4E65400-2CE6-44CE-8B91-F652FF784FB2}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="2"/>
-																	<Property Name="Min" Type="Real64" Value="-2"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-												</Reference>
-											</ReferenceList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Walk" ID="{DA170E6B-8C9D-4948-A4D3-8DDCD3B5D991}" ShortID="395269240">
-											<PropertyList>
-												<Property Name="Highpass" Type="int16">
-													<ValueList>
-														<Value>18</Value>
-													</ValueList>
-												</Property>
-												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{F5ACFE4B-545A-493A-8E21-47C62DA5B553}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="50"/>
-																	<Property Name="Min" Type="Real64" Value="-100"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{1D4DA73A-D3D3-440C-9170-8855E808B202}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="2"/>
-																	<Property Name="Min" Type="Real64" Value="-2"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-												</Reference>
-											</ReferenceList>
-										</RandomSequenceContainer>
-									</ChildrenList>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="Run" ID="{C8FC2909-6C5D-4660-B594-02940E1723FB}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="Walk" ID="{DA170E6B-8C9D-4948-A4D3-8DDCD3B5D991}"/>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="None" ID="{565AF50C-84A0-474A-BA95-A2A007031CE9}"/>
-												<ItemList>
-													<ItemRef Name="Walk" ID="{DA170E6B-8C9D-4948-A4D3-8DDCD3B5D991}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="Run" ID="{D4AC1E22-2EF3-4B43-AC26-8FB22A9527D6}"/>
-												<ItemList>
-													<ItemRef Name="Run" ID="{C8FC2909-6C5D-4660-B594-02940E1723FB}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="Walk" ID="{B42C843D-4C84-48CD-8472-F4EA3C141922}"/>
-												<ItemList>
-													<ItemRef Name="Walk" ID="{DA170E6B-8C9D-4948-A4D3-8DDCD3B5D991}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
-									</GroupingInfo>
-								</SwitchContainer>
-								<SwitchContainer Name="Linoleum" ID="{69027486-869E-40A8-A8AF-F56A24BDAB07}" ShortID="1037120443">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-										</Reference>
-										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="None" ID="{565AF50C-84A0-474A-BA95-A2A007031CE9}" WorkUnitID="{F65D30D3-DFF9-4088-9661-7E588F98F3D3}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-										</Reference>
-										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="Player_Movement_Speed" ID="{68ED3B79-B09B-4998-95AC-8437C5BFC56D}" WorkUnitID="{F65D30D3-DFF9-4088-9661-7E588F98F3D3}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<RandomSequenceContainer Name="Run" ID="{660B5F98-F3B5-4B09-BE77-461458008ADA}" ShortID="943423972">
-											<PropertyList>
-												<Property Name="Highpass" Type="int16">
-													<ValueList>
-														<Value>18</Value>
-													</ValueList>
-												</Property>
-												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{EB11ED1C-0851-40BB-8CCF-6E5334E6BB93}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="50"/>
-																	<Property Name="Min" Type="Real64" Value="-100"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{8C092777-A21A-405A-85A8-557A9CC9A26A}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="2"/>
-																	<Property Name="Min" Type="Real64" Value="-2"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-												</Reference>
-											</ReferenceList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Walk" ID="{02BA9C4F-307D-493D-BE0B-5ACDABC837F0}" ShortID="993644681">
-											<PropertyList>
-												<Property Name="Highpass" Type="int16">
-													<ValueList>
-														<Value>18</Value>
-													</ValueList>
-												</Property>
-												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{1645421D-44D0-47F0-847B-678D318658B0}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="50"/>
-																	<Property Name="Min" Type="Real64" Value="-100"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>12</Value>
-													</ValueList>
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{578C1DE2-10A9-4312-A919-FE3F337D6CC6}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="2"/>
-																	<Property Name="Min" Type="Real64" Value="-2"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-												</Reference>
-											</ReferenceList>
-										</RandomSequenceContainer>
-									</ChildrenList>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="Walk" ID="{02BA9C4F-307D-493D-BE0B-5ACDABC837F0}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="Run" ID="{660B5F98-F3B5-4B09-BE77-461458008ADA}"/>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="None" ID="{565AF50C-84A0-474A-BA95-A2A007031CE9}"/>
-												<ItemList>
-													<ItemRef Name="Walk" ID="{02BA9C4F-307D-493D-BE0B-5ACDABC837F0}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="Run" ID="{D4AC1E22-2EF3-4B43-AC26-8FB22A9527D6}"/>
-												<ItemList>
-													<ItemRef Name="Run" ID="{660B5F98-F3B5-4B09-BE77-461458008ADA}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="Walk" ID="{B42C843D-4C84-48CD-8472-F4EA3C141922}"/>
-												<ItemList>
-													<ItemRef Name="Walk" ID="{02BA9C4F-307D-493D-BE0B-5ACDABC837F0}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
-									</GroupingInfo>
-								</SwitchContainer>
-								<SwitchContainer Name="Carpet" ID="{52655EA0-94A2-47D7-9060-0F9601A7BB62}" ShortID="857112715">
+								<RandomSequenceContainer Name="Carpet" ID="{4FF2B089-0D22-49DB-8512-7B22EA1E8EA5}" ShortID="343054084">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>18</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{586346D3-1B12-47A5-8B37-B4136D376F2B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>3</Value>
+												<Value>18</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{21069079-8DB1-4C8C-B082-02BF6C3D69DD}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="2"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
 										</Reference>
-										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="None" ID="{565AF50C-84A0-474A-BA95-A2A007031CE9}" WorkUnitID="{F65D30D3-DFF9-4088-9661-7E588F98F3D3}"/>
-										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
 										</Reference>
-										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="Player_Movement_Speed" ID="{68ED3B79-B09B-4998-95AC-8437C5BFC56D}" WorkUnitID="{F65D30D3-DFF9-4088-9661-7E588F98F3D3}"/>
-										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Run" ID="{0956CA66-4149-40F8-962A-FC358E33988D}" ShortID="913083040">
-											<PropertyList>
-												<Property Name="Highpass" Type="int16">
-													<ValueList>
-														<Value>18</Value>
-													</ValueList>
-												</Property>
-												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{92E9459D-AF50-43B5-8EB7-46349397700C}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="50"/>
-																	<Property Name="Min" Type="Real64" Value="-100"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>6</Value>
-													</ValueList>
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{7C90B855-27B5-48D7-8D22-43854A90BD75}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="2"/>
-																	<Property Name="Min" Type="Real64" Value="-2"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_001" ID="{CF3A1E7F-D01B-437A-A9F8-814289CCAC45}" ShortID="615105247">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
@@ -392,266 +107,19 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_001" ID="{75D30BA7-84FE-4D33-82DB-C9DAE242EB08}" ShortID="866387198">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_001" ID="{8376DA26-6991-4F39-B266-E2DE2DBF89AB}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_001.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="82673287"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_001" ID="{8376DA26-6991-4F39-B266-E2DE2DBF89AB}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_002" ID="{9CCA45D1-63B2-44DE-BC64-47483F87010E}" ShortID="83302506">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_002" ID="{515D5D61-FD2E-4949-B83C-18D57570FD75}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_002.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="495482347"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_002" ID="{515D5D61-FD2E-4949-B83C-18D57570FD75}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_003" ID="{58C4DE31-3C61-4F15-989B-009A7D842336}" ShortID="389733629">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_003" ID="{800CBC7F-EBEB-471F-8346-A32A2FA32A57}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_003.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="676942731"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_003" ID="{800CBC7F-EBEB-471F-8346-A32A2FA32A57}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_004" ID="{85542380-690A-45CC-BE92-1E59D8DC96BB}" ShortID="202285146">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_004" ID="{40100C5A-2BE2-45EF-9B44-64D19A5605EF}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_004.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="801320484"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_004" ID="{40100C5A-2BE2-45EF-9B44-64D19A5605EF}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_005" ID="{A86245C1-69ED-48C9-861A-E40A99CDF431}" ShortID="216665837">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_005" ID="{B0AE6316-F8D4-4A2B-834D-006FF608EF1C}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_005.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="555788299"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_005" ID="{B0AE6316-F8D4-4A2B-834D-006FF608EF1C}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_006" ID="{D803AE4A-DB76-4525-A537-9CE730492695}" ShortID="50662669">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_006" ID="{46D8A780-CB1A-41C2-900C-032BF7E05590}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_006.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="168396020"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_006" ID="{46D8A780-CB1A-41C2-900C-032BF7E05590}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_007" ID="{BDB5003C-1968-4655-A36D-39A33A7C7F01}" ShortID="442328810">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_007" ID="{60E4CB67-B26D-48AD-B076-50F003AA5430}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_007.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="929609925"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_007" ID="{60E4CB67-B26D-48AD-B076-50F003AA5430}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_008" ID="{AE5D577D-761A-45CB-9432-BD239088D4A5}" ShortID="92597549">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_008" ID="{BFA78585-E63E-4BC0-AE1A-4034E9002A40}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_008.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="249033734"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_008" ID="{BFA78585-E63E-4BC0-AE1A-4034E9002A40}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_009" ID="{58BD6A53-7FE4-41AF-AA29-6851899FAA88}" ShortID="10672811">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_009" ID="{EFC799DC-1FD1-47E4-8303-4E517CD027B2}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_009.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="165844679"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_009" ID="{EFC799DC-1FD1-47E4-8303-4E517CD027B2}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_010" ID="{1D63AC03-6442-431D-9DFC-E842EDCF60EE}" ShortID="615940780">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_010" ID="{689BE315-6194-4C27-B52A-69C4C940ED73}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_010.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="565058619"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_010" ID="{689BE315-6194-4C27-B52A-69C4C940ED73}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_001" ID="{BC0DA3C0-A01B-4406-B257-1C81B5295FF3}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="423081268"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Walk" ID="{4FF2B089-0D22-49DB-8512-7B22EA1E8EA5}" ShortID="343054084">
-											<PropertyList>
-												<Property Name="Highpass" Type="int16">
-													<ValueList>
-														<Value>18</Value>
-													</ValueList>
-												</Property>
-												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{586346D3-1B12-47A5-8B37-B4136D376F2B}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="50"/>
-																	<Property Name="Min" Type="Real64" Value="-100"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>6</Value>
-													</ValueList>
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{21069079-8DB1-4C8C-B082-02BF6C3D69DD}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="2"/>
-																	<Property Name="Min" Type="Real64" Value="-2"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_001" ID="{BC0DA3C0-A01B-4406-B257-1C81B5295FF3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_002" ID="{EF546F0A-8350-4250-9D20-6AD0942A9243}" ShortID="787556319">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
@@ -661,311 +129,1097 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_001" ID="{CF3A1E7F-D01B-437A-A9F8-814289CCAC45}" ShortID="615105247">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_001" ID="{BC0DA3C0-A01B-4406-B257-1C81B5295FF3}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_001.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="423081268"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_001" ID="{BC0DA3C0-A01B-4406-B257-1C81B5295FF3}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_002" ID="{EF546F0A-8350-4250-9D20-6AD0942A9243}" ShortID="787556319">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_002" ID="{113F171F-CB10-4F14-B087-E4F2698197E4}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_002.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="847285673"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_002" ID="{113F171F-CB10-4F14-B087-E4F2698197E4}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_003" ID="{CD6C26F0-C7EA-49E0-811B-E898CF2C83FB}" ShortID="286697837">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_003" ID="{F4F787CD-965E-4D40-8F39-82FE9674C6C2}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_003.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="289642687"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_003" ID="{F4F787CD-965E-4D40-8F39-82FE9674C6C2}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_004" ID="{0833D944-06F0-4D87-9EC0-188375DD1C1B}" ShortID="944098012">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_004" ID="{5611B3CE-5598-497D-8175-3C27B1ED1D5F}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_004.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="970384260"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_004" ID="{5611B3CE-5598-497D-8175-3C27B1ED1D5F}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_005" ID="{F9632CF5-806F-4364-A59E-A7A290DBF223}" ShortID="696251703">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_005" ID="{7D73D976-2988-4C19-8BF2-3D432F0956BC}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_005.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="772224025"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_005" ID="{7D73D976-2988-4C19-8BF2-3D432F0956BC}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_006" ID="{706818B6-78C6-4071-B64E-E495531E36FE}" ShortID="744411945">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_006" ID="{CDB41A04-5AA1-48A1-A2CA-B2EF527F4D7C}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_006.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="429816183"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_006" ID="{CDB41A04-5AA1-48A1-A2CA-B2EF527F4D7C}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_007" ID="{599D1525-5BDE-40BF-97CA-37930C0F1289}" ShortID="952711626">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_007" ID="{43F64D8C-430E-43DD-8F22-232CA4551E04}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_007.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="627377987"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_007" ID="{43F64D8C-430E-43DD-8F22-232CA4551E04}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_008" ID="{5257328F-602D-4100-AFF7-FED4785696D2}" ShortID="211589207">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_008" ID="{38B526FA-7F4F-464F-AD3D-FCD155DC527E}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_008.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="153383340"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_008" ID="{38B526FA-7F4F-464F-AD3D-FCD155DC527E}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_009" ID="{9DF6F2D3-1CFF-451F-9233-5C59A7C0799E}" ShortID="832707773">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_009" ID="{00C4097D-3E09-4A1E-9B5C-896E203F9DB7}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_009.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="957822187"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_009" ID="{00C4097D-3E09-4A1E-9B5C-896E203F9DB7}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_010" ID="{CD60786A-2A91-47B0-BAE2-45EE0ACBB6D4}" ShortID="91255697">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_010" ID="{D16388D6-18DA-453A-A331-7AD0A3E0D548}">
-															<Language>SFX</Language>
-															<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_010.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="685938386"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_010" ID="{D16388D6-18DA-453A-A331-7AD0A3E0D548}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_002" ID="{113F171F-CB10-4F14-B087-E4F2698197E4}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="847285673"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</RandomSequenceContainer>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_002" ID="{113F171F-CB10-4F14-B087-E4F2698197E4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_003" ID="{CD6C26F0-C7EA-49E0-811B-E898CF2C83FB}" ShortID="286697837">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_003" ID="{F4F787CD-965E-4D40-8F39-82FE9674C6C2}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="289642687"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_003" ID="{F4F787CD-965E-4D40-8F39-82FE9674C6C2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_004" ID="{0833D944-06F0-4D87-9EC0-188375DD1C1B}" ShortID="944098012">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_004" ID="{5611B3CE-5598-497D-8175-3C27B1ED1D5F}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="970384260"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_004" ID="{5611B3CE-5598-497D-8175-3C27B1ED1D5F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_005" ID="{F9632CF5-806F-4364-A59E-A7A290DBF223}" ShortID="696251703">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_005" ID="{7D73D976-2988-4C19-8BF2-3D432F0956BC}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="772224025"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_005" ID="{7D73D976-2988-4C19-8BF2-3D432F0956BC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_006" ID="{706818B6-78C6-4071-B64E-E495531E36FE}" ShortID="744411945">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_006" ID="{CDB41A04-5AA1-48A1-A2CA-B2EF527F4D7C}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="429816183"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_006" ID="{CDB41A04-5AA1-48A1-A2CA-B2EF527F4D7C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_007" ID="{599D1525-5BDE-40BF-97CA-37930C0F1289}" ShortID="952711626">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_007" ID="{43F64D8C-430E-43DD-8F22-232CA4551E04}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="627377987"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_007" ID="{43F64D8C-430E-43DD-8F22-232CA4551E04}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_008" ID="{5257328F-602D-4100-AFF7-FED4785696D2}" ShortID="211589207">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_008" ID="{38B526FA-7F4F-464F-AD3D-FCD155DC527E}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_008.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="153383340"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_008" ID="{38B526FA-7F4F-464F-AD3D-FCD155DC527E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_009" ID="{9DF6F2D3-1CFF-451F-9233-5C59A7C0799E}" ShortID="832707773">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_009" ID="{00C4097D-3E09-4A1E-9B5C-896E203F9DB7}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_009.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="957822187"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_009" ID="{00C4097D-3E09-4A1E-9B5C-896E203F9DB7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_010" ID="{CD60786A-2A91-47B0-BAE2-45EE0ACBB6D4}" ShortID="91255697">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_010" ID="{D16388D6-18DA-453A-A331-7AD0A3E0D548}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_010.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="685938386"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_010" ID="{D16388D6-18DA-453A-A331-7AD0A3E0D548}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="Run" ID="{0956CA66-4149-40F8-962A-FC358E33988D}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="Walk" ID="{4FF2B089-0D22-49DB-8512-7B22EA1E8EA5}"/>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="None" ID="{565AF50C-84A0-474A-BA95-A2A007031CE9}"/>
-												<ItemList>
-													<ItemRef Name="Walk" ID="{4FF2B089-0D22-49DB-8512-7B22EA1E8EA5}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="Run" ID="{D4AC1E22-2EF3-4B43-AC26-8FB22A9527D6}"/>
-												<ItemList>
-													<ItemRef Name="Run" ID="{0956CA66-4149-40F8-962A-FC358E33988D}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="Walk" ID="{B42C843D-4C84-48CD-8472-F4EA3C141922}"/>
-												<ItemList>
-													<ItemRef Name="Walk" ID="{4FF2B089-0D22-49DB-8512-7B22EA1E8EA5}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
-									</GroupingInfo>
-								</SwitchContainer>
-								<SwitchContainer Name="Metal" ID="{B5C82569-BC44-47C6-833B-9371E9FA3398}" ShortID="125532901">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Concrete" ID="{DA170E6B-8C9D-4948-A4D3-8DDCD3B5D991}" ShortID="395269240">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>18</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F5ACFE4B-545A-493A-8E21-47C62DA5B553}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1D4DA73A-D3D3-440C-9170-8855E808B202}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="2"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
 										</Reference>
-										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="None" ID="{565AF50C-84A0-474A-BA95-A2A007031CE9}" WorkUnitID="{F65D30D3-DFF9-4088-9661-7E588F98F3D3}"/>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-01" ID="{A9FF8533-9EC3-4CCE-95F7-E27C9BEB43C1}" ShortID="329333074">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-01" ID="{7A06B5B3-0DC4-4ECF-AF3B-3918D3685FAB}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="636947494"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-01" ID="{7A06B5B3-0DC4-4ECF-AF3B-3918D3685FAB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-02" ID="{18ADA8CD-1190-4ED8-9176-29CD049B47A0}" ShortID="632858387">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-02" ID="{EFC8B6D0-AD1A-4B7E-8388-CE32EADEB9EA}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="255485503"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-02" ID="{EFC8B6D0-AD1A-4B7E-8388-CE32EADEB9EA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-03" ID="{7A12D0C9-C421-4579-9FBE-CAF5E71AFB8C}" ShortID="843180302">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-03" ID="{AF959B4C-2BB7-4865-B0D7-7CDDDDA3D26E}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="98528667"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-03" ID="{AF959B4C-2BB7-4865-B0D7-7CDDDDA3D26E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-04" ID="{935314D1-19AF-428E-BAFB-8F828AB79AE1}" ShortID="1013149030">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-04" ID="{06FD1274-0210-4BF6-B548-9D796552BC3C}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="766464765"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-04" ID="{06FD1274-0210-4BF6-B548-9D796552BC3C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-05" ID="{72FDF6DE-7F97-4A35-BF49-8F74FFF6BB22}" ShortID="784380557">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-05" ID="{D1E9B2FF-F242-45EA-83D5-8650A5342006}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1028052583"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-05" ID="{D1E9B2FF-F242-45EA-83D5-8650A5342006}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-06" ID="{686CF780-5CD3-4719-B0AF-4E46B8F2E464}" ShortID="264536585">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-06" ID="{A8486288-1052-439A-B9D9-BA31B569C3BA}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="943696869"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-06" ID="{A8486288-1052-439A-B9D9-BA31B569C3BA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-07" ID="{FEF2569F-815D-4A7E-8F75-F207A83F3CB6}" ShortID="785556153">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-07" ID="{12235D70-5E6C-43EB-AF22-33A9AAA945C9}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="941373290"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-07" ID="{12235D70-5E6C-43EB-AF22-33A9AAA945C9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-08" ID="{D25AAF7F-0809-4C28-BC6C-3AB08800DB8E}" ShortID="183182406">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-08" ID="{DFE8ECA7-1142-453A-8BA3-AD65DA34DA28}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-08.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="776312726"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-08" ID="{DFE8ECA7-1142-453A-8BA3-AD65DA34DA28}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-09" ID="{B57C8276-2E26-49DA-AD93-383514CCB7AC}" ShortID="531578845">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-09" ID="{3C16C7C6-1322-4CC5-9E19-F9E2FD7852CE}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-09.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="814563019"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-09" ID="{3C16C7C6-1322-4CC5-9E19-F9E2FD7852CE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-10" ID="{67E7EE25-AEAB-4A14-B185-61F7AAED6213}" ShortID="581215130">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-10" ID="{9888823B-105E-4326-98A9-35959BEFE896}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-10.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="421165370"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-10" ID="{9888823B-105E-4326-98A9-35959BEFE896}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-11" ID="{82B7D95C-9C24-4563-A329-F9629781D414}" ShortID="362891923">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-11" ID="{EB16DF10-5401-4442-A4F7-509094397E05}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-11.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="838454052"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-11" ID="{EB16DF10-5401-4442-A4F7-509094397E05}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-12" ID="{65DA8653-FEBF-4B36-8307-C0EEE89B3840}" ShortID="112528878">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-12" ID="{F1BE75EB-4749-4FDD-8C60-9860362D86B9}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-12.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="252834829"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-12" ID="{F1BE75EB-4749-4FDD-8C60-9860362D86B9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-13" ID="{65D185A1-DE03-430A-98B7-874EA04ACB30}" ShortID="703229958">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-13" ID="{05AA6270-BCB7-41DA-A02E-EF43F724129D}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-13.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="294882890"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-13" ID="{05AA6270-BCB7-41DA-A02E-EF43F724129D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-14" ID="{F43EF4E0-4F6D-43FE-BDCE-310C401D440D}" ShortID="890265050">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-14" ID="{D6FB1B08-5A8C-45BB-9E2D-403F80B77912}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-14.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="380058834"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-14" ID="{D6FB1B08-5A8C-45BB-9E2D-403F80B77912}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-15" ID="{ABA00DB1-6134-4B4E-9FAC-0FDD8C784424}" ShortID="861080328">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-15" ID="{BDDA1334-3841-46EF-9582-282C435333FF}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-15.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="519832230"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-15" ID="{BDDA1334-3841-46EF-9582-282C435333FF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-16" ID="{F04F44AD-855A-4CDC-8753-F96F8845C3F9}" ShortID="762066505">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-16" ID="{923C4F26-7CE8-4F1F-8050-BE548086F691}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-16.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="548267970"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-16" ID="{923C4F26-7CE8-4F1F-8050-BE548086F691}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-17" ID="{EAB913B1-84F4-43D4-B486-AA10F35A1D54}" ShortID="239217940">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-17" ID="{A14BDC5C-3073-4ECF-9DC2-6FB3A13149FB}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-17.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="764300941"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-17" ID="{A14BDC5C-3073-4ECF-9DC2-6FB3A13149FB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-18" ID="{FC59912D-D35F-4929-9D86-7CDE6876A980}" ShortID="144001371">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-18" ID="{9DFF4151-3460-44E9-90D7-9D6D69E07C8A}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-18.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="478024690"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-18" ID="{9DFF4151-3460-44E9-90D7-9D6D69E07C8A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-19" ID="{82DEA2C0-4C78-4129-B3CE-8C50C9D522CD}" ShortID="884412999">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-19" ID="{04B712A2-F6A0-42DC-8D51-6A7E44132B4E}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-19.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="582872234"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-19" ID="{04B712A2-F6A0-42DC-8D51-6A7E44132B4E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-20" ID="{9DE42A0A-50C6-4F50-815A-93871E04C729}" ShortID="945719322">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-20" ID="{CD04B2A4-4CB1-40C4-BA14-6AACA0828D6A}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-20.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="123906352"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-20" ID="{CD04B2A4-4CB1-40C4-BA14-6AACA0828D6A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-21" ID="{E6EB4129-2412-4A1F-9BF5-CB29FD5B3686}" ShortID="504992398">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-21" ID="{9766006F-D51F-44F3-BB8A-7A825B8DA4B9}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-21.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="28495973"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-21" ID="{9766006F-D51F-44F3-BB8A-7A825B8DA4B9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-22" ID="{0A8ED560-4706-4B42-8319-9F51358BB7EC}" ShortID="233083142">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-22" ID="{AB38820E-960B-494A-B6DF-E53A84941E8C}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-22.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="52701471"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-22" ID="{AB38820E-960B-494A-B6DF-E53A84941E8C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-23" ID="{9D136EB3-28DD-4F1C-83E8-DCC08344BFFC}" ShortID="922711543">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-23" ID="{8A9291DC-6D91-4127-8202-6FE957EC00FA}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-23.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="609461993"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-23" ID="{8A9291DC-6D91-4127-8202-6FE957EC00FA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-24" ID="{BDC3F30F-2C05-4052-8600-A7689690303E}" ShortID="637722432">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-24" ID="{4E871C7E-2412-4042-93FF-70786FE99159}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-24.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="186280878"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Shoe_Walk_Heavy_Tile_Floor_RingOfFyre-24" ID="{4E871C7E-2412-4042-93FF-70786FE99159}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Linoleum" ID="{02BA9C4F-307D-493D-BE0B-5ACDABC837F0}" ShortID="993644681">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>18</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1645421D-44D0-47F0-847B-678D318658B0}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>12</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{578C1DE2-10A9-4312-A919-FE3F337D6CC6}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="2"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
 										</Reference>
-										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="Player_Movement_Speed" ID="{68ED3B79-B09B-4998-95AC-8437C5BFC56D}" WorkUnitID="{F65D30D3-DFF9-4088-9661-7E588F98F3D3}"/>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_001" ID="{9AE9DA40-CD66-4727-B446-DB04DE8D2336}" ShortID="11524120">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_001" ID="{BFD55814-12AD-4BCD-B351-81BF7A0A28F9}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="992419778"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_001" ID="{BFD55814-12AD-4BCD-B351-81BF7A0A28F9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_002" ID="{C57F0467-8EDC-4B17-8392-499A85AAC42B}" ShortID="455332026">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_002" ID="{E7A40FE0-4D46-458D-8F44-9C4C48269CC6}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="198133506"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_002" ID="{E7A40FE0-4D46-458D-8F44-9C4C48269CC6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_003" ID="{EC126AEA-B562-40E1-8D4B-263968BF6938}" ShortID="81142848">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_003" ID="{3C65DFBA-B930-4DD0-973D-F80153B26BD0}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="644012150"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_003" ID="{3C65DFBA-B930-4DD0-973D-F80153B26BD0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_004" ID="{F629DA43-6F12-4C55-BEF4-439D733453F6}" ShortID="779764207">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_004" ID="{51608FA1-16A3-47B3-ABCB-6F548654EF29}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="245308100"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_004" ID="{51608FA1-16A3-47B3-ABCB-6F548654EF29}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_005" ID="{1581D220-77A0-4856-A3B7-074FB67A0C1D}" ShortID="785119511">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_005" ID="{DDE87368-C23A-49AC-89C9-59D8E7B6BFE3}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="663595890"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_005" ID="{DDE87368-C23A-49AC-89C9-59D8E7B6BFE3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_006" ID="{5020100A-4747-4E97-84D9-93EBD8257D14}" ShortID="787898484">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_006" ID="{7A94E08A-3E22-4F2F-8AA8-2CBC215CC90E}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="856213517"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_006" ID="{7A94E08A-3E22-4F2F-8AA8-2CBC215CC90E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_007" ID="{CA979959-F9E9-4E30-A5D8-E4578CD69BA1}" ShortID="567259799">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_007" ID="{056E74CB-9127-49DE-B897-765B3DFB083A}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="903196187"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_007" ID="{056E74CB-9127-49DE-B897-765B3DFB083A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_008" ID="{0C735E50-9554-4539-9A00-E18DA874BACF}" ShortID="368107786">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_008" ID="{B56F4160-BF0E-4721-87FC-1DED960C3E47}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_008.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="131048280"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_008" ID="{B56F4160-BF0E-4721-87FC-1DED960C3E47}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_009" ID="{5B4C67DB-53AC-44B6-89D1-797A76CC2231}" ShortID="782972294">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_009" ID="{FD2608B6-6A72-4F2C-A2E7-6892ACE9C6A2}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_009.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="118228041"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_009" ID="{FD2608B6-6A72-4F2C-A2E7-6892ACE9C6A2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_010" ID="{238A9A3D-6BE3-46A5-9947-A89DF50BD46C}" ShortID="286068970">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_010" ID="{1600A921-73F8-4E74-890A-3BFB1AEEC342}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_010.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="869835407"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_010" ID="{1600A921-73F8-4E74-890A-3BFB1AEEC342}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Metal" ID="{E22FEB87-31B3-469F-B27B-6EDEED35ADAF}" ShortID="167667192">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>18</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{78482757-AF93-431F-8F7B-5199EA2A796E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A45C203C-DEC6-440A-9F7D-9AF5A77D452B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="2"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Run" ID="{DFA85FE4-21C8-4EE5-B079-64AFB5CAA303}" ShortID="638282832">
-											<PropertyList>
-												<Property Name="Highpass" Type="int16">
-													<ValueList>
-														<Value>18</Value>
-													</ValueList>
-												</Property>
-												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{9F4AD3D8-7424-4950-8528-ED8558828E56}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="50"/>
-																	<Property Name="Min" Type="Real64" Value="-100"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{80C2968D-9A86-4FA1-82D6-C2A3E89499FE}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="2"/>
-																	<Property Name="Min" Type="Real64" Value="-2"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-01" ID="{2257F09C-EA35-4C8F-8B64-CB383B6758EC}" ShortID="847475528">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
@@ -974,42 +1228,20 @@
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
 												</Reference>
 											</ReferenceList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Walk" ID="{E22FEB87-31B3-469F-B27B-6EDEED35ADAF}" ShortID="167667192">
-											<PropertyList>
-												<Property Name="Highpass" Type="int16">
-													<ValueList>
-														<Value>18</Value>
-													</ValueList>
-												</Property>
-												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{78482757-AF93-431F-8F7B-5199EA2A796E}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="50"/>
-																	<Property Name="Min" Type="Real64" Value="-100"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{A45C203C-DEC6-440A-9F7D-9AF5A77D452B}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="2"/>
-																	<Property Name="Min" Type="Real64" Value="-2"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-01" ID="{D4D6679F-82CF-4031-B873-180EB88EC040}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="209194316"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-01" ID="{D4D6679F-82CF-4031-B873-180EB88EC040}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-02" ID="{0C64BBCF-801E-4643-BA4B-2E631AFD45BC}" ShortID="296995374">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
@@ -1018,78 +1250,478 @@
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
 												</Reference>
 											</ReferenceList>
-										</RandomSequenceContainer>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-02" ID="{72960148-AF5E-4ABA-B7D7-3F1138C5B74F}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="619291529"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-02" ID="{72960148-AF5E-4ABA-B7D7-3F1138C5B74F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-03" ID="{93DDDE37-F4C5-4576-9CE3-5438BA56CC65}" ShortID="805324501">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-03" ID="{98716986-910F-495F-BC14-9763C184097B}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="779176828"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-03" ID="{98716986-910F-495F-BC14-9763C184097B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-04" ID="{CC4D507C-21DF-40C1-B256-734CD756C8AD}" ShortID="177765044">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-04" ID="{F96F5D6B-8FD4-49EE-B692-AA7E1A94C0D4}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="744315447"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-04" ID="{F96F5D6B-8FD4-49EE-B692-AA7E1A94C0D4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-05" ID="{8D5F84AD-D8B5-4FD8-8C12-4FAF6FAEC94F}" ShortID="405968864">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-05" ID="{D6287174-D953-40C0-A1ED-7B36696BCB40}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="457977193"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-05" ID="{D6287174-D953-40C0-A1ED-7B36696BCB40}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-06" ID="{20C03FA0-9905-447D-A6C0-33971BA36A23}" ShortID="704476358">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-06" ID="{A866503B-25A6-4622-BAFA-99C95D1627BC}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="513525695"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-06" ID="{A866503B-25A6-4622-BAFA-99C95D1627BC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-07" ID="{0AEEF1AF-E3A0-4363-9FE7-4CDC8A9A07FD}" ShortID="128276928">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-07" ID="{3F0A1B12-1A5F-48E5-BD23-1DAF0F426CA3}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="105227695"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-07" ID="{3F0A1B12-1A5F-48E5-BD23-1DAF0F426CA3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-08" ID="{77120DA3-F5D3-45FA-9014-A6DB1ED62B07}" ShortID="288658359">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-08" ID="{4BB94B99-D982-443D-8AAA-E2365448664F}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-08.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="840255665"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-08" ID="{4BB94B99-D982-443D-8AAA-E2365448664F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-09" ID="{112E203C-509B-45FD-875D-923D6358E58D}" ShortID="828926448">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-09" ID="{FA5F3B20-14DF-4D8A-8DE6-8D5BD50DCD01}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-09.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="711250695"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-09" ID="{FA5F3B20-14DF-4D8A-8DE6-8D5BD50DCD01}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-10" ID="{D72B6350-2CD0-43C5-A154-BC8A1F45CD0F}" ShortID="459547113">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-10" ID="{D52837F8-2E33-46F1-9A8E-60A253434E54}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-10.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="694028235"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-10" ID="{D52837F8-2E33-46F1-9A8E-60A253434E54}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-11" ID="{B07BE49A-7EEA-4D26-A2BF-1C33107737E7}" ShortID="377240589">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-11" ID="{FE8A61A5-217F-443E-A5F3-467744656A99}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-11.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="72913320"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-11" ID="{FE8A61A5-217F-443E-A5F3-467744656A99}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-12" ID="{90DE7345-0F6E-48C9-A9B3-CFF06635FE2E}" ShortID="156792273">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-12" ID="{F7EC3431-0E50-4542-97B3-23C80DF038B4}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-12.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="239023255"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-12" ID="{F7EC3431-0E50-4542-97B3-23C80DF038B4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-13" ID="{EF3E06CF-4903-4491-8C5F-C1DE0898B6CF}" ShortID="1069873722">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-13" ID="{D1EFCC81-31F7-4EE6-9069-1A1FDF1D0528}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-13.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="107130344"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-13" ID="{D1EFCC81-31F7-4EE6-9069-1A1FDF1D0528}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-14" ID="{F4FFF102-1FBD-482B-A640-32804B0E8F87}" ShortID="981831763">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-14" ID="{1C3B7794-472E-4B86-BC77-AAF58D47587E}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-14.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="903178025"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-14" ID="{1C3B7794-472E-4B86-BC77-AAF58D47587E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-15" ID="{3A6CC888-B577-45FC-896D-AE5A76558BCB}" ShortID="360375023">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-15" ID="{273E8760-8BE8-43C3-AF0F-FADB9C4D5096}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-15.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="136521944"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-15" ID="{273E8760-8BE8-43C3-AF0F-FADB9C4D5096}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-16" ID="{2F7019B6-67BD-4C8D-80E6-5673EE586EBB}" ShortID="247122872">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-16" ID="{09C7E9DF-F0EB-401D-8E0A-0E343A5BA965}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-16.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="50948787"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-16" ID="{09C7E9DF-F0EB-401D-8E0A-0E343A5BA965}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-17" ID="{4D6A05CE-8177-47F0-ACD8-00FA553483DB}" ShortID="613875015">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-17" ID="{DCE9D12A-D1AC-4D26-8794-A59325CDEDE1}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-17.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="895211338"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-17" ID="{DCE9D12A-D1AC-4D26-8794-A59325CDEDE1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-18" ID="{1C0D1339-590B-4514-A93F-4F9DBB08950D}" ShortID="799247240">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-18" ID="{6EC9E758-869B-4D71-A418-487770953ED8}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-18.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="233607681"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-18" ID="{6EC9E758-869B-4D71-A418-487770953ED8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-19" ID="{01068131-9AC5-4E3D-A309-6A132B25CEB2}" ShortID="399695289">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-19" ID="{08C10529-09A0-49DC-A01F-60A4B6583DCD}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-19.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="931334640"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-19" ID="{08C10529-09A0-49DC-A01F-60A4B6583DCD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-20" ID="{604C4D32-DA4B-497B-BA10-9DB001C47F82}" ShortID="886255986">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-20" ID="{06820B81-7404-4181-B692-734317135EED}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-20.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="839525606"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-20" ID="{06820B81-7404-4181-B692-734317135EED}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-21" ID="{D18562A8-BE01-4C35-A88D-699EF03A0A9B}" ShortID="864657710">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-21" ID="{7A74686E-D87C-48FE-8A82-2E9118EE1DE6}">
+													<Language>SFX</Language>
+													<AudioFile>FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-21.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="192316506"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FEETHmn_Footsteps_Heavy_Metal_Hollow_Structure_RingOfFyre-21" ID="{7A74686E-D87C-48FE-8A82-2E9118EE1DE6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="Walk" ID="{E22FEB87-31B3-469F-B27B-6EDEED35ADAF}"/>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="Run" ID="{DFA85FE4-21C8-4EE5-B079-64AFB5CAA303}"/>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="None" ID="{565AF50C-84A0-474A-BA95-A2A007031CE9}"/>
-												<ItemList>
-													<ItemRef Name="Walk" ID="{E22FEB87-31B3-469F-B27B-6EDEED35ADAF}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="Run" ID="{D4AC1E22-2EF3-4B43-AC26-8FB22A9527D6}"/>
-												<ItemList>
-													<ItemRef Name="Run" ID="{DFA85FE4-21C8-4EE5-B079-64AFB5CAA303}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="Walk" ID="{B42C843D-4C84-48CD-8472-F4EA3C141922}"/>
-												<ItemList>
-													<ItemRef Name="Walk" ID="{E22FEB87-31B3-469F-B27B-6EDEED35ADAF}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
-									</GroupingInfo>
-								</SwitchContainer>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
-										<ItemRef Name="Metal" ID="{B5C82569-BC44-47C6-833B-9371E9FA3398}"/>
+										<ItemRef Name="Linoleum" ID="{02BA9C4F-307D-493D-BE0B-5ACDABC837F0}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Linoleum" ID="{69027486-869E-40A8-A8AF-F56A24BDAB07}"/>
+										<ItemRef Name="Concrete" ID="{DA170E6B-8C9D-4948-A4D3-8DDCD3B5D991}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Carpet" ID="{52655EA0-94A2-47D7-9060-0F9601A7BB62}"/>
+										<ItemRef Name="Metal" ID="{E22FEB87-31B3-469F-B27B-6EDEED35ADAF}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Concrete" ID="{1EC8CAD8-0682-4EBA-B210-ED118CFBDF55}"/>
+										<ItemRef Name="Carpet" ID="{4FF2B089-0D22-49DB-8512-7B22EA1E8EA5}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
 										<SwitchRef Name="Metal" ID="{BA4F5C27-4DAF-4C42-96E2-F6D2661C1A87}"/>
 										<ItemList>
-											<ItemRef Name="Metal" ID="{B5C82569-BC44-47C6-833B-9371E9FA3398}"/>
+											<ItemRef Name="Metal" ID="{E22FEB87-31B3-469F-B27B-6EDEED35ADAF}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Linoleum" ID="{BAA74040-B1E8-4BC9-AD6C-F10E034822EB}"/>
 										<ItemList>
-											<ItemRef Name="Linoleum" ID="{69027486-869E-40A8-A8AF-F56A24BDAB07}"/>
+											<ItemRef Name="Linoleum" ID="{02BA9C4F-307D-493D-BE0B-5ACDABC837F0}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Carpet" ID="{DA212C81-8A40-43D3-8CAC-F2588E3F3801}"/>
 										<ItemList>
-											<ItemRef Name="Carpet" ID="{52655EA0-94A2-47D7-9060-0F9601A7BB62}"/>
+											<ItemRef Name="Carpet" ID="{4FF2B089-0D22-49DB-8512-7B22EA1E8EA5}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Concrete" ID="{3738C7AF-9A6A-46A9-8101-14B23168D842}"/>
 										<ItemList>
-											<ItemRef Name="Concrete" ID="{1EC8CAD8-0682-4EBA-B210-ED118CFBDF55}"/>
+											<ItemRef Name="Concrete" ID="{DA170E6B-8C9D-4948-A4D3-8DDCD3B5D991}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>

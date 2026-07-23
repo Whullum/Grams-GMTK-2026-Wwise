@@ -4,6 +4,18 @@
 		<WorkUnit Name="Player" ID="{185BBABD-AADE-45E4-888B-B4470BDD7D14}" PersistMode="Standalone">
 			<ChildrenList>
 				<Event Name="Player_Footstep" ID="{2683603D-18E4-45ED-A62F-5DF25428FAAD}">
+					<PropertyList>
+						<Property Name="InstanceLimit" Type="int16">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="LimitScope" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{282820BA-BA93-45BB-971A-7543956866CA}" ShortID="981580160">
 							<ReferenceList>
