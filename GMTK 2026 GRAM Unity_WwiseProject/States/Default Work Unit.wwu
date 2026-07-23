@@ -11,13 +11,6 @@
 						<State Name="Aggressive" ID="{6697982B-4BC3-466A-A564-1382B00B7CF6}"/>
 					</ChildrenList>
 				</StateGroup>
-				<StateGroup Name="Player_Movement_Speed" ID="{68ED3B79-B09B-4998-95AC-8437C5BFC56D}">
-					<ChildrenList>
-						<State Name="None" ID="{565AF50C-84A0-474A-BA95-A2A007031CE9}"/>
-						<State Name="Run" ID="{D4AC1E22-2EF3-4B43-AC26-8FB22A9527D6}"/>
-						<State Name="Walk" ID="{B42C843D-4C84-48CD-8472-F4EA3C141922}"/>
-					</ChildrenList>
-				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
