@@ -1,0 +1,64 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2932040671",
+    "Type": "Event",
+    "GUID": "{9192C5BD-1D75-4655-B0DF-570CBFF9D844}",
+    "Language": "SFX",
+    "Hash": "{E3081961-4141-CAA7-3F25-2E92DD822C3E}",
+    "ObjectPath": "Play_Music",
+    "ShortName": "Play_Music",
+    "Path": "Event/Play_Music.bnk",
+    "Events": [
+     {
+      "Id": "2932040671",
+      "Name": "Play_Music",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Music",
+      "GUID": "{9192C5BD-1D75-4655-B0DF-570CBFF9D844}",
+      "DurationType": "Infinite"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3353356129",
+      "Name": "MUS_MusicState",
+      "ObjectPath": "\\States\\Default Work Unit\\MUS_MusicState",
+      "GUID": "{3CB42D1B-559B-4C0E-96F3-0D0686D4BCB2}",
+      "States": [
+       {
+        "Id": "670611050",
+        "Name": "Neutral",
+        "ObjectPath": "\\States\\Default Work Unit\\MUS_MusicState\\Neutral",
+        "GUID": "{EA749C0C-81B7-47CF-BBA3-281A4777527B}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\MUS_MusicState\\None",
+        "GUID": "{F441CC65-D098-4FC8-804E-65DEC9E13F17}"
+       },
+       {
+        "Id": "3503386865",
+        "Name": "Aggressive",
+        "ObjectPath": "\\States\\Default Work Unit\\MUS_MusicState\\Aggressive",
+        "GUID": "{6697982B-4BC3-466A-A564-1382B00B7CF6}"
+       },
+       {
+        "Id": "3753286132",
+        "Name": "Calm",
+        "ObjectPath": "\\States\\Default Work Unit\\MUS_MusicState\\Calm",
+        "GUID": "{E782D8E8-09EC-4BE3-8E0A-C2C8643C71E6}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{CBDD6CD3-1512-4BCD-0AC0-57BE213AD60E}"
+ }
+}
