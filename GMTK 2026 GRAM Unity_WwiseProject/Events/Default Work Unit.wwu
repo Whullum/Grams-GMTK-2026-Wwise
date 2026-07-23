@@ -4,6 +4,18 @@
 		<WorkUnit Name="Default Work Unit" ID="{263DDC36-1659-43D4-8C76-EED609DD8578}" PersistMode="Standalone">
 			<ChildrenList>
 				<Event Name="SFX_TEST_EVENT" ID="{3AD970E4-1448-4A39-A9C0-ED0312517E80}">
+					<PropertyList>
+						<Property Name="InstanceLimit" Type="int16">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+						<Property Name="LimitScope" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{EA911DB5-F7DB-4AFC-9031-E7669F61D596}" ShortID="616292364">
 							<ReferenceList>
