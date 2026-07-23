@@ -37,6 +37,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_TEST_MUSIC_Jaron___Pizza_Run___Section_1" ID="{B7AC89FA-0F70-48D0-86E1-DB1E7DFDC2B9}">
+					<ChildrenList>
+						<Action Name="" ID="{58054231-F163-4002-82C5-1FFE8DB3C546}" ShortID="58004941">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TEST_MUSIC_Jaron - Pizza Run - Section 1" ID="{E761F0A3-08B1-41B0-957A-300519EFB079}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
