@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{37C8ADA0-5628-50C9-EB34-D783E6F993E6}",
+    "Hash": "{5B92314B-DAE9-2170-DF34-B1159B587C46}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -76,6 +76,32 @@
     ],
     "StateGroups": [
      {
+      "Id": "1062734446",
+      "Name": "Player_Movement_Speed",
+      "ObjectPath": "\\States\\Default Work Unit\\Player_Movement_Speed",
+      "GUID": "{68ED3B79-B09B-4998-95AC-8437C5BFC56D}",
+      "States": [
+       {
+        "Id": "712161704",
+        "Name": "Run",
+        "ObjectPath": "\\States\\Default Work Unit\\Player_Movement_Speed\\Run",
+        "GUID": "{D4AC1E22-2EF3-4B43-AC26-8FB22A9527D6}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Player_Movement_Speed\\None",
+        "GUID": "{565AF50C-84A0-474A-BA95-A2A007031CE9}"
+       },
+       {
+        "Id": "2108779966",
+        "Name": "Walk",
+        "ObjectPath": "\\States\\Default Work Unit\\Player_Movement_Speed\\Walk",
+        "GUID": "{B42C843D-4C84-48CD-8472-F4EA3C141922}"
+       }
+      ]
+     },
+     {
       "Id": "3353356129",
       "Name": "MUS_MusicState",
       "ObjectPath": "\\States\\Default Work Unit\\MUS_MusicState",
@@ -107,9 +133,43 @@
        }
       ]
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1834394558",
+      "Name": "Surface",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Surface",
+      "GUID": "{38F630E8-1B54-4921-8905-51C87A9AACCF}",
+      "Switches": [
+       {
+        "Id": "841620460",
+        "Name": "Concrete",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Concrete",
+        "GUID": "{3738C7AF-9A6A-46A9-8101-14B23168D842}"
+       },
+       {
+        "Id": "2412606308",
+        "Name": "Carpet",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Carpet",
+        "GUID": "{DA212C81-8A40-43D3-8CAC-F2588E3F3801}"
+       },
+       {
+        "Id": "2473969246",
+        "Name": "Metal",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Metal",
+        "GUID": "{BA4F5C27-4DAF-4C42-96E2-F6D2661C1A87}"
+       },
+       {
+        "Id": "3995207278",
+        "Name": "Linoleum",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Linoleum",
+        "GUID": "{BAA74040-B1E8-4BC9-AD6C-F10E034822EB}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{25514E1C-65A6-DD2B-B27E-F3B2F5D73603}"
+  "FileHash": "{A2657C66-B6F5-E2A2-2FD6-61604BC91737}"
  }
 }

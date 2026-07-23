@@ -1,0 +1,20 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2453392179	Player_Footstep			\Player\Player_Footstep	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1834394558	Surface			\Default Work Unit\Surface	
+
+Switch	ID	Name	Switch Group			Notes
+	841620460	Concrete	Surface			
+	2412606308	Carpet	Surface			
+	2473969246	Metal	Surface			
+	3995207278	Linoleum	Surface			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1062734446	Player_Movement_Speed			\Default Work Unit\Player_Movement_Speed	
+
+State	ID	Name	State Group			Notes
+	712161704	Run	Player_Movement_Speed			
+	748895195	None	Player_Movement_Speed			
+	2108779966	Walk	Player_Movement_Speed			
+

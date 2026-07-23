@@ -1,7 +1,11 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	1062734446	Player_Movement_Speed			\Default Work Unit\Player_Movement_Speed	
 	3353356129	MUS_MusicState			\Default Work Unit\MUS_MusicState	
 
 State	ID	Name	State Group			Notes
+	712161704	Run	Player_Movement_Speed			
+	748895195	None	Player_Movement_Speed			
+	2108779966	Walk	Player_Movement_Speed			
 	670611050	Neutral	MUS_MusicState			
 	748895195	None	MUS_MusicState			
 	3503386865	Aggressive	MUS_MusicState			

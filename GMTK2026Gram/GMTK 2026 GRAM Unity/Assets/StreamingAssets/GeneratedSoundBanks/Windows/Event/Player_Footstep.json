@@ -1,0 +1,738 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2453392179",
+    "Type": "Event",
+    "GUID": "{2683603D-18E4-45ED-A62F-5DF25428FAAD}",
+    "Language": "SFX",
+    "Hash": "{BE846EB3-FFB5-E15D-2692-04CDD3BF36B5}",
+    "ObjectPath": "Player_Footstep",
+    "ShortName": "Player_Footstep",
+    "Path": "Event/Player_Footstep.bnk",
+    "Media": [
+     {
+      "Id": "58869513",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_002.wav",
+      "Path": "Media/58869513.wem",
+      "CachePath": "ED/{EDD4636B-C55E-B24E-D236-CC5FDC6F63B6}.wem"
+     },
+     {
+      "Id": "82673287",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_001.wav",
+      "Path": "Media/82673287.wem",
+      "CachePath": "34/{346CD3DD-AC63-B919-90CF-0083873D847C}.wem"
+     },
+     {
+      "Id": "137119363",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_009.wav",
+      "Path": "Media/137119363.wem",
+      "CachePath": "07/{0713DCE3-0585-83B2-8FDF-E1D401DBC579}.wem"
+     },
+     {
+      "Id": "153383340",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_008.wav",
+      "Path": "Media/153383340.wem",
+      "CachePath": "87/{87EF64FE-E0DE-A77D-84CD-BDAA91F65E4D}.wem"
+     },
+     {
+      "Id": "165844679",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_009.wav",
+      "Path": "Media/165844679.wem",
+      "CachePath": "C0/{C07E86F7-AC95-E6CE-A81D-6B9A2CAB80E6}.wem"
+     },
+     {
+      "Id": "168396020",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_006.wav",
+      "Path": "Media/168396020.wem",
+      "CachePath": "18/{183FED4A-B86E-D266-2C89-4243D88AB799}.wem"
+     },
+     {
+      "Id": "249033734",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_008.wav",
+      "Path": "Media/249033734.wem",
+      "CachePath": "9B/{9BF121C7-21DB-A53E-3051-51980979C87E}.wem"
+     },
+     {
+      "Id": "266209921",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_010.wav",
+      "Path": "Media/266209921.wem",
+      "CachePath": "8D/{8DF27AE1-0515-AC79-6F58-87FEA7C22671}.wem"
+     },
+     {
+      "Id": "267511976",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_004.wav",
+      "Path": "Media/267511976.wem",
+      "CachePath": "71/{718DB666-7F83-A87A-FF79-24895599EAFE}.wem"
+     },
+     {
+      "Id": "273392622",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_008.wav",
+      "Path": "Media/273392622.wem",
+      "CachePath": "0B/{0BD64D17-7FE4-C5D3-D533-BCFD01864FF3}.wem"
+     },
+     {
+      "Id": "289642687",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_003.wav",
+      "Path": "Media/289642687.wem",
+      "CachePath": "F7/{F777BBC2-2AAE-EDDA-8D70-2CB03EE6D8DF}.wem"
+     },
+     {
+      "Id": "389230029",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_007.wav",
+      "Path": "Media/389230029.wem",
+      "CachePath": "A8/{A8D4998A-DEEA-185C-DDFD-1E2DD6AAE923}.wem"
+     },
+     {
+      "Id": "423081268",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_001.wav",
+      "Path": "Media/423081268.wem",
+      "CachePath": "E6/{E675C088-B10D-5CEE-520B-8935BCF24803}.wem"
+     },
+     {
+      "Id": "429816183",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_006.wav",
+      "Path": "Media/429816183.wem",
+      "CachePath": "EC/{EC330222-8A4B-20A0-CE98-0909AE16CBAB}.wem"
+     },
+     {
+      "Id": "495482347",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_002.wav",
+      "Path": "Media/495482347.wem",
+      "CachePath": "2E/{2EAC1C26-4FC2-FB13-D6A4-74B24EEB0C28}.wem"
+     },
+     {
+      "Id": "503820914",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_009.wav",
+      "Path": "Media/503820914.wem",
+      "CachePath": "4B/{4B7BB951-ED5B-47BD-4896-231C7B4F7267}.wem"
+     },
+     {
+      "Id": "504644425",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_001.wav",
+      "Path": "Media/504644425.wem",
+      "CachePath": "3A/{3A8447B1-5EFB-BDE5-3E82-D8BA8117E668}.wem"
+     },
+     {
+      "Id": "504724513",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_003.wav",
+      "Path": "Media/504724513.wem",
+      "CachePath": "B9/{B9D6660E-B542-3A08-45E4-F322327D35B4}.wem"
+     },
+     {
+      "Id": "514795512",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_001.wav",
+      "Path": "Media/514795512.wem",
+      "CachePath": "16/{168E1EBA-B2E6-956E-9E15-078279F7E9C6}.wem"
+     },
+     {
+      "Id": "547472633",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_005.wav",
+      "Path": "Media/547472633.wem",
+      "CachePath": "F7/{F74C45BF-F5C9-63D6-1E7B-7D7505E083FF}.wem"
+     },
+     {
+      "Id": "555788299",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_005.wav",
+      "Path": "Media/555788299.wem",
+      "CachePath": "A1/{A1CF14EA-4259-64A0-C902-E607FE12B01F}.wem"
+     },
+     {
+      "Id": "565058619",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_010.wav",
+      "Path": "Media/565058619.wem",
+      "CachePath": "8D/{8DD98545-8F48-B78C-F245-1FEBDF07A05C}.wem"
+     },
+     {
+      "Id": "579032665",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_005.wav",
+      "Path": "Media/579032665.wem",
+      "CachePath": "83/{83E255E6-7A39-00B0-E5F6-2D5785A1CCE3}.wem"
+     },
+     {
+      "Id": "627377987",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_007.wav",
+      "Path": "Media/627377987.wem",
+      "CachePath": "88/{88F85AC2-CCE3-6AF4-1503-B150D48C03FC}.wem"
+     },
+     {
+      "Id": "652185619",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_007.wav",
+      "Path": "Media/652185619.wem",
+      "CachePath": "34/{34B5C786-20F5-A511-B0D4-8D7692AE851F}.wem"
+     },
+     {
+      "Id": "676942731",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_003.wav",
+      "Path": "Media/676942731.wem",
+      "CachePath": "45/{4531A279-512C-B84D-AE01-F13C90211060}.wem"
+     },
+     {
+      "Id": "685938386",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_010.wav",
+      "Path": "Media/685938386.wem",
+      "CachePath": "DB/{DBDA10C3-6FC0-221E-A322-7BE1ADC6E183}.wem"
+     },
+     {
+      "Id": "717404679",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_002.wav",
+      "Path": "Media/717404679.wem",
+      "CachePath": "23/{2310CC0F-15F8-440C-CC83-3464797473D9}.wem"
+     },
+     {
+      "Id": "723468073",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_003.wav",
+      "Path": "Media/723468073.wem",
+      "CachePath": "35/{35A28583-6F83-E746-8909-06CC30845ED4}.wem"
+     },
+     {
+      "Id": "749704516",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_006.wav",
+      "Path": "Media/749704516.wem",
+      "CachePath": "FA/{FA7503CB-47C1-33D3-B950-36629BB797AC}.wem"
+     },
+     {
+      "Id": "772224025",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_005.wav",
+      "Path": "Media/772224025.wem",
+      "CachePath": "6E/{6E1082EB-2DD6-85B4-261D-E1B10A2CB6E0}.wem"
+     },
+     {
+      "Id": "801320484",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_004.wav",
+      "Path": "Media/801320484.wem",
+      "CachePath": "11/{11FC19A8-4E98-2E7E-DD08-CC4106CD7E14}.wem"
+     },
+     {
+      "Id": "828111199",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_010.wav",
+      "Path": "Media/828111199.wem",
+      "CachePath": "83/{8321EA11-B2AA-E02F-A89E-56BF748D8FBE}.wem"
+     },
+     {
+      "Id": "847285673",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_002.wav",
+      "Path": "Media/847285673.wem",
+      "CachePath": "50/{50253BA9-A2D0-55B8-F481-7C0729107503}.wem"
+     },
+     {
+      "Id": "852584041",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_006.wav",
+      "Path": "Media/852584041.wem",
+      "CachePath": "7C/{7C14F2ED-BF52-36A2-057C-8234ECA7B742}.wem"
+     },
+     {
+      "Id": "903563531",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Run_AP_008.wav",
+      "Path": "Media/903563531.wem",
+      "CachePath": "DC/{DC3BD3F1-CD89-32B8-0E86-0210BD1C2A0F}.wem"
+     },
+     {
+      "Id": "929609925",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_007.wav",
+      "Path": "Media/929609925.wem",
+      "CachePath": "63/{63BA8CC0-D5E8-A5E5-56FE-930F8440E959}.wem"
+     },
+     {
+      "Id": "957822187",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_009.wav",
+      "Path": "Media/957822187.wem",
+      "CachePath": "A1/{A137F0A3-E61E-DCD4-D19B-583AA8C20AF1}.wem"
+     },
+     {
+      "Id": "970384260",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Carpet, Separated, Walk_AP_004.wav",
+      "Path": "Media/970384260.wem",
+      "CachePath": "95/{95BCBFC9-B07A-0DF9-540F-B71C8F4C7DEF}.wem"
+     },
+     {
+      "Id": "1011423605",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FEETHmn_Footstep, Sneakers on Linoleum, Seperate, Walk_AP_004.wav",
+      "Path": "Media/1011423605.wem",
+      "CachePath": "98/{9861729F-C30E-46DD-C026-92D3539AA663}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2453392179",
+      "Name": "Player_Footstep",
+      "ObjectPath": "\\Events\\Player\\Player_Footstep",
+      "GUID": "{2683603D-18E4-45ED-A62F-5DF25428FAAD}",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "2.6486578",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "2473969246",
+         "GUID": "{BA4F5C27-4DAF-4C42-96E2-F6D2661C1A87}"
+        },
+        "Children": []
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "3995207278",
+         "GUID": "{BAA74040-B1E8-4BC9-AD6C-F10E034822EB}"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "State",
+           "GroupId": "1062734446",
+           "Id": "748895195",
+           "GUID": "{565AF50C-84A0-474A-BA95-A2A007031CE9}",
+           "Default": "true"
+          },
+          "MediaRefs": [
+           {
+            "Id": "137119363"
+           },
+           {
+            "Id": "273392622"
+           },
+           {
+            "Id": "504644425"
+           },
+           {
+            "Id": "579032665"
+           },
+           {
+            "Id": "652185619"
+           },
+           {
+            "Id": "717404679"
+           },
+           {
+            "Id": "723468073"
+           },
+           {
+            "Id": "828111199"
+           },
+           {
+            "Id": "852584041"
+           },
+           {
+            "Id": "1011423605"
+           }
+          ]
+         },
+         {
+          "SwitchValue": {
+           "GroupType": "State",
+           "GroupId": "1062734446",
+           "Id": "712161704",
+           "GUID": "{D4AC1E22-2EF3-4B43-AC26-8FB22A9527D6}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "58869513"
+           },
+           {
+            "Id": "266209921"
+           },
+           {
+            "Id": "267511976"
+           },
+           {
+            "Id": "389230029"
+           },
+           {
+            "Id": "503820914"
+           },
+           {
+            "Id": "504724513"
+           },
+           {
+            "Id": "514795512"
+           },
+           {
+            "Id": "547472633"
+           },
+           {
+            "Id": "749704516"
+           },
+           {
+            "Id": "903563531"
+           }
+          ]
+         },
+         {
+          "SwitchValue": {
+           "GroupType": "State",
+           "GroupId": "1062734446",
+           "Id": "2108779966",
+           "GUID": "{B42C843D-4C84-48CD-8472-F4EA3C141922}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "137119363"
+           },
+           {
+            "Id": "273392622"
+           },
+           {
+            "Id": "504644425"
+           },
+           {
+            "Id": "579032665"
+           },
+           {
+            "Id": "652185619"
+           },
+           {
+            "Id": "717404679"
+           },
+           {
+            "Id": "723468073"
+           },
+           {
+            "Id": "828111199"
+           },
+           {
+            "Id": "852584041"
+           },
+           {
+            "Id": "1011423605"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "2412606308",
+         "GUID": "{DA212C81-8A40-43D3-8CAC-F2588E3F3801}"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "State",
+           "GroupId": "1062734446",
+           "Id": "748895195",
+           "GUID": "{565AF50C-84A0-474A-BA95-A2A007031CE9}",
+           "Default": "true"
+          },
+          "MediaRefs": [
+           {
+            "Id": "153383340"
+           },
+           {
+            "Id": "289642687"
+           },
+           {
+            "Id": "423081268"
+           },
+           {
+            "Id": "429816183"
+           },
+           {
+            "Id": "627377987"
+           },
+           {
+            "Id": "685938386"
+           },
+           {
+            "Id": "772224025"
+           },
+           {
+            "Id": "847285673"
+           },
+           {
+            "Id": "957822187"
+           },
+           {
+            "Id": "970384260"
+           }
+          ]
+         },
+         {
+          "SwitchValue": {
+           "GroupType": "State",
+           "GroupId": "1062734446",
+           "Id": "712161704",
+           "GUID": "{D4AC1E22-2EF3-4B43-AC26-8FB22A9527D6}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "82673287"
+           },
+           {
+            "Id": "165844679"
+           },
+           {
+            "Id": "168396020"
+           },
+           {
+            "Id": "249033734"
+           },
+           {
+            "Id": "495482347"
+           },
+           {
+            "Id": "555788299"
+           },
+           {
+            "Id": "565058619"
+           },
+           {
+            "Id": "676942731"
+           },
+           {
+            "Id": "801320484"
+           },
+           {
+            "Id": "929609925"
+           }
+          ]
+         },
+         {
+          "SwitchValue": {
+           "GroupType": "State",
+           "GroupId": "1062734446",
+           "Id": "2108779966",
+           "GUID": "{B42C843D-4C84-48CD-8472-F4EA3C141922}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "153383340"
+           },
+           {
+            "Id": "289642687"
+           },
+           {
+            "Id": "423081268"
+           },
+           {
+            "Id": "429816183"
+           },
+           {
+            "Id": "627377987"
+           },
+           {
+            "Id": "685938386"
+           },
+           {
+            "Id": "772224025"
+           },
+           {
+            "Id": "847285673"
+           },
+           {
+            "Id": "957822187"
+           },
+           {
+            "Id": "970384260"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "841620460",
+         "GUID": "{3738C7AF-9A6A-46A9-8101-14B23168D842}"
+        },
+        "Children": []
+       }
+      ]
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1062734446",
+      "Name": "Player_Movement_Speed",
+      "ObjectPath": "\\States\\Default Work Unit\\Player_Movement_Speed",
+      "GUID": "{68ED3B79-B09B-4998-95AC-8437C5BFC56D}",
+      "States": [
+       {
+        "Id": "712161704",
+        "Name": "Run",
+        "ObjectPath": "\\States\\Default Work Unit\\Player_Movement_Speed\\Run",
+        "GUID": "{D4AC1E22-2EF3-4B43-AC26-8FB22A9527D6}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Player_Movement_Speed\\None",
+        "GUID": "{565AF50C-84A0-474A-BA95-A2A007031CE9}"
+       },
+       {
+        "Id": "2108779966",
+        "Name": "Walk",
+        "ObjectPath": "\\States\\Default Work Unit\\Player_Movement_Speed\\Walk",
+        "GUID": "{B42C843D-4C84-48CD-8472-F4EA3C141922}"
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1834394558",
+      "Name": "Surface",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Surface",
+      "GUID": "{38F630E8-1B54-4921-8905-51C87A9AACCF}",
+      "Switches": [
+       {
+        "Id": "841620460",
+        "Name": "Concrete",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Concrete",
+        "GUID": "{3738C7AF-9A6A-46A9-8101-14B23168D842}"
+       },
+       {
+        "Id": "2412606308",
+        "Name": "Carpet",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Carpet",
+        "GUID": "{DA212C81-8A40-43D3-8CAC-F2588E3F3801}"
+       },
+       {
+        "Id": "2473969246",
+        "Name": "Metal",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Metal",
+        "GUID": "{BA4F5C27-4DAF-4C42-96E2-F6D2661C1A87}"
+       },
+       {
+        "Id": "3995207278",
+        "Name": "Linoleum",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Linoleum",
+        "GUID": "{BAA74040-B1E8-4BC9-AD6C-F10E034822EB}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{7F46B73A-605E-C61F-BB1F-D4BC702EB7A5}"
+ }
+}
