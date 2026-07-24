@@ -11,6 +11,17 @@
 						<State Name="Aggressive" ID="{6697982B-4BC3-466A-A564-1382B00B7CF6}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Player_Slices_Eaten" ID="{492202C7-42C3-484C-92E1-BAEA8E3724BB}">
+					<ChildrenList>
+						<State Name="None" ID="{0F16AD7A-BC88-4672-BEFB-9481498D282B}"/>
+						<State Name="Player_Slices_Eaten_01" ID="{DD0D70EA-C17D-40AD-A082-AE2D4E9E72CF}"/>
+						<State Name="Player_Slices_Eaten_02" ID="{09798C5F-11BC-4892-B1F9-2F228126AFE9}"/>
+						<State Name="Player_Slices_Eaten_03" ID="{12ED5AEC-A784-4EBC-AC2C-7DE6FD81929B}"/>
+						<State Name="Player_Slices_Eaten_04" ID="{D5079925-5EAD-4BC7-8383-7EB3FB6C4C4C}"/>
+						<State Name="Player_Slices_Eaten_05" ID="{7660FB14-C229-43B2-BDF1-B3CEDFF90C6F}"/>
+						<State Name="Player_Slices_Eaten_06" ID="{85884079-D9A4-4688-9F5D-32725F851BAE}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
