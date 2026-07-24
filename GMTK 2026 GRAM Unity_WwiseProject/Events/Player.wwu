@@ -77,6 +77,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Player_PowerUps_Jump" ID="{477BF04E-B899-48C6-BA83-2C782C01E362}">
+					<ChildrenList>
+						<Action Name="" ID="{A462AF8D-5E82-4598-887A-91C2087D1FB2}" ShortID="376812725">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_PowerUps_Jump" ID="{CF235BF0-C5AA-4001-A485-180D59D84E14}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Jump" ID="{FFE02400-1C55-4ED4-A121-A5CE333ADDAE}">
+					<ChildrenList>
+						<Action Name="" ID="{C9D5A621-DD50-441B-AEC0-714659D75980}" ShortID="435473932">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Jump" ID="{405B50D9-67E8-4690-9D2D-D50C2BAE2206}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
