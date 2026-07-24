@@ -46,13 +46,6 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{63A39B02-70E8-48C3-A1C8-1F6D45B1C874}" ShortID="404252466">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Player_PowerUps_Dash" ID="{5377A722-16E3-41F0-AC9D-4A23165345D1}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Player_Eat_Pizza_Pepperoni" ID="{FD85B558-AFEA-45E7-AA22-AFC0C5BA7C63}">
@@ -61,13 +54,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Player_Eat_Pizza" ID="{9197AE8D-D346-4A75-A1F1-EDF5D711A64F}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{4CF96529-684C-4E99-930E-4252044D03D6}" ShortID="889673401">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Player_PowerUps_Jump" ID="{CF235BF0-C5AA-4001-A485-180D59D84E14}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
