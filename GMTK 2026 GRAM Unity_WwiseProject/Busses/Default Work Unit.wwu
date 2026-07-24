@@ -85,6 +85,10 @@
 							</ObjectLists>
 						</Bus>
 						<Bus Name="Ambience Bus" ID="{A815E035-3B7D-4150-8135-59E419312A93}"/>
+						<AuxBus Name="Corridor_Verb" ID="{CDAB7A12-B6DD-4086-A445-80A220EB4A88}"/>
+						<AuxBus Name="Room_Verb" ID="{0EDD68B4-A9FB-43BF-9317-35C295448230}"/>
+						<AuxBus Name="Cold_Verb" ID="{C5CF2918-58D0-4411-A6C9-21F37A5164EF}"/>
+						<AuxBus Name="Hot_Verb" ID="{D9B6D3ED-E51F-4F66-8C53-623C127145C8}"/>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="RTPC">
