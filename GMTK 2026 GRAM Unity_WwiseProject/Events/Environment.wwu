@@ -16,6 +16,61 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Ambience_Laboratory_Tesla_Coils" ID="{84371D32-3299-4234-93EA-441E8AB5E9C7}">
+							<ChildrenList>
+								<Action Name="" ID="{7311D674-2DBC-4752-B0F5-9FEEE6E7F596}" ShortID="631372549">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambience_TeslaCoils" ID="{A3A89399-BB99-44AB-AEC2-03F75849FBA4}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambience_Laboratory_Keyboards" ID="{C8A78C85-1BC4-47D3-A927-67E102188294}">
+							<ChildrenList>
+								<Action Name="" ID="{0C7AAA51-EB90-40D4-B776-C8B04BE07919}" ShortID="291885032">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambience_Keyboards" ID="{B1B4C765-906A-4FE3-AFCD-CFD73887E65B}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambience_Laboratory_Vat" ID="{CCA06096-BB7C-495F-8DAB-D257F5774D6F}">
+							<ChildrenList>
+								<Action Name="" ID="{98BFD670-0720-4AB6-AE3E-5B794BC528FE}" ShortID="283447609">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambience_Vats" ID="{C11B9703-AE11-4C70-BD64-6F99A25731A6}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambience_Laboratory_ComputerBeeps" ID="{D2A931F8-1FFF-43FE-9825-85D2ADC38F15}">
+							<ChildrenList>
+								<Action Name="" ID="{8BFC002F-E4A5-4885-9419-E6262C4E2EAD}" ShortID="505848287">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambience_ComputerBeeps" ID="{1AE7121F-943A-445D-9F9A-D7BB64FFBC99}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambience_Laboratory_Base_Loop" ID="{7095F749-13AA-49D0-915B-A8A729897FF7}">
+							<ChildrenList>
+								<Action Name="" ID="{7C4E62FA-E6B6-4801-89F1-623A935B0131}" ShortID="833425838">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambience_Laboratory_Base_Loop" ID="{A067F245-A52E-47DC-90EF-2DE240A2E0B8}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

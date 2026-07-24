@@ -84,6 +84,7 @@
 								</ObjectList>
 							</ObjectLists>
 						</Bus>
+						<Bus Name="Ambience Bus" ID="{A815E035-3B7D-4150-8135-59E419312A93}"/>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="RTPC">

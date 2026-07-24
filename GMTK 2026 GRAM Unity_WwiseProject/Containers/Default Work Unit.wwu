@@ -193,6 +193,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="FEETHmn_Footstep, Sneakers on Carpet, Separated, Run_AP_005" ID="{A86245C1-69ED-48C9-861A-E40A99CDF431}" ShortID="216665837">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
@@ -1298,7 +1305,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="Player_PowerUps_Dash" ID="{5377A722-16E3-41F0-AC9D-4A23165345D1}" ShortID="97050750">
+								<RandomSequenceContainer Name="Player_PowerUps_Jump" ID="{CF235BF0-C5AA-4001-A485-180D59D84E14}" ShortID="67074480">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
@@ -1308,7 +1315,59 @@
 										</Reference>
 									</ReferenceList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Player_PowerUps_Jump" ID="{CF235BF0-C5AA-4001-A485-180D59D84E14}" ShortID="67074480">
+								<RandomSequenceContainer Name="Player_PowerUps_Dash_Start" ID="{2346A06E-70B4-47EC-9503-953942D71677}" ShortID="979613841">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<RTPC Name="" ID="{373C8628-57C9-4143-BDAD-188342AFA207}" ShortID="974727891">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RTPC_Player_Dash" ID="{757E52DD-E772-4C01-B758-42B280D75851}" WorkUnitID="{0329338C-2039-44A3-A0DB-41116739FB0A}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{C92A35ED-D567-413E-8E83-0C68E734FE1F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.01544</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.86226</XPos>
+																		<YPos>-0.00684</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-45.46774</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Player_PowerUps_Dash_Finish" ID="{C153BC58-2181-45FE-87C0-AAFF01510C30}" ShortID="372797570">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
@@ -1842,7 +1901,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+									<ObjectRef Name="Ambience Bus" ID="{A815E035-3B7D-4150-8135-59E419312A93}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2288,47 +2347,9 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Ambience_ComputerBeeps" ID="{1AE7121F-943A-445D-9F9A-D7BB64FFBC99}" ShortID="200817572">
+										<PropertyContainer Name="Ambience_Laboratory_Random_Emitters" ID="{280F6F0D-C0B7-41E2-A2D0-E9C0C1A06967}" ShortID="810029216">
 											<PropertyList>
-												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-												</Reference>
-											</ReferenceList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Ambience_Keyboards" ID="{B1B4C765-906A-4FE3-AFCD-CFD73887E65B}" ShortID="405225979">
-											<PropertyList>
-												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-												</Reference>
-											</ReferenceList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Ambience_TeslaCoils" ID="{A3A89399-BB99-44AB-AEC2-03F75849FBA4}" ShortID="515310863">
-											<PropertyList>
-												<Property Name="Lowpass" Type="int16">
-													<ValueList>
-														<Value>40</Value>
-													</ValueList>
-												</Property>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-21</Value>
-													</ValueList>
-												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -2339,262 +2360,45 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Tesla Coils" ID="{A04F2351-3734-433C-B865-2AFB247BAB8B}" ShortID="397624572">
+												<RandomSequenceContainer Name="Ambience_ComputerBeeps" ID="{1AE7121F-943A-445D-9F9A-D7BB64FFBC99}" ShortID="200817572">
 													<PropertyList>
-														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+															<ObjectRef Name="Ambience Bus" ID="{A815E035-3B7D-4150-8135-59E419312A93}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
 														</Reference>
 													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="Tesla coil 1" ID="{F030F800-CB51-480C-BA0D-9CE361F3D7F8}" ShortID="591830655">
-															<PropertyList>
-																<Property Name="Weight" Type="Real64">
-																	<ValueList>
-																		<Value>40</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Tesla coil 1" ID="{F754FE38-DE2A-418F-B18A-5097694B3859}">
-																	<Language>SFX</Language>
-																	<AudioFile>Tesla coil 1.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="265917564"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Tesla coil 1" ID="{F754FE38-DE2A-418F-B18A-5097694B3859}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Tesla coil 2" ID="{AF60BA39-1CA4-4986-8ADA-DB93F371EE02}" ShortID="920338528">
-															<PropertyList>
-																<Property Name="Weight" Type="Real64">
-																	<ValueList>
-																		<Value>40</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Tesla coil 2" ID="{A5F09D6D-EB0D-4783-B4DF-3DC7F72533C5}">
-																	<Language>SFX</Language>
-																	<AudioFile>Tesla coil 2.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="785429814"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Tesla coil 2" ID="{A5F09D6D-EB0D-4783-B4DF-3DC7F72533C5}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Tesla coil 3" ID="{2E66FDC9-1357-4EFD-8790-ED0AEFF47E0F}" ShortID="127374878">
-															<PropertyList>
-																<Property Name="Weight" Type="Real64">
-																	<ValueList>
-																		<Value>40</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Tesla coil 3" ID="{4B6990F7-F70E-4307-9C63-9C3AB5FF20B2}">
-																	<Language>SFX</Language>
-																	<AudioFile>Tesla coil 3.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="592784326"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Tesla coil 3" ID="{4B6990F7-F70E-4307-9C63-9C3AB5FF20B2}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Tesla coil 4" ID="{DC8F0612-8635-4FB9-A24A-6A6E4A152530}" ShortID="488280089">
-															<PropertyList>
-																<Property Name="Weight" Type="Real64">
-																	<ValueList>
-																		<Value>40</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Tesla coil 4" ID="{E11320FD-DEBA-4C84-A827-D0C51AD6B2A7}">
-																	<Language>SFX</Language>
-																	<AudioFile>Tesla coil 4.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="520779337"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Tesla coil 4" ID="{E11320FD-DEBA-4C84-A827-D0C51AD6B2A7}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Tesla coil 5" ID="{021EBBD0-5A1C-4B2E-84FD-BF4619F62B1A}" ShortID="130189667">
-															<PropertyList>
-																<Property Name="Weight" Type="Real64">
-																	<ValueList>
-																		<Value>40</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Tesla coil 5" ID="{A80D35D8-86B0-44C5-8EEE-39A1E086B89B}">
-																	<Language>SFX</Language>
-																	<AudioFile>Tesla coil 5.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="549253677"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Tesla coil 5" ID="{A80D35D8-86B0-44C5-8EEE-39A1E086B89B}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Tesla coil 6" ID="{5DE5B89D-CDC2-4407-9BDC-405D8515638B}" ShortID="536250095">
-															<PropertyList>
-																<Property Name="Weight" Type="Real64">
-																	<ValueList>
-																		<Value>40</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Tesla coil 6" ID="{92EA92E7-90AB-4A53-80AA-69DFD1162AA7}">
-																	<Language>SFX</Language>
-																	<AudioFile>Tesla coil 6.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="218954603"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Tesla coil 6" ID="{92EA92E7-90AB-4A53-80AA-69DFD1162AA7}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Tesla coil 7" ID="{11201716-9795-4D75-A445-B8A275E0DD4C}" ShortID="318247641">
-															<PropertyList>
-																<Property Name="Weight" Type="Real64">
-																	<ValueList>
-																		<Value>40</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Tesla coil 7" ID="{88C80130-42A7-4D92-B906-6BF9784C979B}">
-																	<Language>SFX</Language>
-																	<AudioFile>Tesla coil 7.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="636007893"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Tesla coil 7" ID="{88C80130-42A7-4D92-B906-6BF9784C979B}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Tesla coil 8" ID="{A15E4B5A-FEF0-48DD-91B4-C16BD7DF5B8B}" ShortID="884545706">
-															<PropertyList>
-																<Property Name="Weight" Type="Real64">
-																	<ValueList>
-																		<Value>40</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Tesla coil 8" ID="{096A9A7C-48C1-4CF7-8D49-A1607D1573A1}">
-																	<Language>SFX</Language>
-																	<AudioFile>Tesla coil 8.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="1022150563"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Tesla coil 8" ID="{096A9A7C-48C1-4CF7-8D49-A1607D1573A1}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-													</ChildrenList>
-													<PositioningInfo>
-														<Panner Name="" ID="{0FFD8239-B8E5-4A39-9139-F13DE28205D5}"/>
-													</PositioningInfo>
 												</RandomSequenceContainer>
-												<Sound Name="Silence" ID="{E5242FCE-47D7-4BEE-993F-BB53B9B61A79}" ShortID="941457400">
+												<RandomSequenceContainer Name="Ambience_Vats" ID="{C11B9703-AE11-4C70-BD64-6F99A25731A6}" ShortID="144511134">
 													<PropertyList>
-														<Property Name="Weight" Type="Real64">
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Ambience Bus" ID="{A815E035-3B7D-4150-8135-59E419312A93}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Ambience_TeslaCoils" ID="{A3A89399-BB99-44AB-AEC2-03F75849FBA4}" ShortID="515310863">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16">
 															<ValueList>
-																<Value>70</Value>
+																<Value>40</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-21</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -2603,87 +2407,580 @@
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+															<ObjectRef Name="Ambience Bus" ID="{A815E035-3B7D-4150-8135-59E419312A93}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<SourcePlugin Name="Silence" ID="{C66D38BD-0D5B-4469-9990-E561F1AD5807}" ShortID="397872364" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+														<RandomSequenceContainer Name="Tesla Coils" ID="{A04F2351-3734-433C-B865-2AFB247BAB8B}" ShortID="397624572">
 															<PropertyList>
-																<Property Name="LengthMax" Type="Real32" Value="10"/>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="OverridePositioning" Type="bool" Value="True"/>
 															</PropertyList>
-															<Language>SFX</Language>
-														</SourcePlugin>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="Tesla coil 1" ID="{F030F800-CB51-480C-BA0D-9CE361F3D7F8}" ShortID="591830655">
+																	<PropertyList>
+																		<Property Name="Weight" Type="Real64">
+																			<ValueList>
+																				<Value>40</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Tesla coil 1" ID="{F754FE38-DE2A-418F-B18A-5097694B3859}">
+																			<Language>SFX</Language>
+																			<AudioFile>Tesla coil 1.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="265917564"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Tesla coil 1" ID="{F754FE38-DE2A-418F-B18A-5097694B3859}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Tesla coil 2" ID="{AF60BA39-1CA4-4986-8ADA-DB93F371EE02}" ShortID="920338528">
+																	<PropertyList>
+																		<Property Name="Weight" Type="Real64">
+																			<ValueList>
+																				<Value>40</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Tesla coil 2" ID="{A5F09D6D-EB0D-4783-B4DF-3DC7F72533C5}">
+																			<Language>SFX</Language>
+																			<AudioFile>Tesla coil 2.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="785429814"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Tesla coil 2" ID="{A5F09D6D-EB0D-4783-B4DF-3DC7F72533C5}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Tesla coil 3" ID="{2E66FDC9-1357-4EFD-8790-ED0AEFF47E0F}" ShortID="127374878">
+																	<PropertyList>
+																		<Property Name="Weight" Type="Real64">
+																			<ValueList>
+																				<Value>40</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Tesla coil 3" ID="{4B6990F7-F70E-4307-9C63-9C3AB5FF20B2}">
+																			<Language>SFX</Language>
+																			<AudioFile>Tesla coil 3.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="592784326"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Tesla coil 3" ID="{4B6990F7-F70E-4307-9C63-9C3AB5FF20B2}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Tesla coil 4" ID="{DC8F0612-8635-4FB9-A24A-6A6E4A152530}" ShortID="488280089">
+																	<PropertyList>
+																		<Property Name="Weight" Type="Real64">
+																			<ValueList>
+																				<Value>40</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Tesla coil 4" ID="{E11320FD-DEBA-4C84-A827-D0C51AD6B2A7}">
+																			<Language>SFX</Language>
+																			<AudioFile>Tesla coil 4.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="520779337"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Tesla coil 4" ID="{E11320FD-DEBA-4C84-A827-D0C51AD6B2A7}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Tesla coil 5" ID="{021EBBD0-5A1C-4B2E-84FD-BF4619F62B1A}" ShortID="130189667">
+																	<PropertyList>
+																		<Property Name="Weight" Type="Real64">
+																			<ValueList>
+																				<Value>40</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Tesla coil 5" ID="{A80D35D8-86B0-44C5-8EEE-39A1E086B89B}">
+																			<Language>SFX</Language>
+																			<AudioFile>Tesla coil 5.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="549253677"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Tesla coil 5" ID="{A80D35D8-86B0-44C5-8EEE-39A1E086B89B}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Tesla coil 6" ID="{5DE5B89D-CDC2-4407-9BDC-405D8515638B}" ShortID="536250095">
+																	<PropertyList>
+																		<Property Name="Weight" Type="Real64">
+																			<ValueList>
+																				<Value>40</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Tesla coil 6" ID="{92EA92E7-90AB-4A53-80AA-69DFD1162AA7}">
+																			<Language>SFX</Language>
+																			<AudioFile>Tesla coil 6.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="218954603"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Tesla coil 6" ID="{92EA92E7-90AB-4A53-80AA-69DFD1162AA7}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Tesla coil 7" ID="{11201716-9795-4D75-A445-B8A275E0DD4C}" ShortID="318247641">
+																	<PropertyList>
+																		<Property Name="Weight" Type="Real64">
+																			<ValueList>
+																				<Value>40</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Tesla coil 7" ID="{88C80130-42A7-4D92-B906-6BF9784C979B}">
+																			<Language>SFX</Language>
+																			<AudioFile>Tesla coil 7.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="636007893"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Tesla coil 7" ID="{88C80130-42A7-4D92-B906-6BF9784C979B}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Tesla coil 8" ID="{A15E4B5A-FEF0-48DD-91B4-C16BD7DF5B8B}" ShortID="884545706">
+																	<PropertyList>
+																		<Property Name="Weight" Type="Real64">
+																			<ValueList>
+																				<Value>40</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Tesla coil 8" ID="{096A9A7C-48C1-4CF7-8D49-A1607D1573A1}">
+																			<Language>SFX</Language>
+																			<AudioFile>Tesla coil 8.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="1022150563"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Tesla coil 8" ID="{096A9A7C-48C1-4CF7-8D49-A1607D1573A1}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<PositioningInfo>
+																<Panner Name="" ID="{0FFD8239-B8E5-4A39-9139-F13DE28205D5}"/>
+															</PositioningInfo>
+														</RandomSequenceContainer>
+														<Sound Name="Silence" ID="{E5242FCE-47D7-4BEE-993F-BB53B9B61A79}" ShortID="941457400">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>70</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<SourcePlugin Name="Silence" ID="{C66D38BD-0D5B-4469-9990-E561F1AD5807}" ShortID="397872364" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																	<PropertyList>
+																		<Property Name="LengthMax" Type="Real32" Value="10"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																</SourcePlugin>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Silence" ID="{C66D38BD-0D5B-4469-9990-E561F1AD5807}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
 													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Silence" ID="{C66D38BD-0D5B-4469-9990-E561F1AD5807}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+													<PositioningInfo>
+														<Panner Name="" ID="{856CA0D6-7A13-4A47-A2BE-8EDADFBF64D0}"/>
+													</PositioningInfo>
+													<ObjectLists>
+														<ObjectList Name="Playlist">
+															<PluginInnerObject Name="" ID="{143A0015-69E1-4726-B57F-C688C5DA8072}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+																<ReferenceList>
+																	<Reference Name="PlaylistObject">
+																		<ObjectRef Name="Tesla Coils" ID="{A04F2351-3734-433C-B865-2AFB247BAB8B}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+																	</Reference>
+																</ReferenceList>
+															</PluginInnerObject>
+															<PluginInnerObject Name="" ID="{2084F8DF-CB28-420E-83FE-C167C2DEAB80}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+																<ReferenceList>
+																	<Reference Name="PlaylistObject">
+																		<ObjectRef Name="Silence" ID="{E5242FCE-47D7-4BEE-993F-BB53B9B61A79}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+																	</Reference>
+																</ReferenceList>
+															</PluginInnerObject>
+														</ObjectList>
+													</ObjectLists>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Ambience_Keyboards" ID="{B1B4C765-906A-4FE3-AFCD-CFD73887E65B}" ShortID="405225979">
+													<PropertyList>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Ambience Bus" ID="{A815E035-3B7D-4150-8135-59E419312A93}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
 											</ChildrenList>
-											<PositioningInfo>
-												<Panner Name="" ID="{856CA0D6-7A13-4A47-A2BE-8EDADFBF64D0}"/>
-											</PositioningInfo>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Player_Slices_Eaten" ID="{492202C7-42C3-484C-92E1-BAEA8E3724BB}"/>
+														<StateGroupInfo Name="" ID="{BB0C25C0-2584-4182-96F4-C6A8ED48B001}" ShortID="188914871"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Player_Slices_Eaten_01" ID="{DD0D70EA-C17D-40AD-A082-AE2D4E9E72CF}"/>
+														<CustomState Name="" ID="{0E42168C-441D-44E0-B4B2-CB56F6306DF1}" ShortID="723706736">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="1"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player_Slices_Eaten_05" ID="{7660FB14-C229-43B2-BDF1-B3CEDFF90C6F}"/>
+														<CustomState Name="" ID="{8CFB3888-C672-44EB-963B-A819395B42E4}" ShortID="171048792">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="9"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="None" ID="{0F16AD7A-BC88-4672-BEFB-9481498D282B}"/>
+														<CustomState Name="" ID="{D9351939-2CA2-4912-B742-FDBE6905EF43}" ShortID="113047706"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player_Slices_Eaten_06" ID="{85884079-D9A4-4688-9F5D-32725F851BAE}"/>
+														<CustomState Name="" ID="{61F7E4C1-BC41-455B-940D-FC3AF2248C2C}" ShortID="1059258774">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="12"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player_Slices_Eaten_02" ID="{09798C5F-11BC-4892-B1F9-2F228126AFE9}"/>
+														<CustomState Name="" ID="{9080A2F8-D34B-43CC-B737-99DC2F345A2E}" ShortID="1007594048">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="2"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player_Slices_Eaten_04" ID="{D5079925-5EAD-4BC7-8383-7EB3FB6C4C4C}"/>
+														<CustomState Name="" ID="{15480156-B583-48BF-A2FB-6323A6294F7D}" ShortID="513530567">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="6"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Player_Slices_Eaten_03" ID="{12ED5AEC-A784-4EBC-AC2C-7DE6FD81929B}"/>
+														<CustomState Name="" ID="{EE4FDF1F-374F-4BD5-89F6-5C45D37BF66C}" ShortID="998714275">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="3"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 											<ObjectLists>
-												<ObjectList Name="Playlist">
-													<PluginInnerObject Name="" ID="{143A0015-69E1-4726-B57F-C688C5DA8072}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{A0829C03-3AB8-445D-9FD6-FBDF9F93B5D9}" ShortID="626859323">
 														<ReferenceList>
-															<Reference Name="PlaylistObject">
-																<ObjectRef Name="Tesla Coils" ID="{A04F2351-3734-433C-B865-2AFB247BAB8B}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+															<Reference Name="Effect">
+																<Custom>
+																	<Effect Name="Flanger (Custom)" ID="{537DE49C-320A-4373-85D9-FCF3E157EADC}" ShortID="918160093" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+																		<PropertyList>
+																			<Property Name="ModDepth" Type="Real32" Value="65.6"/>
+																			<Property Name="ModFrequency" Type="Real32" Value="2.76"/>
+																			<Property Name="WetDryMix" Type="Real32" Value="0"/>
+																		</PropertyList>
+																		<StateInfo>
+																			<StatePropertyList>
+																				<Property Name="WetDryMix"/>
+																			</StatePropertyList>
+																			<StateGroupList>
+																				<StateGroupInfo>
+																					<StateGroupRef Name="Player_Slices_Eaten" ID="{492202C7-42C3-484C-92E1-BAEA8E3724BB}"/>
+																					<StateGroupInfo Name="" ID="{D6B5FC80-0CC8-4EB9-83B6-51A5D31AA826}" ShortID="216706916"/>
+																				</StateGroupInfo>
+																			</StateGroupList>
+																			<CustomStateList>
+																				<CustomState>
+																					<StateRef Name="Player_Slices_Eaten_01" ID="{DD0D70EA-C17D-40AD-A082-AE2D4E9E72CF}"/>
+																					<CustomState Name="" ID="{7D0C6875-53E4-4AFC-96CA-D8F99F397CEC}" ShortID="101808029">
+																						<PropertyList>
+																							<Property Name="WetDryMix" Type="Real32" Value="12"/>
+																						</PropertyList>
+																					</CustomState>
+																				</CustomState>
+																				<CustomState>
+																					<StateRef Name="Player_Slices_Eaten_05" ID="{7660FB14-C229-43B2-BDF1-B3CEDFF90C6F}"/>
+																					<CustomState Name="" ID="{7A98A1D4-4750-4772-BED5-7639AC6E184F}" ShortID="683255734">
+																						<PropertyList>
+																							<Property Name="WetDryMix" Type="Real32" Value="72"/>
+																						</PropertyList>
+																					</CustomState>
+																				</CustomState>
+																				<CustomState>
+																					<StateRef Name="None" ID="{0F16AD7A-BC88-4672-BEFB-9481498D282B}"/>
+																					<CustomState Name="" ID="{B64BDE2D-B3D4-47D4-ADFD-8F2D6D07500E}" ShortID="43843219">
+																						<PropertyList>
+																							<Property Name="WetDryMix" Type="Real32" Value="0"/>
+																						</PropertyList>
+																					</CustomState>
+																				</CustomState>
+																				<CustomState>
+																					<StateRef Name="Player_Slices_Eaten_06" ID="{85884079-D9A4-4688-9F5D-32725F851BAE}"/>
+																					<CustomState Name="" ID="{8D9BCA5F-8D76-4541-9498-56BE90F76DA8}" ShortID="262402555">
+																						<PropertyList>
+																							<Property Name="WetDryMix" Type="Real32" Value="96"/>
+																						</PropertyList>
+																					</CustomState>
+																				</CustomState>
+																				<CustomState>
+																					<StateRef Name="Player_Slices_Eaten_02" ID="{09798C5F-11BC-4892-B1F9-2F228126AFE9}"/>
+																					<CustomState Name="" ID="{8BDB95EA-DA73-4467-916B-9DAF8D2C25C4}" ShortID="423552056">
+																						<PropertyList>
+																							<Property Name="WetDryMix" Type="Real32" Value="24"/>
+																						</PropertyList>
+																					</CustomState>
+																				</CustomState>
+																				<CustomState>
+																					<StateRef Name="Player_Slices_Eaten_04" ID="{D5079925-5EAD-4BC7-8383-7EB3FB6C4C4C}"/>
+																					<CustomState Name="" ID="{CAB2333C-97BA-4582-9781-0B71C61E5BC8}" ShortID="248557931">
+																						<PropertyList>
+																							<Property Name="WetDryMix" Type="Real32" Value="48"/>
+																						</PropertyList>
+																					</CustomState>
+																				</CustomState>
+																				<CustomState>
+																					<StateRef Name="Player_Slices_Eaten_03" ID="{12ED5AEC-A784-4EBC-AC2C-7DE6FD81929B}"/>
+																					<CustomState Name="" ID="{B39DBC35-FFB5-439F-8616-2C51004309BF}" ShortID="893612765">
+																						<PropertyList>
+																							<Property Name="WetDryMix" Type="Real32" Value="36"/>
+																						</PropertyList>
+																					</CustomState>
+																				</CustomState>
+																			</CustomStateList>
+																		</StateInfo>
+																	</Effect>
+																</Custom>
 															</Reference>
 														</ReferenceList>
-													</PluginInnerObject>
-													<PluginInnerObject Name="" ID="{2084F8DF-CB28-420E-83FE-C167C2DEAB80}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
-														<ReferenceList>
-															<Reference Name="PlaylistObject">
-																<ObjectRef Name="Silence" ID="{E5242FCE-47D7-4BEE-993F-BB53B9B61A79}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
-															</Reference>
-														</ReferenceList>
-													</PluginInnerObject>
+														<StateInfo>
+															<CustomStateList>
+																<CustomState>
+																	<StateRef Name="Player_Slices_Eaten_01" ID="{DD0D70EA-C17D-40AD-A082-AE2D4E9E72CF}"/>
+																	<CustomState Name="" ID="{C12F4CBF-0C8E-4A07-8921-F810ECD059BE}" ShortID="420715442"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="Player_Slices_Eaten_05" ID="{7660FB14-C229-43B2-BDF1-B3CEDFF90C6F}"/>
+																	<CustomState Name="" ID="{9FCFB279-18DB-479E-8931-635037F907C8}" ShortID="267199616"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="None" ID="{0F16AD7A-BC88-4672-BEFB-9481498D282B}"/>
+																	<CustomState Name="" ID="{78B936D0-B95B-4498-931A-F53371DFEAAE}" ShortID="594079794"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="Player_Slices_Eaten_06" ID="{85884079-D9A4-4688-9F5D-32725F851BAE}"/>
+																	<CustomState Name="" ID="{EE4536C5-F493-4CCE-9EFB-AF11613FBB2A}" ShortID="801967026"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="Player_Slices_Eaten_02" ID="{09798C5F-11BC-4892-B1F9-2F228126AFE9}"/>
+																	<CustomState Name="" ID="{B78271DB-D378-45F9-8DDA-CF2CED07C7B1}" ShortID="239674805"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="Player_Slices_Eaten_04" ID="{D5079925-5EAD-4BC7-8383-7EB3FB6C4C4C}"/>
+																	<CustomState Name="" ID="{7CFF30D8-7A0F-4ECF-9690-E1EBEF9697E5}" ShortID="92850655"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="Player_Slices_Eaten_03" ID="{12ED5AEC-A784-4EBC-AC2C-7DE6FD81929B}"/>
+																	<CustomState Name="" ID="{E0440DFB-5A3F-4D08-BB1B-7EF914927A4D}" ShortID="1029084211"/>
+																</CustomState>
+															</CustomStateList>
+														</StateInfo>
+													</EffectSlot>
+												</ObjectList>
+												<ObjectList Name="RTPC">
+													<RTPC Name="" ID="{1FAE31EA-C2E3-4216-B4E0-E670D7462546}" ShortID="501597633">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+														</PropertyList>
+														<ReferenceList/>
+													</RTPC>
 												</ObjectList>
 											</ObjectLists>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Ambience_Vats" ID="{C11B9703-AE11-4C70-BD64-6F99A25731A6}" ShortID="144511134">
-											<PropertyList>
-												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-											</PropertyList>
+										</PropertyContainer>
+										<SwitchContainer Name="Ambience_Laboratory_Base_Loop" ID="{A067F245-A52E-47DC-90EF-2DE240A2E0B8}" ShortID="665763542">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
 												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-												</Reference>
-											</ReferenceList>
-										</RandomSequenceContainer>
-										<Sound Name="AMBInd-Laboratory_MainRoomHum_LP_01_AAG" ID="{0EDA781A-7603-4C8D-8E72-F80E68FF68C2}" ShortID="62143356">
-											<PropertyList>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="IsStreamingEnabled" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="None" ID="{0F16AD7A-BC88-4672-BEFB-9481498D282B}" WorkUnitID="{F65D30D3-DFF9-4088-9661-7E588F98F3D3}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Player_Slices_Eaten" ID="{492202C7-42C3-484C-92E1-BAEA8E3724BB}" WorkUnitID="{F65D30D3-DFF9-4088-9661-7E588F98F3D3}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="AMBInd-Laboratory_MainRoomHum_LP_01_AAG" ID="{8A676369-FA3A-471D-9603-D967DDAD11B6}">
-													<Language>SFX</Language>
-													<AudioFile>AMBInd-Laboratory_MainRoomHum_LP_01_AAG.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="766507505"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<Sound Name="AMBInd-Laboratory_MainRoomHum_LP_01_AAG" ID="{0EDA781A-7603-4C8D-8E72-F80E68FF68C2}" ShortID="62143356">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="IsStreamingEnabled" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Ambience Bus" ID="{A815E035-3B7D-4150-8135-59E419312A93}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMBInd-Laboratory_MainRoomHum_LP_01_AAG" ID="{8A676369-FA3A-471D-9603-D967DDAD11B6}">
+															<Language>SFX</Language>
+															<AudioFile>AMBInd-Laboratory_MainRoomHum_LP_01_AAG.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="766507505"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMBInd-Laboratory_MainRoomHum_LP_01_AAG" ID="{8A676369-FA3A-471D-9603-D967DDAD11B6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMBInd-Laboratory_MainRoomHum_LP_01_AAG" ID="{8A676369-FA3A-471D-9603-D967DDAD11B6}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="AMBInd-Laboratory_MainRoomHum_LP_01_AAG" ID="{0EDA781A-7603-4C8D-8E72-F80E68FF68C2}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="None" ID="{0F16AD7A-BC88-4672-BEFB-9481498D282B}"/>
+														<ItemList>
+															<ItemRef Name="AMBInd-Laboratory_MainRoomHum_LP_01_AAG" ID="{0EDA781A-7603-4C8D-8E72-F80E68FF68C2}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
 									</ChildrenList>
 								</PropertyContainer>
 							</ChildrenList>
