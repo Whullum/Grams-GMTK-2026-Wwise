@@ -2690,6 +2690,221 @@
 						</PropertyContainer>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Placeholders" ID="{6F820A78-ECDC-46FB-8E87-99746B7E4D40}" ShortID="596317499">
+					<ChildrenList>
+						<Sound Name="PH01" ID="{EF27E93B-8FFA-4F7C-A730-1D2031D11A9D}" ShortID="823977428">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Bus" ID="{3103FD2E-C5F1-42AC-A555-1E6CDD35F2DE}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="click (hihat)" ID="{4C095552-E27E-4AE7-8BD9-CBFBE2C9F422}">
+									<Language>SFX</Language>
+									<AudioFile>click (hihat).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="667693154"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="click (hihat)" ID="{4C095552-E27E-4AE7-8BD9-CBFBE2C9F422}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PH03" ID="{4120AAF0-4045-430C-BC83-E85A351B59C7}" ShortID="37170300">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-530</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Bus" ID="{3103FD2E-C5F1-42AC-A555-1E6CDD35F2DE}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="slick (hihat)" ID="{F213B823-6949-4768-9A90-12E31A8904D5}">
+									<Language>SFX</Language>
+									<AudioFile>slick (hihat).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="385417344"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="slick (hihat)" ID="{F213B823-6949-4768-9A90-12E31A8904D5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PH05" ID="{3E709D7A-25F9-4825-8085-6C577CA6865D}" ShortID="837015380">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Bus" ID="{3103FD2E-C5F1-42AC-A555-1E6CDD35F2DE}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="soft (hihat)" ID="{108EA7A1-0844-4DF0-95D9-00320F2BDE1C}">
+									<Language>SFX</Language>
+									<AudioFile>soft (hihat).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="305304308"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="soft (hihat)" ID="{108EA7A1-0844-4DF0-95D9-00320F2BDE1C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PH07" ID="{24D635D5-B661-471B-8822-B2D64829FB3C}" ShortID="1069652256">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Bus" ID="{3103FD2E-C5F1-42AC-A555-1E6CDD35F2DE}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="tired (hihat)" ID="{0CB719B8-9413-4715-8B01-FA18CABC5017}">
+									<Language>SFX</Language>
+									<AudioFile>tired (hihat).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1020495402"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="tired (hihat)" ID="{0CB719B8-9413-4715-8B01-FA18CABC5017}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PH02" ID="{D51A36CF-B35C-4D43-B381-90BCE158FE0E}" ShortID="946074069">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Bus" ID="{3103FD2E-C5F1-42AC-A555-1E6CDD35F2DE}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="clive the snare" ID="{B0156127-F391-432F-8187-882CFA08BC8B}">
+									<Language>SFX</Language>
+									<AudioFile>clive the snare.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="857602310"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="clive the snare" ID="{B0156127-F391-432F-8187-882CFA08BC8B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PH04" ID="{ECB481CD-62C8-4DC2-A4CB-2B7D6782E8A6}" ShortID="1019448313">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Bus" ID="{3103FD2E-C5F1-42AC-A555-1E6CDD35F2DE}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="snappy" ID="{673CA676-BF34-44DF-A03C-44BCA136573F}">
+									<Language>SFX</Language>
+									<AudioFile>snappy.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="965219652"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="snappy" ID="{673CA676-BF34-44DF-A03C-44BCA136573F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PH06" ID="{D322D9CF-A159-4557-B270-43734DE6EA94}" ShortID="69188883">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Bus" ID="{3103FD2E-C5F1-42AC-A555-1E6CDD35F2DE}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="the vibes frfr" ID="{D8BBE85E-681B-4896-81ED-07181654AD9C}">
+									<Language>SFX</Language>
+									<AudioFile>the vibes frfr.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="980902378"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="the vibes frfr" ID="{D8BBE85E-681B-4896-81ED-07181654AD9C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PH08" ID="{4E324A6A-5C7E-4D12-9AC6-D0E4F2B30F1F}" ShortID="73635908">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Bus" ID="{3103FD2E-C5F1-42AC-A555-1E6CDD35F2DE}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="wholesome" ID="{4FCB87B7-DC1D-44B2-99D2-090D9F1B5047}">
+									<Language>SFX</Language>
+									<AudioFile>wholesome.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="470585317"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="wholesome" ID="{4FCB87B7-DC1D-44B2-99D2-090D9F1B5047}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>
