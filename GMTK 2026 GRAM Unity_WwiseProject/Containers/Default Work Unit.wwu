@@ -1575,7 +1575,25 @@
 										</Reference>
 									</ReferenceList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Player_PowerUps_Dash_Start" ID="{2346A06E-70B4-47EC-9503-953942D71677}" ShortID="979613841">
+								<RandomSequenceContainer Name="Player_PowerUps_Dash" ID="{2346A06E-70B4-47EC-9503-953942D71677}" ShortID="979613841">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>960</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
@@ -1584,6 +1602,30 @@
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="MOVEActv-Player_Cheese Dash Start_AAG" ID="{05AF2706-83F0-4464-A59D-A2B4C681ED46}" ShortID="499992966">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MOVEActv-Player_Cheese Dash Start_AAG" ID="{22757E72-5E0D-4ADD-9831-8DAE3DEB9AB3}">
+													<Language>SFX</Language>
+													<AudioFile>MOVEActv-Player_Cheese Dash Start_AAG.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="344083853"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MOVEActv-Player_Cheese Dash Start_AAG" ID="{22757E72-5E0D-4ADD-9831-8DAE3DEB9AB3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 									<ObjectLists>
 										<ObjectList Name="RTPC">
 											<RTPC Name="" ID="{373C8628-57C9-4143-BDAD-188342AFA207}" ShortID="974727891">
@@ -1608,8 +1650,8 @@
 																		<SegmentShape>Exp3</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>0.86226</XPos>
-																		<YPos>-0.00684</YPos>
+																		<XPos>0.23384</XPos>
+																		<YPos>0.02405</YPos>
 																		<Flags>0</Flags>
 																		<SegmentShape>Exp3</SegmentShape>
 																	</Point>
@@ -1624,18 +1666,83 @@
 													</Reference>
 												</ReferenceList>
 											</RTPC>
+											<RTPC Name="" ID="{7BBF570C-EC5F-4AA8-A6A7-3DAA94F3468B}" ShortID="47049864">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RTPC_Player_Dash" ID="{757E52DD-E772-4C01-B758-42B280D75851}" WorkUnitID="{0329338C-2039-44A3-A0DB-41116739FB0A}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{29FFD027-DB75-453F-8E6F-C02CB4872D73}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.30384</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-20</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+											<RTPC Name="" ID="{8A6C3ED9-6033-4E0E-928E-C3A1D63ACB06}" ShortID="290122994">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RTPC_Player_Dash" ID="{757E52DD-E772-4C01-B758-42B280D75851}" WorkUnitID="{0329338C-2039-44A3-A0DB-41116739FB0A}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{05BE3A00-BD5E-4F07-B72C-ED2BEA4612EF}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.1901</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-1458</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
 										</ObjectList>
 									</ObjectLists>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Player_PowerUps_Dash_Finish" ID="{C153BC58-2181-45FE-87C0-AAFF01510C30}" ShortID="372797570">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-										</Reference>
-									</ReferenceList>
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</PropertyContainer>
@@ -4041,13 +4148,6 @@
 															</CustomStateList>
 														</StateInfo>
 													</EffectSlot>
-												</ObjectList>
-												<ObjectList Name="RTPC">
-													<RTPC Name="" ID="{1FAE31EA-C2E3-4216-B4E0-E670D7462546}" ShortID="501597633">
-														<PropertyList>
-															<Property Name="PropertyName" Type="string" Value="Lowpass"/>
-														</PropertyList>
-													</RTPC>
 												</ObjectList>
 											</ObjectLists>
 										</PropertyContainer>

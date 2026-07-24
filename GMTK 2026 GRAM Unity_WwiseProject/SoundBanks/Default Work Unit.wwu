@@ -14,6 +14,7 @@
 						<ObjectRef Name="SFX_TEST_EVENT" ID="{3AD970E4-1448-4A39-A9C0-ED0312517E80}" WorkUnitID="{263DDC36-1659-43D4-8C76-EED609DD8578}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_PH04" ID="{A3F16C31-702F-4A5E-90FD-156E627AD370}" WorkUnitID="{263DDC36-1659-43D4-8C76-EED609DD8578}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_PH03" ID="{B67CBC25-0F40-4ADA-8E08-C0B689E073DB}" WorkUnitID="{263DDC36-1659-43D4-8C76-EED609DD8578}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player_PowerUps_Dash" ID="{9614D645-AE27-4D7B-8A70-C57A8ADE5DC9}" WorkUnitID="{185BBABD-AADE-45E4-888B-B4470BDD7D14}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_PH07" ID="{E14D3BBA-D116-4E83-98D4-CAA7DC919F83}" WorkUnitID="{263DDC36-1659-43D4-8C76-EED609DD8578}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
