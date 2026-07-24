@@ -729,7 +729,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>10</Value>
+												<Value>12</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -1898,6 +1898,130 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Folder Name="VO" ID="{EFF25D80-0082-4144-875E-42B20EC36B95}" ShortID="542136971">
+							<ChildrenList>
+								<RandomSequenceContainer Name="VOX_Player_RecievePizza" ID="{84C5F014-9845-48A6-963B-82B90D498511}" ShortID="790532295">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="VOX_Player_DeliverPizza" ID="{775F4696-5167-424E-B0F9-F112E167C4BD}" ShortID="1057579992">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="VOX_Player_FailDelivery" ID="{3867B8FE-AA9C-4D40-8165-8BBF87DC1280}" ShortID="768476460">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="VOX_Player_BizzareDeliver" ID="{F00369BE-8973-4707-A460-7E908A9E8A55}" ShortID="818707806">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="VOX_Player_Dash" ID="{0F84F289-2D1D-4AC2-9B80-5E550B98F8D2}" ShortID="457106320">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="VOX_Player_Jump" ID="{E8DB9AE4-0A99-4A88-AED5-EF43B2DAC72B}" ShortID="714774025">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<Sound Name="VOX_Player_PickupBattery" ID="{BCF1946B-1231-4919-A330-56A759011554}" ShortID="151361925">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+								<Sound Name="VOX_Player_PickupMicrowave" ID="{3BE67CC4-9311-4198-84E9-4AFF9D9DFD24}" ShortID="156018752">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+								<Sound Name="VOX_Player_GooFall" ID="{1E6EC42B-D07F-4147-BD25-CE8C2968E226}" ShortID="219808262">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+								<Sound Name="VOX_Player_GooWalk" ID="{B0AE5057-7C55-4B40-BA3D-225A357F7D33}" ShortID="6897008">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+								<RandomSequenceContainer Name="VOX_Player_FirePizza" ID="{A1A84122-705A-4834-ABEB-BC5F26A32023}" ShortID="101771331">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="VOX_Player_IcePizza" ID="{59A8FD9F-CB1F-472F-A7D9-F1B1B31F05AF}" ShortID="817244881">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{83633D20-1C98-4051-B972-04FCCAA9774E}" ShortID="404026678">
@@ -1930,6 +2054,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="UIMvmt_Slider-001" ID="{6022A8DD-258B-4C5D-927A-3876616C1BAB}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>UIMvmt_Slider-001.wav</AudioFile>
 											<MediaIDList>
@@ -2137,6 +2264,753 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="UIMvmt_Slider-010" ID="{B279BAF0-41BC-4BEA-8CBB-9005961BAEF9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="UI_ClockTick_Normal" ID="{4E6BD320-6E8C-47F0-B72F-18CF9237FE66}" ShortID="860816807">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="CLOCKTick_UI-001 (VAR1)" ID="{7FBA32DB-0C9D-4852-8FFA-2CCB12414BBE}" ShortID="751674205">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CLOCKTick_UI-001 (VAR1)" ID="{E1A3806D-AC5E-416D-B042-413362219046}">
+											<Language>SFX</Language>
+											<AudioFile>CLOCKTick_UI-001 (VAR1).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="826323402"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CLOCKTick_UI-001 (VAR1)" ID="{E1A3806D-AC5E-416D-B042-413362219046}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CLOCKTick_UI-002 (VAR1)" ID="{E43C487B-ED45-4577-AC2E-AB6C7F5955B7}" ShortID="849832045">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CLOCKTick_UI-002 (VAR1)" ID="{5BCA547B-03D2-4C83-9D76-024EE16A9F4E}">
+											<Language>SFX</Language>
+											<AudioFile>CLOCKTick_UI-002 (VAR1).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="727642901"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CLOCKTick_UI-002 (VAR1)" ID="{5BCA547B-03D2-4C83-9D76-024EE16A9F4E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CLOCKTick_UI-003 (VAR1)" ID="{E8CE654B-551F-43F8-850A-50F207402EEB}" ShortID="375818301">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CLOCKTick_UI-003 (VAR1)" ID="{CA61474D-9B0F-4FA3-ACA2-48E9C2D5133C}">
+											<Language>SFX</Language>
+											<AudioFile>CLOCKTick_UI-003 (VAR1).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1013290893"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CLOCKTick_UI-003 (VAR1)" ID="{CA61474D-9B0F-4FA3-ACA2-48E9C2D5133C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CLOCKTick_UI-004 (VAR1)" ID="{108D1C1E-D92A-4346-8574-5803DCB45F13}" ShortID="312428141">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CLOCKTick_UI-004 (VAR1)" ID="{B3269D2D-36C8-418E-AABD-EE8090A2FEAB}">
+											<Language>SFX</Language>
+											<AudioFile>CLOCKTick_UI-004 (VAR1).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="249008126"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CLOCKTick_UI-004 (VAR1)" ID="{B3269D2D-36C8-418E-AABD-EE8090A2FEAB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="UI_ClockTick_Angry" ID="{BD57B380-5E34-440F-9E97-72F30F17DF9F}" ShortID="1014061993">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="CLOCKTick_UI_Angry (VAR1)-001" ID="{28CFD580-45C2-4917-A444-FEFB265EC2AA}" ShortID="543553481">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CLOCKTick_UI_Angry (VAR1)-001" ID="{27D50736-9428-471D-B325-9A7C5E781FA5}">
+											<Language>SFX</Language>
+											<AudioFile>CLOCKTick_UI_Angry (VAR1)-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="584225229"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CLOCKTick_UI_Angry (VAR1)-001" ID="{27D50736-9428-471D-B325-9A7C5E781FA5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CLOCKTick_UI_Angry (VAR1)-002" ID="{9B35830A-16FC-43D8-AC00-CE688CCDC6B9}" ShortID="303919098">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CLOCKTick_UI_Angry (VAR1)-002" ID="{5E0CEC4C-2143-4F86-9E8C-F27F78019040}">
+											<Language>SFX</Language>
+											<AudioFile>CLOCKTick_UI_Angry (VAR1)-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="761194068"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CLOCKTick_UI_Angry (VAR1)-002" ID="{5E0CEC4C-2143-4F86-9E8C-F27F78019040}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CLOCKTick_UI_Angry (VAR1)-003" ID="{DE0E25BC-4F1E-4ECF-8329-0E50A1FE12D5}" ShortID="956884498">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CLOCKTick_UI_Angry (VAR1)-003" ID="{3AAB0D20-2019-4345-8F34-06EFA192053C}">
+											<Language>SFX</Language>
+											<AudioFile>CLOCKTick_UI_Angry (VAR1)-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="423736601"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CLOCKTick_UI_Angry (VAR1)-003" ID="{3AAB0D20-2019-4345-8F34-06EFA192053C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CLOCKTick_UI_Angry (VAR1)-004" ID="{FB1BA2A4-8F00-47AC-8BEE-DA355F3CFE49}" ShortID="64328781">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CLOCKTick_UI_Angry (VAR1)-004" ID="{E80F362B-D845-4DE1-98D8-3560FDDB085C}">
+											<Language>SFX</Language>
+											<AudioFile>CLOCKTick_UI_Angry (VAR1)-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="980926607"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CLOCKTick_UI_Angry (VAR1)-004" ID="{E80F362B-D845-4DE1-98D8-3560FDDB085C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="UI_MenuOpen" ID="{5F2C42A1-CC74-491B-846F-1F0DA5FC4BA4}" ShortID="684093799">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="UI_MapOpen" ID="{64EBE4F5-1C0E-467C-9FFB-9F716D07AE6B}" ShortID="206963022">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="UIAlert_Map_Open-001" ID="{B2648CE2-9886-482F-B8D1-00A53620A611}" ShortID="397545221">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UIAlert_Map_Open-001" ID="{EF02F5EF-DBAA-4D73-9E54-422E02F5167F}">
+											<Language>SFX</Language>
+											<AudioFile>UIAlert_Map_Open-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="914119621"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UIAlert_Map_Open-001" ID="{EF02F5EF-DBAA-4D73-9E54-422E02F5167F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UIAlert_Map_Open-003" ID="{D7BA5834-EAD5-4650-9B7F-378DF98BED50}" ShortID="976746968">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UIAlert_Map_Open-003" ID="{31D70787-BF30-4292-A501-43A36E95122B}">
+											<Language>SFX</Language>
+											<AudioFile>UIAlert_Map_Open-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="472490146"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UIAlert_Map_Open-003" ID="{31D70787-BF30-4292-A501-43A36E95122B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UIAlert_Map_Open-002" ID="{C834831F-2C99-4748-B07D-2E9B49DC984E}" ShortID="833460001">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UIAlert_Map_Open-002" ID="{463FED89-863C-417F-A0BA-FC0CA16C7201}">
+											<Language>SFX</Language>
+											<AudioFile>UIAlert_Map_Open-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="875209463"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UIAlert_Map_Open-002" ID="{463FED89-863C-417F-A0BA-FC0CA16C7201}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="UI_MapClose" ID="{08007C94-CDE2-450B-A571-2C4E5DAFA2BA}" ShortID="528600083">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="UIAlert_Map_Close-001" ID="{17B9C09F-327D-44DD-BFDB-08F59993CD40}" ShortID="71737085">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UIAlert_Map_Close-001" ID="{5E54A4F0-7DA4-4D5C-80CE-EEB26F421ED5}">
+											<Language>SFX</Language>
+											<AudioFile>UIAlert_Map_Close-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="844381337"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UIAlert_Map_Close-001" ID="{5E54A4F0-7DA4-4D5C-80CE-EEB26F421ED5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UIAlert_Map_Close-002" ID="{E66FA811-89A9-4E48-846E-8BE6F58C8E1B}" ShortID="159297314">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UIAlert_Map_Close-002" ID="{CB670B75-8E64-4873-8283-5FA39875E9DE}">
+											<Language>SFX</Language>
+											<AudioFile>UIAlert_Map_Close-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="611719565"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UIAlert_Map_Close-002" ID="{CB670B75-8E64-4873-8283-5FA39875E9DE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UIAlert_Map_Close-003" ID="{545AC21E-CFB5-4F50-B98D-CF04D07F9962}" ShortID="373939229">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UIAlert_Map_Close-003" ID="{8A7B77BE-246B-4F37-ABD2-0476ECA9EFED}">
+											<Language>SFX</Language>
+											<AudioFile>UIAlert_Map_Close-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="469636516"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UIAlert_Map_Close-003" ID="{8A7B77BE-246B-4F37-ABD2-0476ECA9EFED}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="UI_Hover" ID="{54553374-4C44-45C3-9A05-A6BCCACB43A8}" ShortID="38616117">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="UIClick_Menu-001 (VAR1)" ID="{DFE02E35-991C-4799-9296-49C8F5E52CDB}" ShortID="937971463">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UIClick_Menu-001 (VAR1)" ID="{7931392F-B622-445A-87AD-AAD9775DC550}">
+											<Language>SFX</Language>
+											<AudioFile>UIClick_Menu-001 (VAR1).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="828702291"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UIClick_Menu-001 (VAR1)" ID="{7931392F-B622-445A-87AD-AAD9775DC550}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UIClick_Menu-002 (VAR1)" ID="{3B01D7BE-9776-4FEF-BE5D-ECE00DC90F4E}" ShortID="1005880847">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UIClick_Menu-002 (VAR1)" ID="{61D99B32-AA9F-4463-B81A-D814DAC6D154}">
+											<Language>SFX</Language>
+											<AudioFile>UIClick_Menu-002 (VAR1).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="981981015"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UIClick_Menu-002 (VAR1)" ID="{61D99B32-AA9F-4463-B81A-D814DAC6D154}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UIClick_Menu-003 (VAR1)" ID="{E7F3CB4D-FF36-451F-B4F3-B827A753D141}" ShortID="628584221">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UIClick_Menu-003 (VAR1)" ID="{94F946D6-6612-41D9-BCC7-2B1BABACF96B}">
+											<Language>SFX</Language>
+											<AudioFile>UIClick_Menu-003 (VAR1).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="933488000"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UIClick_Menu-003 (VAR1)" ID="{94F946D6-6612-41D9-BCC7-2B1BABACF96B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UIClick_Menu-004 (VAR1)" ID="{D19A929D-3544-43DB-898D-4408376B9657}" ShortID="421665920">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UIClick_Menu-004 (VAR1)" ID="{2F53753C-366A-417A-B692-997F448903EA}">
+											<Language>SFX</Language>
+											<AudioFile>UIClick_Menu-004 (VAR1).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="432396110"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UIClick_Menu-004 (VAR1)" ID="{2F53753C-366A-417A-B692-997F448903EA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="UI_Select" ID="{A4945508-CB28-4DB7-82ED-D108D0D95C23}" ShortID="805441494">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="UI_Deny" ID="{B5756517-037F-4535-99C5-BAAB761FD6D7}" ShortID="25270629">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="UIClick_Notification Negative-001" ID="{584BBA74-2B99-4141-9FDD-2771C1646317}" ShortID="735474703">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UIClick_Notification Negative-001" ID="{E7CB181A-BF62-4D65-8CA5-8D39DECBA1EE}">
+											<Language>SFX</Language>
+											<AudioFile>UIClick_Notification Negative-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="333030125"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UIClick_Notification Negative-001" ID="{E7CB181A-BF62-4D65-8CA5-8D39DECBA1EE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UIClick_Notification Negative-002" ID="{8748A884-D961-4A3E-8A41-A22CA4F6E8CB}" ShortID="139020449">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UIClick_Notification Negative-002" ID="{A3165BEA-5866-4655-BC68-45AD318882A3}">
+											<Language>SFX</Language>
+											<AudioFile>UIClick_Notification Negative-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="943647547"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UIClick_Notification Negative-002" ID="{A3165BEA-5866-4655-BC68-45AD318882A3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UIClick_Notification Negative-003" ID="{21B4F0BF-BA65-4F88-A8B5-53FA98BCFF00}" ShortID="391850970">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UIClick_Notification Negative-003" ID="{0DBD4E1A-5C24-495D-9672-AB18D7833E59}">
+											<Language>SFX</Language>
+											<AudioFile>UIClick_Notification Negative-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="27103152"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UIClick_Notification Negative-003" ID="{0DBD4E1A-5C24-495D-9672-AB18D7833E59}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UIClick_Notification Negative-004" ID="{C5741FA4-2C20-4896-ADDC-6CC6054EE52D}" ShortID="198341158">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UIClick_Notification Negative-004" ID="{7EB98027-0561-483E-8378-DD0DB86D6C95}">
+											<Language>SFX</Language>
+											<AudioFile>UIClick_Notification Negative-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="611864356"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UIClick_Notification Negative-004" ID="{7EB98027-0561-483E-8378-DD0DB86D6C95}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UIClick_Notification Negative-005" ID="{AA44DFF4-F997-41F9-BBE9-A123A630C97C}" ShortID="285724330">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UIClick_Notification Negative-005" ID="{E5A9A8C5-F44C-4EFB-8F72-96BA5E928338}">
+											<Language>SFX</Language>
+											<AudioFile>UIClick_Notification Negative-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="977185770"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UIClick_Notification Negative-005" ID="{E5A9A8C5-F44C-4EFB-8F72-96BA5E928338}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UIClick_Notification Negative-006" ID="{05B47F72-72C2-48AA-A15B-550A7C218975}" ShortID="423848438">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UIClick_Notification Negative-006" ID="{70CECA6C-2DBF-4729-B238-A61185D2EEC9}">
+											<Language>SFX</Language>
+											<AudioFile>UIClick_Notification Negative-006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="661303561"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UIClick_Notification Negative-006" ID="{70CECA6C-2DBF-4729-B238-A61185D2EEC9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="UI_ScoreTotal" ID="{DE0FAF2D-36A2-469D-9715-7C3A6A131614}" ShortID="523169130">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX Bus" ID="{3103FD2E-C5F1-42AC-A555-1E6CDD35F2DE}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="UIClick_Menu_PIZZA-001" ID="{998CB92D-7B83-4FB4-B6BB-6569F3FEFC7B}" ShortID="144325627">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UIClick_Menu_PIZZA-001" ID="{EEA9C5E8-AC2E-406C-B34A-E6E950B89AC5}">
+											<Language>SFX</Language>
+											<AudioFile>UIClick_Menu_PIZZA-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="867863754"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UIClick_Menu_PIZZA-001" ID="{EEA9C5E8-AC2E-406C-B34A-E6E950B89AC5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UIClick_Menu_PIZZA-002" ID="{30452BA3-9639-4A98-AD81-7AC15DD696CF}" ShortID="490221">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UIClick_Menu_PIZZA-002" ID="{C0A98559-39DD-4928-9597-D61F5A4A05CE}">
+											<Language>SFX</Language>
+											<AudioFile>UIClick_Menu_PIZZA-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="715413336"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UIClick_Menu_PIZZA-002" ID="{C0A98559-39DD-4928-9597-D61F5A4A05CE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UIClick_Menu_PIZZA-003" ID="{D58E2B2D-ABA0-4CA5-BF12-B72A03FE5BDC}" ShortID="348931506">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UIClick_Menu_PIZZA-003" ID="{198D7F7D-C67C-42CF-8CFB-79EC3E81236C}">
+											<Language>SFX</Language>
+											<AudioFile>UIClick_Menu_PIZZA-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="218873492"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UIClick_Menu_PIZZA-003" ID="{198D7F7D-C67C-42CF-8CFB-79EC3E81236C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
