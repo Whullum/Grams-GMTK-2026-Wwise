@@ -28,6 +28,13 @@
 				</Event>
 				<Event Name="Player_Kick" ID="{F47A7F99-E520-4071-A94A-96CA1C884DD9}">
 					<ChildrenList>
+						<Action Name="" ID="{5A6A6E70-C7F8-4352-A3CA-C1934E08BA8C}" ShortID="754279204">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Kick_Base" ID="{AEAB68F2-A194-4D21-B0CF-151D46BA5FEA}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{122716D8-B34F-418F-9171-4EDB4205D5E2}" ShortID="914101901">
 							<ReferenceList>
 								<Reference Name="Target">

@@ -3,29 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{263DDC36-1659-43D4-8C76-EED609DD8578}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="SFX_TEST_EVENT" ID="{3AD970E4-1448-4A39-A9C0-ED0312517E80}">
-					<PropertyList>
-						<Property Name="InstanceLimit" Type="int16">
-							<ValueList>
-								<Value>3</Value>
-							</ValueList>
-						</Property>
-						<Property Name="LimitScope" Type="int16">
-							<ValueList>
-								<Value>1</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{EA911DB5-F7DB-4AFC-9031-E7669F61D596}" ShortID="616292364">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_TEST" ID="{CB07705A-436D-4EC7-AFB6-AC65454B6D86}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Music" ID="{9192C5BD-1D75-4655-B0DF-570CBFF9D844}">
 					<ChildrenList>
 						<Action Name="" ID="{F4F998E0-CBCC-4704-AB50-1999D92A2EF8}" ShortID="289607202">
@@ -37,17 +14,143 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_TEST_MUSIC_Jaron___Pizza_Run___Section_1" ID="{B7AC89FA-0F70-48D0-86E1-DB1E7DFDC2B9}">
+				<Event Name="Play_UI_Slider" ID="{8D4CE956-532B-4EFA-8CBE-9BAFA1CA5778}">
 					<ChildrenList>
-						<Action Name="" ID="{58054231-F163-4002-82C5-1FFE8DB3C546}" ShortID="58004941">
+						<Action Name="" ID="{23FCD45A-0BD7-4096-9CBA-CAB3819640E4}" ShortID="11665650">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TEST_MUSIC_Jaron - Pizza Run - Section 1" ID="{E761F0A3-08B1-41B0-957A-300519EFB079}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+									<ObjectRef Name="UI_Slider" ID="{FF6F04CE-FF72-4FA1-8B57-FA8FA70F2387}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Placeholder Sounds" ID="{E028025A-42C2-4A40-ABED-D2B87BF7F86C}" ShortID="9268853">
+					<ChildrenList>
+						<Event Name="Play_PH06" ID="{9729F638-11CB-4189-839C-BC614528F9E4}">
+							<ChildrenList>
+								<Action Name="" ID="{FE4E24C1-D396-4CDF-B50F-0F3004D13B42}" ShortID="151357331">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PH06" ID="{D322D9CF-A159-4557-B270-43734DE6EA94}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_PH05" ID="{EE10DA97-9FFF-4480-B6A1-9BA37404091B}">
+							<ChildrenList>
+								<Action Name="" ID="{7ADCAFF2-1273-43A7-868E-4BD7C3A139E1}" ShortID="69268864">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PH05" ID="{3E709D7A-25F9-4825-8085-6C577CA6865D}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_PH04" ID="{A3F16C31-702F-4A5E-90FD-156E627AD370}">
+							<ChildrenList>
+								<Action Name="" ID="{5FF14367-F584-43F1-A77A-89E25BDE924B}" ShortID="220869217">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PH04" ID="{ECB481CD-62C8-4DC2-A4CB-2B7D6782E8A6}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_PH01" ID="{343F607A-2CE3-4158-A5E4-91E43BA7490C}">
+							<ChildrenList>
+								<Action Name="" ID="{BA5C192C-A82D-4DE3-865E-F8D1EAF1E8B1}" ShortID="644300492">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PH01" ID="{EF27E93B-8FFA-4F7C-A730-1D2031D11A9D}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_TEST_MUSIC_Jaron___Pizza_Run___Section_1" ID="{B7AC89FA-0F70-48D0-86E1-DB1E7DFDC2B9}">
+							<ChildrenList>
+								<Action Name="" ID="{58054231-F163-4002-82C5-1FFE8DB3C546}" ShortID="58004941">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TEST_MUSIC_Jaron - Pizza Run - Section 1" ID="{E761F0A3-08B1-41B0-957A-300519EFB079}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_PH08" ID="{05AEC7BB-E11E-4572-B199-33CBD1508446}">
+							<ChildrenList>
+								<Action Name="" ID="{32E685C7-75F6-4302-ACF8-BC227E07BC7D}" ShortID="445978166">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PH08" ID="{4E324A6A-5C7E-4D12-9AC6-D0E4F2B30F1F}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_TEST_EVENT" ID="{3AD970E4-1448-4A39-A9C0-ED0312517E80}">
+							<PropertyList>
+								<Property Name="InstanceLimit" Type="int16">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+								<Property Name="LimitScope" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{EA911DB5-F7DB-4AFC-9031-E7669F61D596}" ShortID="616292364">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_TEST" ID="{CB07705A-436D-4EC7-AFB6-AC65454B6D86}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_PH03" ID="{B67CBC25-0F40-4ADA-8E08-C0B689E073DB}">
+							<ChildrenList>
+								<Action Name="" ID="{EB28C325-FB14-4DAC-B43F-F980DA03CF8E}" ShortID="743042655">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PH03" ID="{4120AAF0-4045-430C-BC83-E85A351B59C7}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_PH07" ID="{E14D3BBA-D116-4E83-98D4-CAA7DC919F83}">
+							<ChildrenList>
+								<Action Name="" ID="{7588942A-13B3-4F42-9875-C0F83573A0BD}" ShortID="834358895">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PH07" ID="{24D635D5-B661-471B-8822-B2D64829FB3C}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_PH02" ID="{AD6D89F8-3F13-47BD-86B3-E2D6D8835A95}">
+							<ChildrenList>
+								<Action Name="" ID="{83EF8B20-578A-40C3-872C-4872B578812E}" ShortID="503369519">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PH02" ID="{D51A36CF-B35C-4D43-B381-90BCE158FE0E}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
