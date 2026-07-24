@@ -1583,6 +1583,7 @@
 												<Value>1</Value>
 											</ValueList>
 										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
 												<Value>960</Value>
@@ -1623,6 +1624,50 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="MOVEActv-Player_Cheese Dash Start_AAG" ID="{22757E72-5E0D-4ADD-9831-8DAE3DEB9AB3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MOVEActv-Player_Cheese Dash Start_02_AAG" ID="{0C6BC434-4859-46B0-9811-7E1AB9462DD3}" ShortID="928320482">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MOVEActv-Player_Cheese Dash Start_02_AAG" ID="{ED2AF67B-9778-4FB4-B3A1-C58A176790C0}">
+													<Language>SFX</Language>
+													<AudioFile>MOVEActv-Player_Cheese Dash Start_02_AAG.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="715500717"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MOVEActv-Player_Cheese Dash Start_02_AAG" ID="{ED2AF67B-9778-4FB4-B3A1-C58A176790C0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MOVEActv-Player_Cheese Dash Start_03_AAG" ID="{4A5878D1-83DE-46EA-B71C-028169BD9B56}" ShortID="188050664">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MOVEActv-Player_Cheese Dash Start_03_AAG" ID="{30A60636-9D53-4F41-84D3-A600C50D295D}">
+													<Language>SFX</Language>
+													<AudioFile>MOVEActv-Player_Cheese Dash Start_03_AAG.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="613595153"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MOVEActv-Player_Cheese Dash Start_03_AAG" ID="{30A60636-9D53-4F41-84D3-A600C50D295D}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
