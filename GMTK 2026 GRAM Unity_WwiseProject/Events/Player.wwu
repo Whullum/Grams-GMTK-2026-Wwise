@@ -66,6 +66,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Player_PowerUps_Dash" ID="{9614D645-AE27-4D7B-8A70-C57A8ADE5DC9}">
+					<ChildrenList>
+						<Action Name="" ID="{4CA17B4A-8E51-4040-B163-4FAA16247D3A}" ShortID="312130494">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_PowerUps_Dash" ID="{2346A06E-70B4-47EC-9503-953942D71677}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
