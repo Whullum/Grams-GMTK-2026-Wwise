@@ -14,17 +14,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_UI_Slider" ID="{8D4CE956-532B-4EFA-8CBE-9BAFA1CA5778}">
-					<ChildrenList>
-						<Action Name="" ID="{23FCD45A-0BD7-4096-9CBA-CAB3819640E4}" ShortID="11665650">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="UI_Slider" ID="{FF6F04CE-FF72-4FA1-8B57-FA8FA70F2387}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Placeholder Sounds" ID="{E028025A-42C2-4A40-ABED-D2B87BF7F86C}" ShortID="9268853">
 					<ChildrenList>
 						<Event Name="Play_PH06" ID="{9729F638-11CB-4189-839C-BC614528F9E4}">

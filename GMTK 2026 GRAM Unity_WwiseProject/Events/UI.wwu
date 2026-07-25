@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D190AD2D-F9CD-4D1E-A122-5936E91299F6}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="UI" ID="{D190AD2D-F9CD-4D1E-A122-5936E91299F6}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_UI_ClockTick_Normal" ID="{226FB1D4-BB82-4987-8872-3238D5907A6B}">
+					<ChildrenList>
+						<Action Name="" ID="{A33189C3-2F31-46CD-BB13-339EC96F9A92}" ShortID="716310575">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_ClockTick_Normal" ID="{4E6BD320-6E8C-47F0-B72F-18CF9237FE66}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_ClockTick_Angry" ID="{24C949E3-0BBF-4FC8-B229-46E6E9CD1877}">
+					<ChildrenList>
+						<Action Name="" ID="{7B82726A-A505-4693-978A-9505D96289EA}" ShortID="701830448">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_ClockTick_Angry" ID="{BD57B380-5E34-440F-9E97-72F30F17DF9F}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_Score_FinalPunch" ID="{349BD677-33F3-4133-A7DD-76EA34062F26}">
+					<ChildrenList>
+						<Action Name="" ID="{A705C1D6-1A0B-47BD-BC52-6D11BAB0396D}" ShortID="483321499">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Score_FinalPunch" ID="{31DD8213-1A1E-47AE-949B-3DBCCB5D8B83}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_ScoreTotal" ID="{093E1143-6E27-475D-96DB-8CA4B4AE17C1}">
+					<ChildrenList>
+						<Action Name="" ID="{E5741780-39EE-41C6-99B0-C02C3FD3CC37}" ShortID="766840358">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_ScoreTotal" ID="{DE0FAF2D-36A2-469D-9715-7C3A6A131614}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_Slider" ID="{8D4CE956-532B-4EFA-8CBE-9BAFA1CA5778}">
+					<ChildrenList>
+						<Action Name="" ID="{23FCD45A-0BD7-4096-9CBA-CAB3819640E4}" ShortID="11665650">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Slider" ID="{FF6F04CE-FF72-4FA1-8B57-FA8FA70F2387}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_Hover" ID="{2CA97E75-6C06-4A33-9208-EA98A63C3E25}">
+					<ChildrenList>
+						<Action Name="" ID="{BAD40008-B1F6-4796-9B50-83D5166FDC38}" ShortID="1002857823">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Hover" ID="{54553374-4C44-45C3-9A05-A6BCCACB43A8}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_MapClose" ID="{FCE307B8-A4BB-4B4E-AE50-68D647C7E0C8}">
+					<ChildrenList>
+						<Action Name="" ID="{3FE3DCB6-4F60-4796-AB62-857B99D588B1}" ShortID="669948560">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_MapClose" ID="{08007C94-CDE2-450B-A571-2C4E5DAFA2BA}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_MapOpen" ID="{C6543A52-AC73-40AD-BE1B-9F85E56F5467}">
+					<ChildrenList>
+						<Action Name="" ID="{CA74CDA6-C0B3-4D5A-871D-6F7438BFAFC5}" ShortID="938774602">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_MapOpen" ID="{64EBE4F5-1C0E-467C-9FFB-9F716D07AE6B}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
