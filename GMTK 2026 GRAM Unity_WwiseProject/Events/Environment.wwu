@@ -198,6 +198,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_MicrowavePickup" ID="{B7BA0BA8-93D4-407A-92E1-466296B007BE}">
+					<ChildrenList>
+						<Action Name="" ID="{8BC42F7B-3444-4649-AF74-33990487D475}" ShortID="57173539">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MicrowavePickup" ID="{CAA86DC8-7D11-4186-8522-81A647F00ADA}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

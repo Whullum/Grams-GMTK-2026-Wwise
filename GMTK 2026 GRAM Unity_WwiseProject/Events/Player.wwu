@@ -82,6 +82,17 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{500F906C-2952-4705-8B77-C134E4380081}" ShortID="950706887">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+								<Property Name="Probability" Type="Real64" Value="75"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SuperDash" ID="{B508963B-3172-4BE0-AA9F-9EB48C07FD1F}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Player_PowerUps_Jump" ID="{477BF04E-B899-48C6-BA83-2C782C01E362}">
@@ -97,6 +108,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Player_PowerUps_JumpCloth" ID="{B0D41EDF-5968-4073-97B1-A50F3E5D2A5F}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B2C50E17-6A0C-4C5F-BC97-8F0AF1DED393}" ShortID="476233436">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+								<Property Name="Probability" Type="Real64" Value="75"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SuperJump" ID="{82E992ED-2906-454C-A661-4F3B0CB9C23F}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -124,6 +146,62 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="VO" ID="{8C498FB6-BB33-4C8A-BF72-1B0FDC448D66}" ShortID="885374074">
+					<ChildrenList>
+						<Event Name="Play_VO_Delivery_Success" ID="{94F53EC4-78C5-48FD-AA82-F37D100926C9}">
+							<ChildrenList>
+								<Action Name="" ID="{3C458F54-A84E-4A44-8FC6-32F0C28C7D74}" ShortID="20975395">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Delivery Success" ID="{7B56D191-07A4-4396-A92F-6248432565C9}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_VO_Roaming" ID="{17298C91-B3DE-453A-9E08-44BB59A33662}">
+							<ChildrenList>
+								<Action Name="" ID="{05EFC7AB-137D-4EF3-9666-7D3DA3F7B126}" ShortID="65615018">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Roaming" ID="{FA026609-E7FC-4DF8-86B8-13B386F670CB}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_VO_Player_Dash" ID="{8D125741-0628-403F-9186-8E0C2E582ACF}">
+							<ChildrenList>
+								<Action Name="" ID="{5C38867D-F1F4-4480-A888-A40758D844B2}" ShortID="758290968">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.75"/>
+										<Property Name="Probability" Type="Real64" Value="75"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SuperDash" ID="{B508963B-3172-4BE0-AA9F-9EB48C07FD1F}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_VO_Player_SuperJump" ID="{82CAD250-43A3-4534-AD86-B24EE1228491}">
+							<ChildrenList>
+								<Action Name="" ID="{CEF990FE-0AF6-47A6-9B01-9D5097FC10A5}" ShortID="151099582">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.75"/>
+										<Property Name="Probability" Type="Real64" Value="75"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SuperJump" ID="{82E992ED-2906-454C-A661-4F3B0CB9C23F}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
