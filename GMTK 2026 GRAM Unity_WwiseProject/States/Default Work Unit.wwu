@@ -11,6 +11,7 @@
 						<State Name="MainMenu" ID="{0BC2A77C-F671-487E-8719-EE658AA2AC0F}"/>
 						<State Name="Horror" ID="{3B9D1019-4C90-4CCA-BDC1-BF1A35DDEC06}"/>
 						<State Name="Cutscene" ID="{710EA89C-ED21-4AF6-9881-FA5CF4A98415}"/>
+						<State Name="GameOver" ID="{7F50BD80-09A7-40A4-9061-CF71B6922F2F}"/>
 					</ChildrenList>
 				</StateGroup>
 				<StateGroup Name="Player_Slices_Eaten" ID="{492202C7-42C3-484C-92E1-BAEA8E3724BB}">
