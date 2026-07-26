@@ -75,6 +75,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{C51D8EC2-7750-4CD9-856D-F4BD56E280F7}" ShortID="988240417">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_PowerUps_DashAir" ID="{15EC56FE-9DED-442C-8107-E9B129B93438}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Player_PowerUps_Jump" ID="{477BF04E-B899-48C6-BA83-2C782C01E362}">
@@ -83,6 +90,13 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Player_PowerUps_Jump" ID="{CF235BF0-C5AA-4001-A485-180D59D84E14}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0D7EFA5D-CB28-4B71-86D8-84EEC6F09074}" ShortID="219113446">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_PowerUps_JumpCloth" ID="{B0D41EDF-5968-4073-97B1-A50F3E5D2A5F}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -73,12 +73,12 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_VendingMachine_DispensePizza" ID="{407A69C9-917E-4279-A233-C046A2711C87}">
+				<Event Name="Play_VendingMachine_DispenseCheese" ID="{407A69C9-917E-4279-A233-C046A2711C87}">
 					<ChildrenList>
 						<Action Name="" ID="{F05FD18B-0A06-47DE-9661-519E67B1C5E5}" ShortID="64516049">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="VendingMachine_DispensePizza" ID="{D98B7F47-FE98-4A81-AF57-D27D99BA32C7}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+									<ObjectRef Name="VendingMachine_DispenseMushroom" ID="{D98B7F47-FE98-4A81-AF57-D27D99BA32C7}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -90,6 +90,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="VendingMachine_Fix" ID="{E114B8C6-01E3-480E-9674-749F2D90814D}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_VendingMaching_DispensePepp" ID="{5129D88E-91FE-45D5-9CB3-7E74117E8351}">
+					<ChildrenList>
+						<Action Name="" ID="{F77E16BA-6379-4484-8410-974EA7EEBE1E}" ShortID="1020858983">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VendingMaching_DispensePepp" ID="{4FE9B93B-86B5-4303-81D8-68A8367D7A6E}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
