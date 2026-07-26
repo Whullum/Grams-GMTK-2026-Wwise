@@ -16,6 +16,7 @@
 						<Switch Name="VendingMachine" ID="{EFC3B6D1-E911-4A0A-BB59-DDD0FEF7D93C}"/>
 						<Switch Name="Door" ID="{994B0C0D-B805-4455-A177-FD3E50020333}"/>
 						<Switch Name="Wall" ID="{3771C109-E320-4BF7-BA23-C7CDA6A367DE}"/>
+						<Switch Name="Nothing" ID="{F76AEC88-D515-46FF-8A63-F8786A1764DB}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

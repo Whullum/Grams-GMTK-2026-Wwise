@@ -3,17 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{263DDC36-1659-43D4-8C76-EED609DD8578}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Music" ID="{9192C5BD-1D75-4655-B0DF-570CBFF9D844}">
-					<ChildrenList>
-						<Action Name="" ID="{F4F998E0-CBCC-4704-AB50-1999D92A2EF8}" ShortID="289607202">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music Switch" ID="{B5C39FC7-8013-4925-B843-C4EE91EFB0FC}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Placeholder Sounds" ID="{E028025A-42C2-4A40-ABED-D2B87BF7F86C}" ShortID="9268853">
 					<ChildrenList>
 						<Event Name="Play_PH06" ID="{9729F638-11CB-4189-839C-BC614528F9E4}">
@@ -140,6 +129,7 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<WorkUnit Name="Music" ID="{99010B82-074D-4BF2-B721-37152F4806E2}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

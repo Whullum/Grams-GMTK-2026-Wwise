@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{99010B82-074D-4BF2-B721-37152F4806E2}" SchemaVersion="133" RootDocumentID="{263DDC36-1659-43D4-8C76-EED609DD8578}" ParentDocumentID="{263DDC36-1659-43D4-8C76-EED609DD8578}">
+	<Events>
+		<WorkUnit Name="Music" ID="{99010B82-074D-4BF2-B721-37152F4806E2}" OwnerID="{263DDC36-1659-43D4-8C76-EED609DD8578}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_MUS_Gameplay" ID="{921409A1-7AD2-4EA0-BFCD-CD88C978D4D4}">
+					<ChildrenList>
+						<Action Name="" ID="{4ACC0D9D-F901-4708-9ADB-BC73D415C9D3}" ShortID="289750733">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MUS_Gameplay" ID="{B5C39FC7-8013-4925-B843-C4EE91EFB0FC}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MUS_MainMenu" ID="{02F2F292-568A-4A73-B452-5C235D2DAF70}">
+					<ChildrenList>
+						<Action Name="" ID="{802E87E4-9A4E-4278-82BF-AC62054FFF08}" ShortID="291054369">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MUS_MainMenu" ID="{6C64C283-E9A6-45A9-BC91-601414EA438D}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
