@@ -7008,9 +7008,16 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
 										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Idle_Switch" ID="{1C56EB43-88A7-4B12-B876-1F52B552BFB3}" WorkUnitID="{1D3FEC77-78E1-4E84-B7C8-E8BEF792F44F}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<RandomSequenceContainer Name="Idling_Too_Long" ID="{D6F79ACE-CF10-4C40-B34E-B8D9129D2D02}" ShortID="951084141">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
@@ -7242,6 +7249,50 @@
 												<ActiveSource Name="VO_VendingMachine_DoorJam" ID="{CB5FED3F-E31A-44E2-9EBE-44DCA3C88C7C}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="VO_VendingMachine_Idle-Above_Target" ID="{8FC49C37-ED37-47D9-A5FA-59ACCFC69159}" ShortID="615073599">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VO_VendingMachine_Idle-008" ID="{2DCF7DFA-9362-4428-9BA8-8853CC8AA0D0}">
+													<Language>SFX</Language>
+													<AudioFile>VO_VendingMachine_Idle-008.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="511848277"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VO_VendingMachine_Idle-008" ID="{2DCF7DFA-9362-4428-9BA8-8853CC8AA0D0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VO_VendingMachine_Idle-Below_Target" ID="{69140323-6F03-4799-B863-4B799FB99042}" ShortID="1060525818">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VO_VendingMachine_Idle-009" ID="{550DE2C2-A234-4631-AA5D-28336A1EACA1}">
+													<Language>SFX</Language>
+													<AudioFile>VO_VendingMachine_Idle-009.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="3265752"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VO_VendingMachine_Idle-009" ID="{550DE2C2-A234-4631-AA5D-28336A1EACA1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupingBehaviorList>
@@ -7249,7 +7300,13 @@
 												<ItemRef Name="VO_VendingMachine_DoorJam" ID="{57AFC70F-30B1-4CBA-A760-600A5D690F0C}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
+												<ItemRef Name="VO_VendingMachine_Idle-Below_Target" ID="{69140323-6F03-4799-B863-4B799FB99042}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
 												<ItemRef Name="VO_VendingMachine_Idle-Goo_Room" ID="{D1AB6224-6263-4984-81B2-4DD6056701DF}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="VO_VendingMachine_Idle-Above_Target" ID="{8FC49C37-ED37-47D9-A5FA-59ACCFC69159}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="VO_VendingMachine_Idle-Cold_Room" ID="{970BDD76-93F6-41ED-BA8D-5F23F538480D}"/>
@@ -7258,6 +7315,44 @@
 												<ItemRef Name="Idling_Too_Long" ID="{D6F79ACE-CF10-4C40-B34E-B8D9129D2D02}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Idle_StandStill" ID="{EF2AB606-79BE-4FFF-A7C5-C52158A23B04}"/>
+												<ItemList>
+													<ItemRef Name="Idling_Too_Long" ID="{D6F79ACE-CF10-4C40-B34E-B8D9129D2D02}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Idle_Goo" ID="{8CE84E98-DF80-4507-9D7E-AEF0584681B2}"/>
+												<ItemList>
+													<ItemRef Name="VO_VendingMachine_Idle-Goo_Room" ID="{D1AB6224-6263-4984-81B2-4DD6056701DF}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Idle_Above" ID="{62E6E1C7-F6DD-4D8D-ACB4-85CB409DB7B9}"/>
+												<ItemList>
+													<ItemRef Name="VO_VendingMachine_Idle-Above_Target" ID="{8FC49C37-ED37-47D9-A5FA-59ACCFC69159}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Idle_Below" ID="{76AA60D5-D29C-4582-A630-6CC6C21E9B44}"/>
+												<ItemList>
+													<ItemRef Name="VO_VendingMachine_Idle-Below_Target" ID="{69140323-6F03-4799-B863-4B799FB99042}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Idle_Door" ID="{51BF28F3-B2C8-4E28-BE7E-0C80EB21014A}"/>
+												<ItemList>
+													<ItemRef Name="VO_VendingMachine_DoorJam" ID="{57AFC70F-30B1-4CBA-A760-600A5D690F0C}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Idle_Cold" ID="{30F542F7-83CF-471C-B9B0-13C006A13D38}"/>
+												<ItemList>
+													<ItemRef Name="VO_VendingMachine_Idle-Cold_Room" ID="{970BDD76-93F6-41ED-BA8D-5F23F538480D}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
 								<SwitchContainer Name="Dispense_Pizza_Taunts" ID="{35A63082-0E22-44F0-BE14-C9EDE60CC2E0}" ShortID="19844837">
@@ -8319,50 +8414,6 @@
 										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
-								<Sound Name="VO_VendingMachine_Idle-Above_Target" ID="{8FC49C37-ED37-47D9-A5FA-59ACCFC69159}" ShortID="615073599">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="VO_VendingMachine_Idle-008" ID="{2DCF7DFA-9362-4428-9BA8-8853CC8AA0D0}">
-											<Language>SFX</Language>
-											<AudioFile>VO_VendingMachine_Idle-008.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="511848277"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="VO_VendingMachine_Idle-008" ID="{2DCF7DFA-9362-4428-9BA8-8853CC8AA0D0}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="VO_VendingMachine_Idle-Below_Target" ID="{69140323-6F03-4799-B863-4B799FB99042}" ShortID="1060525818">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="VO_VendingMachine_Idle-009" ID="{550DE2C2-A234-4631-AA5D-28336A1EACA1}">
-											<Language>SFX</Language>
-											<AudioFile>VO_VendingMachine_Idle-009.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="3265752"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="VO_VendingMachine_Idle-009" ID="{550DE2C2-A234-4631-AA5D-28336A1EACA1}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 							</ChildrenList>
 						</PropertyContainer>
 					</ChildrenList>

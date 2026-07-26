@@ -20,6 +20,16 @@
 						<Switch Name="Scientist" ID="{948E69C2-57B6-429D-A05A-48A609166345}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Idle_Switch" ID="{1C56EB43-88A7-4B12-B876-1F52B552BFB3}">
+					<ChildrenList>
+						<Switch Name="Idle_StandStill" ID="{EF2AB606-79BE-4FFF-A7C5-C52158A23B04}"/>
+						<Switch Name="Idle_Cold" ID="{30F542F7-83CF-471C-B9B0-13C006A13D38}"/>
+						<Switch Name="Idle_Goo" ID="{8CE84E98-DF80-4507-9D7E-AEF0584681B2}"/>
+						<Switch Name="Idle_Above" ID="{62E6E1C7-F6DD-4D8D-ACB4-85CB409DB7B9}"/>
+						<Switch Name="Idle_Below" ID="{76AA60D5-D29C-4582-A630-6CC6C21E9B44}"/>
+						<Switch Name="Idle_Door" ID="{51BF28F3-B2C8-4E28-BE7E-0C80EB21014A}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

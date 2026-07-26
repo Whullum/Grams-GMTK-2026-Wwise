@@ -185,6 +185,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Idle_Taunts" ID="{62469FAF-E5F2-4D4A-98EB-BD53C30D64FA}">
+							<ChildrenList>
+								<Action Name="" ID="{D1BCE4D7-C290-43B5-9559-77051962B3ED}" ShortID="859096568">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Idle_Taunts" ID="{1188B275-DA26-4AD1-980D-49A65E3DB877}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
