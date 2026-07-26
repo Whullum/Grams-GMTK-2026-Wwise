@@ -117,6 +117,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Scientist_Eating" ID="{7EC8A3F2-202F-4EE7-81F9-25A837A63656}">
+					<ChildrenList>
+						<Action Name="" ID="{AD7C33F5-5FBD-4F7B-B249-7C7B3792221D}" ShortID="1038327367">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Scientist_Eating" ID="{69809843-A2A0-4334-9E99-45080DD3EDDC}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Pizza_Select_Cold" ID="{A7315B11-CB48-41D8-8D85-CA175D089BB1}">
+					<ChildrenList>
+						<Action Name="" ID="{0EB70A1C-4DF7-4628-B0F0-E2482BA64F12}" ShortID="1072646864">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pizza_Select_Cold" ID="{1EC309EF-4197-488F-A8B6-D1D64F645B04}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Pizza_Select_Hot" ID="{573EF4E4-F5C8-4093-9E8A-844CC0BCE8F7}">
+					<ChildrenList>
+						<Action Name="" ID="{73AF1463-5268-4765-B784-C66A897CE129}" ShortID="134544804">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pizza_Select_Hot" ID="{612DB36A-0EE7-4EB5-BF02-98D62DA11CF4}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Pizza_Select_Normal" ID="{DEDAAA34-C32B-4C0D-8FE7-F7518422B10D}">
+					<ChildrenList>
+						<Action Name="" ID="{F6C15739-08B5-4CEB-84B1-EAF3367E65EF}" ShortID="867119359">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pizza_Select_Normal" ID="{4093DE8B-E85A-4164-A913-86B4253CDB62}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

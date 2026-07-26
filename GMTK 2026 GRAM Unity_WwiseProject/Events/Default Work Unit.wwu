@@ -129,7 +129,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<WorkUnit Name="Music" ID="{99010B82-074D-4BF2-B721-37152F4806E2}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
