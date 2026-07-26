@@ -1743,9 +1743,34 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<Sound Name="KICK" ID="{34C21623-B0CD-4651-9D7D-37201E305629}" ShortID="734713304">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX Bus" ID="{3103FD2E-C5F1-42AC-A555-1E6CDD35F2DE}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kick Wall" ID="{268024D0-DF1A-4CDA-9E30-A0D191763C18}">
+											<Language>SFX</Language>
+											<AudioFile>Kick Wall.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1034570395"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kick Wall" ID="{268024D0-DF1A-4CDA-9E30-A0D191763C18}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="KICK" ID="{34C21623-B0CD-4651-9D7D-37201E305629}"/>
+									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Player_Kick_Door" ID="{D79BB25A-C0CD-407A-B743-DCB4BB9BDE84}"/>
 									</GroupingBehavior>
@@ -1761,9 +1786,21 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
+										<SwitchRef Name="Wall" ID="{3771C109-E320-4BF7-BA23-C7CDA6A367DE}"/>
+										<ItemList>
+											<ItemRef Name="Player_Kick_Wall" ID="{415C39D8-555D-4448-8DEB-3893E33E63EC}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
 										<SwitchRef Name="Door" ID="{994B0C0D-B805-4455-A177-FD3E50020333}"/>
 										<ItemList>
 											<ItemRef Name="Player_Kick_Door" ID="{D79BB25A-C0CD-407A-B743-DCB4BB9BDE84}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Scientist" ID="{948E69C2-57B6-429D-A05A-48A609166345}"/>
+										<ItemList>
+											<ItemRef Name="KICK" ID="{34C21623-B0CD-4651-9D7D-37201E305629}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
