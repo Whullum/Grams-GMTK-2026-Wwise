@@ -22,6 +22,14 @@
 						<State Name="Player_Slices_Eaten_06" ID="{85884079-D9A4-4688-9F5D-32725F851BAE}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Level" ID="{636B7BED-B675-4ED6-903E-6B25145D3E66}">
+					<ChildrenList>
+						<State Name="None" ID="{FB39B83C-E2A4-42D6-88AA-1C90480520FD}"/>
+						<State Name="Level_1" ID="{DBAAFB41-EAD7-4A3A-BC4B-3458E5DA34D8}"/>
+						<State Name="Level_3" ID="{0E818BBB-392F-48B5-833F-950C5E1E8DA3}"/>
+						<State Name="Level_2" ID="{5E468CA0-17CD-4A32-B99A-12893BD26BF1}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
