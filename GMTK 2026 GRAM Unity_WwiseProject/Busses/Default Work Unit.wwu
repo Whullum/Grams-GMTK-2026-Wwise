@@ -12,6 +12,15 @@
 					<ChildrenList>
 						<Bus Name="SFX Bus" ID="{3103FD2E-C5F1-42AC-A555-1E6CDD35F2DE}">
 							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{52FCFE04-5CA5-4F7B-B57E-307638C330ED}" ShortID="714317486">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Ak Sidechain Send" CompanyID="0" PluginID="193" PluginType="3">
+												<ObjectRef Name="New_Sidechain_Send" ID="{8CC4FFF6-0E6E-4E37-94F2-F1F79970CDCA}" WorkUnitID="{4AB6951E-CBB8-45A5-A09A-5803944FBE92}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
 								<ObjectList Name="RTPC">
 									<RTPC Name="" ID="{9F57B915-51B8-43A8-9B47-6BBE1857F6D2}" ShortID="268414662">
 										<PropertyList>
@@ -49,6 +58,28 @@
 						</Bus>
 						<Bus Name="Music Bus" ID="{2EAE3143-545A-40C8-8608-45A5F01443F6}">
 							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{084C8330-C170-4504-891E-D954C129C848}" ShortID="245414261">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="Compressor (Custom)" ID="{38E88731-45EE-4D45-8DC5-7FFE6C8C3C70}" ShortID="655535744" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+														<PropertyList>
+															<Property Name="Ratio" Type="Real32" Value="50"/>
+															<Property Name="ReleaseTime" Type="Real32" Value="0.5"/>
+															<Property Name="Threshold" Type="Real32" Value="-28"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="SidechainRef">
+																<ObjectRef Name="VO_Sidechain" ID="{051439BF-E1AD-42C8-A785-2FC3CC25D582}" WorkUnitID="{503756F6-E0F9-4A88-986D-53B6D419FBFE}"/>
+															</Reference>
+														</ReferenceList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
 								<ObjectList Name="RTPC">
 									<RTPC Name="" ID="{0D3F289B-4C9C-45C9-A098-D1F65BFF291E}" ShortID="318972113">
 										<PropertyList>
@@ -90,6 +121,15 @@
 						<AuxBus Name="Hot_Verb" ID="{D9B6D3ED-E51F-4F66-8C53-623C127145C8}"/>
 						<Bus Name="VO Bus" ID="{97F030C7-6633-470E-A450-D3C581533447}">
 							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{BE59BC04-6B6A-48F9-AEC3-9B3FBF788527}" ShortID="857150105">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Ak Sidechain Send" CompanyID="0" PluginID="193" PluginType="3">
+												<ObjectRef Name="New_Sidechain_Send" ID="{8CC4FFF6-0E6E-4E37-94F2-F1F79970CDCA}" WorkUnitID="{4AB6951E-CBB8-45A5-A09A-5803944FBE92}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
 								<ObjectList Name="RTPC">
 									<RTPC Name="" ID="{30A07B59-C11F-4E81-B025-D1E06F08B439}" ShortID="486016432">
 										<PropertyList>
