@@ -172,6 +172,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Vending_Machines" ID="{D0E3C137-0C09-4873-90E7-88E7552C57F3}" ShortID="290326698">
+					<ChildrenList>
+						<Event Name="Play_VendingMachine_Dispense_Taunt" ID="{5D27DA16-D889-4089-B089-DE5707B031F5}">
+							<ChildrenList>
+								<Action Name="" ID="{9386ED33-1DC1-420B-BC7F-72289416EE5E}" ShortID="704333">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Dispense_Pizza_Taunts" ID="{35A63082-0E22-44F0-BE14-C9EDE60CC2E0}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
