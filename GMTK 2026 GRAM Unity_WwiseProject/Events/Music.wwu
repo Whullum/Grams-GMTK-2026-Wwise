@@ -25,6 +25,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_A_Fullcutscene" ID="{99430491-122C-45FA-82FA-62FB969E118A}">
+					<ChildrenList>
+						<Action Name="" ID="{50A11B64-E4DF-43FD-B357-C7A3C345C854}" ShortID="620451823">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="A_Fullcutscene" ID="{C2808511-C41A-4B3E-8BEA-C93C754699C5}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ENDING_D___FINAL" ID="{5F3BCB21-30EF-401E-B11D-0DC4AD8CC442}">
+					<ChildrenList>
+						<Action Name="" ID="{4E356E85-1778-4ACD-802B-6A3B449D9F50}" ShortID="1037410221">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ENDING D - FINAL" ID="{4A1BACB3-1ACA-46CE-9048-F750363ECCE9}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
