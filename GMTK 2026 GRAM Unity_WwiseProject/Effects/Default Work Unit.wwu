@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4AB6951E-CBB8-45A5-A09A-5803944FBE92}" SchemaVersion="133">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{4AB6951E-CBB8-45A5-A09A-5803944FBE92}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4AB6951E-CBB8-45A5-A09A-5803944FBE92}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Sidechain_Send" ID="{8CC4FFF6-0E6E-4E37-94F2-F1F79970CDCA}" PluginName="Ak Sidechain Send" CompanyID="0" PluginID="193" PluginType="3">
+					<ReferenceList>
+						<Reference Name="SidechainRef">
+							<ObjectRef Name="VO_Sidechain" ID="{051439BF-E1AD-42C8-A785-2FC3CC25D582}" WorkUnitID="{503756F6-E0F9-4A88-986D-53B6D419FBFE}"/>
+						</Reference>
+					</ReferenceList>
+				</Effect>
+				<Effect Name="New_Sidechain_Receive" ID="{A963FE61-1A71-4F0A-BE76-1DB6EBBA641F}" PluginName="Ak Sidechain Receive" CompanyID="0" PluginID="194" PluginType="3">
+					<PropertyList>
+						<Property Name="Volume" Type="Real32">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="SidechainRef">
+							<ObjectRef Name="VO_Sidechain" ID="{051439BF-E1AD-42C8-A785-2FC3CC25D582}" WorkUnitID="{503756F6-E0F9-4A88-986D-53B6D419FBFE}"/>
+						</Reference>
+					</ReferenceList>
+				</Effect>
+				<Effect Name="Meter_VO_Sidechain" ID="{0BFEAF84-835A-4D44-919B-6F8382DA98A3}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

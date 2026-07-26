@@ -11,6 +11,22 @@
 						</Module>
 					</ModuleList>
 				</SoundcasterSession>
+				<SoundcasterSession Name="Sidechain Testing" ID="{F670D0D4-9D90-413C-9BE8-CB95F006F299}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="TEST_MUSIC_Jaron - Pizza Run - Section 1" ID="{E761F0A3-08B1-41B0-957A-300519EFB079}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Delivery Success" ID="{7B56D191-07A4-4396-A92F-6248432565C9}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_PowerUps_Jump" ID="{477BF04E-B899-48C6-BA83-2C782C01E362}" WorkUnitID="{185BBABD-AADE-45E4-888B-B4470BDD7D14}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>
