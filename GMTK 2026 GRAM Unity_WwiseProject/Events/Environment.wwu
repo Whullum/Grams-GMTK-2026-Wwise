@@ -209,6 +209,43 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Timer" ID="{50CDD1F3-76D2-492A-9EF5-042B7E298750}" ShortID="469443393">
+					<ChildrenList>
+						<Event Name="Play_Timer_VO_Laughing" ID="{304A0B10-3A59-4074-9885-B1464ACC2F86}">
+							<ChildrenList>
+								<Action Name="" ID="{EEAE350E-F0E7-4D73-88A3-3748A573D9CB}" ShortID="300442227">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VO_VendingMachine_Weak-012" ID="{B1CB5917-F9D2-4A4F-B718-1E214B62EB65}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Timer_VO_Smirk" ID="{53BFA196-B4E4-4BA9-B5E5-EA95D7EBA69C}">
+							<ChildrenList>
+								<Action Name="" ID="{CB6AA61C-8F3F-4B55-834A-0E1BDF4DC0EC}" ShortID="1026284946">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VO_VendingMachine_Strong-005" ID="{E62CB84D-B35C-4EF3-84E5-A8A90DB9687B}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Timer_VO_Blink" ID="{8A36EA37-5EA2-4AB1-9577-DAB348A3C05B}">
+							<ChildrenList>
+								<Action Name="" ID="{4BE1EED4-DE46-4ADB-982B-28FA828AA779}" ShortID="718348287">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VO_VendingMachine_Strong-014" ID="{F6002B91-B0EC-42DF-A1BC-2E89A6D95F2C}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

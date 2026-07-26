@@ -200,6 +200,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_VO_ColdRoom_Entry" ID="{4CE0C287-656A-4F4B-8FA0-E8D2703B1760}">
+							<ChildrenList>
+								<Action Name="" ID="{4B64767D-7996-419F-B23F-1EC907A8ED91}" ShortID="99348357">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VO_Player_Cold_Room_Entry" ID="{0C7114D9-E391-4EBA-A4E5-13626AE3DC29}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
