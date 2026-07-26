@@ -1393,8 +1393,39 @@
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Kick Vending Maching" ID="{D25B32D7-8F6A-4B88-934E-70664E1D6DA4}" ShortID="986049038">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kick Vending Maching" ID="{1DD84196-4CBE-415A-91D3-1DF5B4D1E39C}">
+													<Language>SFX</Language>
+													<AudioFile>Kick Vending Maching.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="160469461"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kick Vending Maching" ID="{1DD84196-4CBE-415A-91D3-1DF5B4D1E39C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Player_Kick_Door" ID="{D79BB25A-C0CD-407A-B743-DCB4BB9BDE84}" ShortID="992123726">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
@@ -1403,6 +1434,30 @@
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Kick Door" ID="{26557A3D-66CC-4DE3-917A-412ABB3C2742}" ShortID="991765675">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kick Door" ID="{4B875179-E7EE-46EC-85E8-9AD81ED1CBF1}">
+													<Language>SFX</Language>
+													<AudioFile>Kick Door.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="310258485"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kick Door" ID="{4B875179-E7EE-46EC-85E8-9AD81ED1CBF1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Player_Kick_Wall" ID="{ACB52213-ABBD-4AA5-AD6B-19DE881EAF42}" ShortID="873803391">
 									<ReferenceList>
@@ -1413,6 +1468,30 @@
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Kick Wall" ID="{AA7D4D33-7CC4-4CF3-960B-2C8273B340E9}" ShortID="137268562">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kick Wall" ID="{391D03B2-600B-47F7-8063-6C745FD1DC48}">
+													<Language>SFX</Language>
+													<AudioFile>Kick Wall.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1054452612"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kick Wall" ID="{391D03B2-600B-47F7-8063-6C745FD1DC48}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
 								</RandomSequenceContainer>
 								<Sound Name="Player_Kick_None" ID="{615085EA-05E8-4C81-BEEF-92ED1A0109C2}" ShortID="432533284">
 									<ReferenceList>
@@ -6376,6 +6455,47 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="VendingMachine_Broken" ID="{64C8F538-10D7-4870-A6F5-0C0CC5CA39E2}" ShortID="162039537">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E1D3C42C-3D59-46F3-80D1-DEB0D248C4A8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2AB3AD5E-C4D0-405C-9DA5-B57559D2A0D5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Vend Machine Broken_1" ID="{0B637671-8397-4C44-BA0F-7508FD08B7D8}">
+									<Language>SFX</Language>
+									<AudioFile>Vend Machine Broken_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="878701227"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="Vend Machine Broken" ID="{9B862C19-1577-4989-80B3-F415A6F0A9AF}">
+									<Language>SFX</Language>
+									<AudioFile>Vend Machine Broken.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="923817725"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Vend Machine Broken" ID="{9B862C19-1577-4989-80B3-F415A6F0A9AF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Placeholders" ID="{6F820A78-ECDC-46FB-8E87-99746B7E4D40}" ShortID="596317499">

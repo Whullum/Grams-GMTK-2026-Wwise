@@ -161,6 +161,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_VendingMachine_Broken" ID="{8EFAF222-6549-4C32-951A-650D32B162EB}">
+					<ChildrenList>
+						<Action Name="" ID="{BCE566D0-DEC4-491A-9259-72CD5F2A9663}" ShortID="447306738">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VendingMachine_Broken" ID="{64C8F538-10D7-4870-A6F5-0C0CC5CA39E2}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
