@@ -91,6 +91,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_UI_Select" ID="{EFDEFCED-F813-4011-9516-04FAC4593C66}">
+					<ChildrenList>
+						<Action Name="" ID="{BF99CBDB-79A3-41F4-9FCC-74103E0514A6}" ShortID="276349233">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Select" ID="{A4945508-CB28-4DB7-82ED-D108D0D95C23}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_Deny" ID="{972A3592-C534-4670-AE9C-AC4B3288F65A}">
+					<ChildrenList>
+						<Action Name="" ID="{E58790B5-8EC1-4AEC-B942-3D26D350DE16}" ShortID="830930071">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Deny" ID="{B5756517-037F-4535-99C5-BAAB761FD6D7}" WorkUnitID="{77D8FA67-7D48-44B0-AA5C-4E13ADBF6A7E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
