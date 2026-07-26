@@ -8,6 +8,7 @@
 						<State Name="None" ID="{F441CC65-D098-4FC8-804E-65DEC9E13F17}"/>
 						<State Name="Calm" ID="{E782D8E8-09EC-4BE3-8E0A-C2C8643C71E6}"/>
 						<State Name="Aggressive" ID="{6697982B-4BC3-466A-A564-1382B00B7CF6}"/>
+						<State Name="MainMenu" ID="{0BC2A77C-F671-487E-8719-EE658AA2AC0F}"/>
 					</ChildrenList>
 				</StateGroup>
 				<StateGroup Name="Player_Slices_Eaten" ID="{492202C7-42C3-484C-92E1-BAEA8E3724BB}">
